@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://dhvehh5gyupd8"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://resources/region_data.gd" id="1_5f11u"]
+
+[resource]
+script = ExtResource("1_5f11u")
+id = 27
+name = "Goblin's Gate"
+neighbors = Array[int]([26, 28])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"
