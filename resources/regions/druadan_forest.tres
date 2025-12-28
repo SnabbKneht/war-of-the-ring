@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://dvu7y56uv1hdt"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://resources/region_data.gd" id="1_jdwyr"]
+
+[resource]
+script = ExtResource("1_jdwyr")
+id = 53
+name = "Druadan Forest"
+neighbors = Array[int]([52, 40, 91, 92, 59, 58])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

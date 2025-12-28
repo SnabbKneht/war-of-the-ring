@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://7xb7t0ytbpfs"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://resources/region_data.gd" id="1_7j4kh"]
+
+[resource]
+script = ExtResource("1_7j4kh")
+id = 80
+name = "Southern Mirkwood"
+neighbors = Array[int]([75, 76, 79, 84, 81])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

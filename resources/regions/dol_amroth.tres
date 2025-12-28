@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://dwaso0cdumco3"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://resources/region_data.gd" id="1_3yk23"]
+
+[resource]
+script = ExtResource("1_3yk23")
+id = 55
+name = "Dol Amroth"
+neighbors = Array[int]([49, 50, 54])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

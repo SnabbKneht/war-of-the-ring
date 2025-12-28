@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://0oodq4oymeqe"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://resources/region_data.gd" id="1_mtlsy"]
+
+[resource]
+script = ExtResource("1_mtlsy")
+id = 60
+name = "Carrock"
+neighbors = Array[int]([61, 70, 72, 71, 26, 25])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

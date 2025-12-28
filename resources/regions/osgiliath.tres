@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://bo05xhk6nwmf0"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://resources/region_data.gd" id="1_qub4y"]
+
+[resource]
+script = ExtResource("1_qub4y")
+id = 59
+name = "Osgiliath"
+neighbors = Array[int]([92, 93, 98, 99, 56, 57, 58, 53])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

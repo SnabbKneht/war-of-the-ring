@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://ctpx2ouin4v4o"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://resources/region_data.gd" id="1_58r50"]
+
+[resource]
+script = ExtResource("1_58r50")
+id = 89
+name = "Dagorlad"
+neighbors = Array[int]([93, 90, 85, 88, 94])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

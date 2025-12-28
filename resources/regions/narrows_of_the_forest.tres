@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://d0ih2kh3f343g"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://resources/region_data.gd" id="1_rvafq"]
+
+[resource]
+script = ExtResource("1_rvafq")
+id = 74
+name = "Narrows of the Forest"
+neighbors = Array[int]([72, 75, 81, 73, 71])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

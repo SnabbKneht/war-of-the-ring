@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://dc70cgbaac2mj"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://resources/region_data.gd" id="1_475wb"]
+
+[resource]
+script = ExtResource("1_475wb")
+id = 85
+name = "Nomad Lands"
+neighbors = Array[int]([79, 86, 88, 89, 90, 84])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

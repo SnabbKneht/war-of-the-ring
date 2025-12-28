@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://b8teuajubgo8w"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://resources/region_data.gd" id="1_qu3ri"]
+
+[resource]
+script = ExtResource("1_qu3ri")
+id = 79
+name = "Southern Rhovanion"
+neighbors = Array[int]([76, 77, 78, 86, 85, 84, 80])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"
