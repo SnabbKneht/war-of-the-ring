@@ -14,6 +14,10 @@ config/name="War of the Ring"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+RegionDatabase="*res://resources/region_database.gd"
+
 [debug]
 
 gdscript/warnings/untyped_declaration=1
