@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EntityType" load_steps=2 format=3 uid="uid://c6vwgr3ov7jni"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://resources/entity_type.gd" id="1_uubxd"]
+
+[resource]
+script = ExtResource("1_uubxd")
+id = "dwarves_leader"
+leadership_value = 1
+must_be_in_army = true
+can_move_army = true
+metadata/_custom_type_script = "uid://c77r01bpric5s"
