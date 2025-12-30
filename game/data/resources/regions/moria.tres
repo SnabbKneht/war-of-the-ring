@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://bk8xqeypjr1mp"]
 
-[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_dh4ef"]
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/scripts/region_data.gd" id="1_dh4ef"]
 
 [resource]
 script = ExtResource("1_dh4ef")

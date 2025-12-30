@@ -1,7 +1,7 @@
 extends Node
 
 
-const regions_directory: String = "res://resources/regions/"
+const regions_directory: String = "res://game/data/resources/regions/"
 
 
 var regions: Dictionary[int, RegionData] = {}

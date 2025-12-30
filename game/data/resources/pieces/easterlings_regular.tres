@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EntityType" load_steps=2 format=3 uid="uid://dd7m0komx0sje"]
 
-[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/piece_type.gd" id="1_8u20k"]
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_8u20k"]
 
 [resource]
 script = ExtResource("1_8u20k")
