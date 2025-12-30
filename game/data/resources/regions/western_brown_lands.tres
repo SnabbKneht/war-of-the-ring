@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://c63fbxhoqdh2o"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_7y5w6"]
+
+[resource]
+script = ExtResource("1_7y5w6")
+id = 83
+name = "Western Brown Lands"
+neighbors = Array[int]([82, 81, 84, 91, 40, 39])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

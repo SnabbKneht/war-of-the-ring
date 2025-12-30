@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://w4yw5wh7218o"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_x7v0m"]
+
+[resource]
+script = ExtResource("1_x7v0m")
+id = 91
+name = "Western Emyn Muil"
+neighbors = Array[int]([83, 84, 90, 92, 53, 40])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

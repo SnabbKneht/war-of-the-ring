@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://bpnkb8ju6tmnl"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_8kgcp"]
+
+[resource]
+script = ExtResource("1_8kgcp")
+id = 88
+name = "Ash Mountains"
+neighbors = Array[int]([87, 86, 85, 89])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

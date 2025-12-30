@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://buirkxvm728up"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_rs5of"]
+
+[resource]
+script = ExtResource("1_rs5of")
+id = 73
+name = "North Anduin Vale"
+neighbors = Array[int]([71, 74, 81, 82, 33, 32])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

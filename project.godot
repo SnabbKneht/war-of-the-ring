@@ -16,7 +16,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-RegionDatabase="*res://static-game-data-scripts/region_database.gd"
+RegionDatabase="*res://game/data/region_database.gd"
 
 [debug]
 

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://bhg5wadgt7fu3"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_2wr7d"]
+
+[resource]
+script = ExtResource("1_2wr7d")
+id = 24
+name = "Minhiriath"
+neighbors = Array[int]([16, 23, 36, 46])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

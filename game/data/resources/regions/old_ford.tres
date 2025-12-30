@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://t75xu7weg7f7"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_tyv82"]
+
+[resource]
+script = ExtResource("1_tyv82")
+id = 26
+name = "Old Ford"
+neighbors = Array[int]([25, 60, 71, 32, 27])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://dgceix4msakme"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_i27aj"]
+
+[resource]
+script = ExtResource("1_i27aj")
+id = 99
+name = "West Harondor"
+neighbors = Array[int]([56, 59, 98, 100, 104, 105])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

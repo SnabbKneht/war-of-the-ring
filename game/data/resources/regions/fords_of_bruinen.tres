@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://c1kcu5tiyn5ad"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_sst1i"]
+
+[resource]
+script = ExtResource("1_sst1i")
+id = 29
+name = "Fords of Bruinen"
+neighbors = Array[int]([5, 28, 30, 6])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

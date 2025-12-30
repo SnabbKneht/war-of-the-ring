@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://cwb5rcucfprq2"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_lml0a"]
+
+[resource]
+script = ExtResource("1_lml0a")
+id = 28
+name = "High Pass"
+neighbors = Array[int]([27, 29])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

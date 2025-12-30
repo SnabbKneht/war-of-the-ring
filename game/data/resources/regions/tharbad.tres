@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://b70k4hrpn35kn"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_3a414"]
+
+[resource]
+script = ExtResource("1_3a414")
+id = 36
+name = "Tharbad"
+neighbors = Array[int]([23, 35, 37, 46, 24])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

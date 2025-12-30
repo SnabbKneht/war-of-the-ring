@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://dhefp5vla3xw7"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_308r6"]
+
+[resource]
+script = ExtResource("1_308r6")
+id = 22
+name = "South Downs"
+neighbors = Array[int]([20, 21, 6, 30, 35, 23, 19])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

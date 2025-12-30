@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://ddqnba8aqpv44"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_mrgym"]
+
+[resource]
+script = ExtResource("1_mrgym")
+id = 64
+name = "Iron Hills"
+neighbors = Array[int]([65, 67, 68, 63])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

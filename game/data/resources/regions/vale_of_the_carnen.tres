@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://dx7cv870v8nvm"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_kbtwi"]
+
+[resource]
+script = ExtResource("1_kbtwi")
+id = 67
+name = "Vale of the Carnen"
+neighbors = Array[int]([64, 65, 66, 77, 76, 68])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

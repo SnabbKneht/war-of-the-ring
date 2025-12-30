@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://bkyk5w45mi35f"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_hwg2x"]
+
+[resource]
+script = ExtResource("1_hwg2x")
+id = 97
+name = "Minas Morgul"
+neighbors = Array[int]([96, 93, 98])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://bwcw1xhfayd26"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_knqfu"]
+
+[resource]
+script = ExtResource("1_knqfu")
+id = 69
+name = "Woodland Realm"
+neighbors = Array[int]([61, 62, 68, 72, 70])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

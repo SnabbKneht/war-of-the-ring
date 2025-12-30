@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://bm0q24sgm1bos"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/resources/region_data.gd" id="1_vqu67"]
+
+[resource]
+script = ExtResource("1_vqu67")
+id = 77
+name = "Vale of the Celduin"
+neighbors = Array[int]([67, 66, 78, 79, 76])
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"
