@@ -1,4 +1,4 @@
-class_name EntityType
+class_name PieceType
 extends Resource
 
 @export var id: String

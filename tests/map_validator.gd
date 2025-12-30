@@ -1,4 +1,5 @@
 class_name MapValidator
+extends RefCounted
 
 
 static func validate_all() -> void:
