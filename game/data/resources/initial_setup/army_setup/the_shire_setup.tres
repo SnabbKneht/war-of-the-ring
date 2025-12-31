@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RegionInitialSetup" load_steps=4 format=3 uid="uid://cax7k3uqupslj"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_g4wwt"]
+[ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/resources/scripts/region_initial_setup.gd" id="2_2tdv8"]
+[ext_resource type="Resource" uid="uid://duw4eq70rpb5p" path="res://game/data/resources/pieces/north_regular.tres" id="2_y53j0"]
+
+[resource]
+script = ExtResource("2_2tdv8")
+region_id = 17
+pieces = Array[ExtResource("1_g4wwt")]([ExtResource("2_y53j0")])
+metadata/_custom_type_script = "uid://dhyigns7t1cbi"

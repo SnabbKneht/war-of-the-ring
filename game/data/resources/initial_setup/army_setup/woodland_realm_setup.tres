@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RegionInitialSetup" load_steps=6 format=3 uid="uid://cb6855irvpuyu"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_jwfxl"]
+[ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/resources/scripts/region_initial_setup.gd" id="2_8ghsj"]
+[ext_resource type="Resource" uid="uid://4vn0bdp377o0" path="res://game/data/resources/pieces/elves_regular.tres" id="2_nca6a"]
+[ext_resource type="Resource" uid="uid://b4k5c1rw4iac3" path="res://game/data/resources/pieces/elves_elite.tres" id="3_rvxya"]
+[ext_resource type="Resource" uid="uid://hoctk8t04fj7" path="res://game/data/resources/pieces/elves_leader.tres" id="4_v4whu"]
+
+[resource]
+script = ExtResource("2_8ghsj")
+region_id = 69
+pieces = Array[ExtResource("1_jwfxl")]([ExtResource("2_nca6a"), ExtResource("3_rvxya"), ExtResource("4_v4whu")])
+metadata/_custom_type_script = "uid://dhyigns7t1cbi"

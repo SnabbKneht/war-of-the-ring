@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RegionInitialSetup" load_steps=5 format=3 uid="uid://cr6xquaetfw4v"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_q2gm8"]
+[ext_resource type="Resource" uid="uid://dfg6y0yhqbfe0" path="res://game/data/resources/pieces/rohan_regular.tres" id="2_3uhs1"]
+[ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/resources/scripts/region_initial_setup.gd" id="2_gqdsc"]
+[ext_resource type="Resource" uid="uid://dsqufyhj6xcla" path="res://game/data/resources/pieces/rohan_elite.tres" id="3_7em1d"]
+
+[resource]
+script = ExtResource("2_gqdsc")
+region_id = 51
+pieces = Array[ExtResource("1_q2gm8")]([ExtResource("2_3uhs1"), ExtResource("3_7em1d")])
+metadata/_custom_type_script = "uid://dhyigns7t1cbi"

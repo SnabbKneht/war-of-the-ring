@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RegionInitialSetup" load_steps=5 format=3 uid="uid://jx8dvphkv0lr"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_dbj1h"]
+[ext_resource type="Resource" uid="uid://c5hn6dut5kil4" path="res://game/data/resources/pieces/isengard_regular.tres" id="2_kethr"]
+[ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/resources/scripts/region_initial_setup.gd" id="2_qeeqc"]
+[ext_resource type="Resource" uid="uid://c17lqvvhfvpbc" path="res://game/data/resources/pieces/isengard_elite.tres" id="3_jrnhi"]
+
+[resource]
+script = ExtResource("2_qeeqc")
+region_id = 44
+pieces = Array[ExtResource("1_dbj1h")]([ExtResource("2_kethr"), ExtResource("2_kethr"), ExtResource("2_kethr"), ExtResource("2_kethr"), ExtResource("3_jrnhi")])
+metadata/_custom_type_script = "uid://dhyigns7t1cbi"
