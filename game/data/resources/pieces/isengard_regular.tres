@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="EntityType" load_steps=2 format=3 uid="uid://c5hn6dut5kil4"]
+[gd_resource type="Resource" script_class="PieceType" load_steps=2 format=3 uid="uid://c5hn6dut5kil4"]
 
 [ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_kc544"]
 
