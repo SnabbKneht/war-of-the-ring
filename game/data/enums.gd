@@ -13,7 +13,7 @@ enum Nation {
 	NONE
 }
 
-enum Player {
+enum Side {
 	FREE_PEOPLES,
 	SHADOW
 }

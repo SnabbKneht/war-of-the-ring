@@ -2,7 +2,7 @@ class_name PieceType
 extends Resource
 
 @export var id: String
-@export var side: Enums.Player
+@export var side: Enums.Side
 @export var nation: Enums.Nation
 @export var combat_value: int
 @export var leadership_value: int
