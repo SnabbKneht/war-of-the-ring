@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="PieceType" load_steps=2 format=3 uid="uid://db7x2lrh3u2ag"]
 
-[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_gyclv"]
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_77mnk"]
 
 [resource]
-script = ExtResource("1_gyclv")
-id = "dwarves_elite"
+script = ExtResource("1_77mnk")
+id = "dwarf_elite"
 combat_value = 1
 can_receive_damage = true
 can_be_reduced_to_regular = true

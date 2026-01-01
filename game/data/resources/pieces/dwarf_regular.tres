@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_3csv2")
-id = "dwarves_regular"
+id = "dwarf_regular"
 combat_value = 1
 can_receive_damage = true
 metadata/_custom_type_script = "uid://c77r01bpric5s"

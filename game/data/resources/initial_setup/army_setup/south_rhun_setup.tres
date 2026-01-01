@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_wrg4l"]
 [ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/resources/scripts/region_initial_setup.gd" id="2_pbbvw"]
-[ext_resource type="Resource" uid="uid://dd7m0komx0sje" path="res://game/data/resources/pieces/easterlings_regular.tres" id="2_pwgcf"]
-[ext_resource type="Resource" uid="uid://bmtmhh8o2l62m" path="res://game/data/resources/pieces/easterlings_elite.tres" id="3_lk4q6"]
+[ext_resource type="Resource" uid="uid://dd7m0komx0sje" path="res://game/data/resources/pieces/easterling_regular.tres" id="2_pwgcf"]
+[ext_resource type="Resource" uid="uid://bmtmhh8o2l62m" path="res://game/data/resources/pieces/easterling_elite.tres" id="3_lk4q6"]
 
 [resource]
 script = ExtResource("2_pbbvw")

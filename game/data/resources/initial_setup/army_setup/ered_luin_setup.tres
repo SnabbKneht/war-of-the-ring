@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_ldg86"]
 [ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/resources/scripts/region_initial_setup.gd" id="2_168ne"]
-[ext_resource type="Resource" uid="uid://pf7t2kiv2vkm" path="res://game/data/resources/pieces/dwarves_regular.tres" id="2_cyckl"]
+[ext_resource type="Resource" uid="uid://pf7t2kiv2vkm" path="res://game/data/resources/pieces/dwarf_regular.tres" id="2_cyckl"]
 
 [resource]
 script = ExtResource("2_168ne")

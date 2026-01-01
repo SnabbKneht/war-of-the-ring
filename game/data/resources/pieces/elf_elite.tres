@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_3u283")
-id = "elves_elite"
+id = "elf_elite"
 nation = 1
 combat_value = 1
 can_receive_damage = true

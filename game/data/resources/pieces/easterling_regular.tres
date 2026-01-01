@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="PieceType" load_steps=2 format=3 uid="uid://dd7m0komx0sje"]
 
-[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_8u20k"]
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_ok57f"]
 
 [resource]
-script = ExtResource("1_8u20k")
-id = "easterlings_regular"
+script = ExtResource("1_ok57f")
+id = "easterling_regular"
 side = 1
 nation = 7
 combat_value = 1

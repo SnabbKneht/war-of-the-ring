@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="RegionInitialSetup" load_steps=6 format=3 uid="uid://48ffumscwh3o"]
 
 [ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/resources/scripts/piece_type.gd" id="1_ftoo2"]
-[ext_resource type="Resource" uid="uid://4vn0bdp377o0" path="res://game/data/resources/pieces/elves_regular.tres" id="2_kewn2"]
+[ext_resource type="Resource" uid="uid://4vn0bdp377o0" path="res://game/data/resources/pieces/elf_regular.tres" id="2_kewn2"]
 [ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/resources/scripts/region_initial_setup.gd" id="2_tfd7x"]
-[ext_resource type="Resource" uid="uid://b4k5c1rw4iac3" path="res://game/data/resources/pieces/elves_elite.tres" id="3_vgmtw"]
-[ext_resource type="Resource" uid="uid://hoctk8t04fj7" path="res://game/data/resources/pieces/elves_leader.tres" id="4_266x2"]
+[ext_resource type="Resource" uid="uid://b4k5c1rw4iac3" path="res://game/data/resources/pieces/elf_elite.tres" id="3_vgmtw"]
+[ext_resource type="Resource" uid="uid://hoctk8t04fj7" path="res://game/data/resources/pieces/elf_leader.tres" id="4_266x2"]
 
 [resource]
 script = ExtResource("2_tfd7x")
