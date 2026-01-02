@@ -1,6 +1,7 @@
 class_name Enums
 extends RefCounted
 
+
 enum Nation {
 	DWARF,
 	ELF,

@@ -5,7 +5,5 @@
 [resource]
 script = ExtResource("1_77mnk")
 id = "dwarf_elite"
-combat_value = 1
-can_receive_damage = true
-can_be_reduced_to_regular = true
+category = 1
 metadata/_custom_type_script = "uid://c77r01bpric5s"

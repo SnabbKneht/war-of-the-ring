@@ -1,12 +1,18 @@
 class_name PieceType
 extends Resource
 
+
+enum Category {
+	REGULAR,
+	ELITE,
+	FREE_PEOPLES_LEADER,
+	NAZGUL,
+	COMPANION,
+	MINION
+}
+
+
 @export var id: String
 @export var side: Enums.Side
 @export var nation: Enums.Nation
-@export var combat_value: int
-@export var leadership_value: int
-@export var can_receive_damage: bool
-@export var can_be_reduced_to_regular: bool
-@export var must_be_in_army: bool
-@export var can_move_army: bool
+@export var category: Category

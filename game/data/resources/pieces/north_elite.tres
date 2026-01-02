@@ -6,7 +6,5 @@
 script = ExtResource("1_jnbbq")
 id = "north_elite"
 nation = 2
-combat_value = 1
-can_receive_damage = true
-can_be_reduced_to_regular = true
+category = 1
 metadata/_custom_type_script = "uid://c77r01bpric5s"
