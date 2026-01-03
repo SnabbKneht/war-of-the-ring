@@ -7,4 +7,5 @@ script = ExtResource("1_nmwlu")
 id = 85
 name = "Noman-lands"
 neighbors = Array[int]([79, 86, 88, 89, 90, 84])
+nation = 8
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

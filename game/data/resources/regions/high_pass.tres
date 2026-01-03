@@ -7,4 +7,5 @@ script = ExtResource("1_lml0a")
 id = 28
 name = "High Pass"
 neighbors = Array[int]([27, 29])
+nation = 8
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

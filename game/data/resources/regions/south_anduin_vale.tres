@@ -7,4 +7,5 @@ script = ExtResource("1_ai5c4")
 id = 82
 name = "South Anduin Vale"
 neighbors = Array[int]([73, 81, 83, 39, 33])
+nation = 8
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

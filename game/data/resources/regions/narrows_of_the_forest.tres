@@ -7,4 +7,5 @@ script = ExtResource("1_rvafq")
 id = 74
 name = "Narrows of the Forest"
 neighbors = Array[int]([72, 75, 81, 73, 71])
+nation = 8
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

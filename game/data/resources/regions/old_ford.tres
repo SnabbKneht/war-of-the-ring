@@ -7,4 +7,5 @@ script = ExtResource("1_tyv82")
 id = 26
 name = "Old Ford"
 neighbors = Array[int]([25, 60, 71, 32, 27])
+nation = 8
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"
