@@ -23,3 +23,11 @@ func load_all_regions() -> void:
 
 func get_region(id: int) -> RegionData:
 	return regions[id]
+
+
+func get_all_region_data() -> Array[RegionData]:
+	return regions.values()
+
+
+func get_all_region_ids() -> Array[int]:
+	return regions.keys()
