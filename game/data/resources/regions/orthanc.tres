@@ -7,5 +7,6 @@ script = ExtResource("1_smvsg")
 id = 44
 name = "Orthanc"
 neighbors = Array[int]([43, 45])
+side = 2
 nation = 5
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

@@ -7,5 +7,6 @@ script = ExtResource("1_25274")
 id = 5
 name = "Rivendell"
 neighbors = Array[int]([29, 6])
+side = 1
 nation = 1
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

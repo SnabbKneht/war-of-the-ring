@@ -7,5 +7,6 @@ script = ExtResource("1_jhko5")
 id = 4
 name = "Mount Gundabad"
 neighbors = Array[int]([25, 3])
+side = 2
 nation = 6
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

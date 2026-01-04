@@ -7,5 +7,6 @@ script = ExtResource("1_a2f3o")
 id = 42
 name = "Helm's Deep"
 neighbors = Array[int]([43, 41])
+side = 1
 nation = 3
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

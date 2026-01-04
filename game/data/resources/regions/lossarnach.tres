@@ -7,5 +7,6 @@ script = ExtResource("1_p3vit")
 id = 57
 name = "Lossarnach"
 neighbors = Array[int]([58, 59, 56])
+side = 1
 nation = 4
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"
