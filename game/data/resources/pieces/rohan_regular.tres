@@ -5,7 +5,6 @@
 [resource]
 script = ExtResource("1_upg1b")
 id = "rohan_regular"
+side = 1
 nation = 3
-combat_value = 1
-can_receive_damage = true
 metadata/_custom_type_script = "uid://c77r01bpric5s"

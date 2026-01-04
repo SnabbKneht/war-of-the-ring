@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_juart")
 id = "isengard_elite"
-side = 1
+side = 2
 nation = 5
 category = 1
 metadata/_custom_type_script = "uid://c77r01bpric5s"

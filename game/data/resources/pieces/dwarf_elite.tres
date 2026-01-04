@@ -5,5 +5,6 @@
 [resource]
 script = ExtResource("1_77mnk")
 id = "dwarf_elite"
+side = 1
 category = 1
 metadata/_custom_type_script = "uid://c77r01bpric5s"

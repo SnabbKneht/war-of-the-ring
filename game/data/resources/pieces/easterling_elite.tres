@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_itkaa")
 id = "easterling_elite"
-side = 1
+side = 2
 nation = 7
 category = 1
 metadata/_custom_type_script = "uid://c77r01bpric5s"

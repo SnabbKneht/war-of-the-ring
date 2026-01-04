@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1_3hudn")
 id = "gondor_leader"
+side = 1
 nation = 4
 category = 2
 metadata/_custom_type_script = "uid://c77r01bpric5s"

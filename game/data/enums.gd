@@ -15,6 +15,7 @@ enum Nation {
 }
 
 enum Side {
+	NONE,
 	FREE_PEOPLES,
 	SHADOW
 }
