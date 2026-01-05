@@ -26,18 +26,20 @@ var can_move_army: bool
 var counts_to_unit_cap: bool
 
 
-func _init() -> void:
-	init_roles()
-	init_combat_value()
-	init_leadership_value()
-	init_can_receive_damage()
-	init_can_be_reduced_to_regular()
-	init_must_be_in_army()
-	init_can_move_army()
-	init_counts_to_unit_cap()
+func _init(id: int, piece_type: PieceType) -> void:
+	self.id = id
+	self.piece_type = piece_type
+	_init_roles()
+	_init_combat_value()
+	_init_leadership_value()
+	_init_can_receive_damage()
+	_init_can_be_reduced_to_regular()
+	_init_must_be_in_army()
+	_init_can_move_army()
+	_init_counts_to_unit_cap()
 
 
-func init_roles() -> void:
+func _init_roles() -> void:
 	match piece_type.category:
 		PieceType.Category.REGULAR:
 			roles.append_array([Role.UNIT, Role.REGULAR])
@@ -53,35 +55,35 @@ func init_roles() -> void:
 			roles.append_array([Role.CHARACTER, Role.MINION])
 
 
-func init_combat_value() -> void:
+func _init_combat_value() -> void:
 	if Role.UNIT in roles:
 		combat_value = 1
 	else:
 		combat_value = 0
 
 
-func init_leadership_value() -> void:
+func _init_leadership_value() -> void:
 	if Role.LEADER in roles or Role.NAZGUL in roles:
 		leadership_value = 1
 	else:
 		leadership_value = 0
 
 
-func init_can_receive_damage() -> void:
+func _init_can_receive_damage() -> void:
 	can_receive_damage = Role.UNIT in roles
 
 
-func init_can_be_reduced_to_regular() -> void:
+func _init_can_be_reduced_to_regular() -> void:
 	can_be_reduced_to_regular = Role.ELITE in roles
 
 
-func init_must_be_in_army() -> void:
+func _init_must_be_in_army() -> void:
 	must_be_in_army = Role.UNIT in roles or piece_type.category == PieceType.Category.FREE_PEOPLES_LEADER
 
 
-func init_can_move_army() -> void:
+func _init_can_move_army() -> void:
 	can_move_army = Role.LEADER in roles or Role.CHARACTER in roles
 
 
-func init_counts_to_unit_cap() -> void:
+func _init_counts_to_unit_cap() -> void:
 	counts_to_unit_cap = Role.UNIT in roles
