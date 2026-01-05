@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://baed4ggop35u3"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_6140k"]
+
+[resource]
+script = ExtResource("1_6140k")
+id = 54
+name = "Lamedon"
+neighbors = Array[int]([50, 55, 56])
+side = 1
+nation = 4
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

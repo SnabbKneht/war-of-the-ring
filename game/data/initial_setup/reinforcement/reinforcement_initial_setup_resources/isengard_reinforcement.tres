@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ReinforcementInitialSetup" load_steps=5 format=3 uid="uid://c3k3falxhlhmk"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/pieces/piece_type.gd" id="1_g5rqm"]
+[ext_resource type="Script" uid="uid://bvtwu5wvh6crj" path="res://game/data/initial_setup/reinforcement/reinforcement_initial_setup.gd" id="2_5gep1"]
+[ext_resource type="Resource" uid="uid://c5hn6dut5kil4" path="res://game/data/pieces/piece_type_resources/isengard_regular.tres" id="2_86wd3"]
+[ext_resource type="Resource" uid="uid://c17lqvvhfvpbc" path="res://game/data/pieces/piece_type_resources/isengard_elite.tres" id="3_oqibb"]
+
+[resource]
+script = ExtResource("2_5gep1")
+side = 1
+nation = 5
+pieces = Array[ExtResource("1_g5rqm")]([ExtResource("2_86wd3"), ExtResource("2_86wd3"), ExtResource("2_86wd3"), ExtResource("2_86wd3"), ExtResource("2_86wd3"), ExtResource("2_86wd3"), ExtResource("3_oqibb"), ExtResource("3_oqibb"), ExtResource("3_oqibb"), ExtResource("3_oqibb"), ExtResource("3_oqibb")])
+metadata/_custom_type_script = "uid://bvtwu5wvh6crj"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RegionInitialSetup" load_steps=5 format=3 uid="uid://b0xnp6c6nch2b"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/pieces/piece_type.gd" id="1_23if7"]
+[ext_resource type="Resource" uid="uid://dd7m0komx0sje" path="res://game/data/pieces/piece_type_resources/easterling_regular.tres" id="2_edmae"]
+[ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/initial_setup/region_army/region_initial_setup.gd" id="2_opn0n"]
+[ext_resource type="Resource" uid="uid://bmtmhh8o2l62m" path="res://game/data/pieces/piece_type_resources/easterling_elite.tres" id="3_cena2"]
+
+[resource]
+script = ExtResource("2_opn0n")
+region_id = 104
+pieces = Array[ExtResource("1_23if7")]([ExtResource("2_edmae"), ExtResource("2_edmae"), ExtResource("2_edmae"), ExtResource("3_cena2")])
+metadata/_custom_type_script = "uid://dhyigns7t1cbi"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ReinforcementInitialSetup" load_steps=5 format=3 uid="uid://c4v01qb56nv10"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/pieces/piece_type.gd" id="1_4aokt"]
+[ext_resource type="Resource" uid="uid://4vn0bdp377o0" path="res://game/data/pieces/piece_type_resources/elf_regular.tres" id="2_hdhx5"]
+[ext_resource type="Script" uid="uid://bvtwu5wvh6crj" path="res://game/data/initial_setup/reinforcement/reinforcement_initial_setup.gd" id="2_lry2j"]
+[ext_resource type="Resource" uid="uid://b4k5c1rw4iac3" path="res://game/data/pieces/piece_type_resources/elf_elite.tres" id="3_px7yn"]
+
+[resource]
+script = ExtResource("2_lry2j")
+nation = 1
+pieces = Array[ExtResource("1_4aokt")]([ExtResource("2_hdhx5"), ExtResource("2_hdhx5"), ExtResource("3_px7yn"), ExtResource("3_px7yn"), ExtResource("3_px7yn"), ExtResource("3_px7yn")])
+metadata/_custom_type_script = "uid://bvtwu5wvh6crj"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://ds8v8qctdtlcc"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_njkrk"]
+
+[resource]
+script = ExtResource("1_njkrk")
+id = 7
+name = "Ettenmoors"
+neighbors = Array[int]([6, 21, 8, 1, 2, 3])
+nation = 8
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

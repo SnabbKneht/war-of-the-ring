@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PieceType" load_steps=2 format=3 uid="uid://bk2oiq2smapgw"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/pieces/piece_type.gd" id="1_5lvop"]
+
+[resource]
+script = ExtResource("1_5lvop")
+id = "north_leader"
+side = 1
+nation = 2
+category = 2
+metadata/_custom_type_script = "uid://c77r01bpric5s"

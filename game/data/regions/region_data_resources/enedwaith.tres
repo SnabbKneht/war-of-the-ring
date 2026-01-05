@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://bwf0mc8bplse6"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_xm7j7"]
+
+[resource]
+script = ExtResource("1_xm7j7")
+id = 46
+name = "Enedwaith"
+neighbors = Array[int]([24, 36, 37, 45, 47])
+nation = 8
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

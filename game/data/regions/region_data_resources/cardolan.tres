@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://chl8j71ka1h5c"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_bwbae"]
+
+[resource]
+script = ExtResource("1_bwbae")
+id = 23
+name = "Cardolan"
+neighbors = Array[int]([18, 19, 22, 35, 36, 24, 16])
+nation = 8
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

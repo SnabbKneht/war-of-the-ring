@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://c58e6hwyyplrp"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_e000c"]
+
+[resource]
+script = ExtResource("1_e000c")
+id = 41
+name = "Westemnet"
+neighbors = Array[int]([38, 40, 52, 51, 42, 43])
+side = 1
+nation = 3
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

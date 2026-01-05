@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RegionInitialSetup" load_steps=4 format=3 uid="uid://spie18pf6yra"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/pieces/piece_type.gd" id="1_6vghe"]
+[ext_resource type="Resource" uid="uid://pmyxaua7iuue" path="res://game/data/pieces/piece_type_resources/sauron_regular.tres" id="2_1q8od"]
+[ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/initial_setup/region_army/region_initial_setup.gd" id="2_yw1xi"]
+
+[resource]
+script = ExtResource("2_yw1xi")
+region_id = 101
+pieces = Array[ExtResource("1_6vghe")]([ExtResource("2_1q8od"), ExtResource("2_1q8od")])
+metadata/_custom_type_script = "uid://dhyigns7t1cbi"

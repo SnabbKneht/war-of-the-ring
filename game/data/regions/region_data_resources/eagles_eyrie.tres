@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://ld0n4hqrp54a"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_oaiml"]
+
+[resource]
+script = ExtResource("1_oaiml")
+id = 25
+name = "Eagles' Eyrie"
+neighbors = Array[int]([4, 60, 26])
+nation = 8
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://3xggs56q6iv1"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_jm1iy"]
+
+[resource]
+script = ExtResource("1_jm1iy")
+id = 14
+name = "Tower Hills"
+neighbors = Array[int]([12, 9, 17, 16, 13])
+nation = 8
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ReinforcementInitialSetup" load_steps=5 format=3 uid="uid://d0goddunokld6"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/pieces/piece_type.gd" id="1_1y41g"]
+[ext_resource type="Script" uid="uid://bvtwu5wvh6crj" path="res://game/data/initial_setup/reinforcement/reinforcement_initial_setup.gd" id="2_01dfe"]
+[ext_resource type="Resource" uid="uid://dd7m0komx0sje" path="res://game/data/pieces/piece_type_resources/easterling_regular.tres" id="2_qfkty"]
+[ext_resource type="Resource" uid="uid://bmtmhh8o2l62m" path="res://game/data/pieces/piece_type_resources/easterling_elite.tres" id="3_434n4"]
+
+[resource]
+script = ExtResource("2_01dfe")
+side = 1
+nation = 7
+pieces = Array[ExtResource("1_1y41g")]([ExtResource("2_qfkty"), ExtResource("2_qfkty"), ExtResource("2_qfkty"), ExtResource("2_qfkty"), ExtResource("2_qfkty"), ExtResource("2_qfkty"), ExtResource("2_qfkty"), ExtResource("2_qfkty"), ExtResource("2_qfkty"), ExtResource("2_qfkty"), ExtResource("3_434n4"), ExtResource("3_434n4"), ExtResource("3_434n4")])
+metadata/_custom_type_script = "uid://bvtwu5wvh6crj"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://bbhgj3larsgx"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_8nghe"]
+
+[resource]
+script = ExtResource("1_8nghe")
+id = 84
+name = "Eastern Brown Lands"
+neighbors = Array[int]([83, 81, 80, 79, 85, 90, 91])
+nation = 8
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

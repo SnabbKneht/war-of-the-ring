@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://kt5bwby5qjno"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_n0h02"]
+
+[resource]
+script = ExtResource("1_n0h02")
+id = 72
+name = "Old Forest Road"
+neighbors = Array[int]([70, 69, 68, 76, 75, 74, 71, 60])
+side = 1
+nation = 2
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

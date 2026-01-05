@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://d1mao68finoxh"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_rtuk4"]
+
+[resource]
+script = ExtResource("1_rtuk4")
+id = 9
+name = "Evendim"
+neighbors = Array[int]([1, 8, 19, 17, 14, 12, 10])
+nation = 8
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

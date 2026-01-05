@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=2 format=3 uid="uid://kbb4d8xel6l8"]
+
+[ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_jhko5"]
+
+[resource]
+script = ExtResource("1_jhko5")
+id = 4
+name = "Mount Gundabad"
+neighbors = Array[int]([25, 3])
+side = 2
+nation = 6
+metadata/_custom_type_script = "uid://b7qn6tlr0m3li"
