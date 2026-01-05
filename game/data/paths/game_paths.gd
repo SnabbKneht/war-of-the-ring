@@ -2,7 +2,7 @@ class_name GamePaths
 extends RefCounted
 
 
-const ARMY_SETUP_DIR: String = "res://game/data/resources/initial_setup/army_setup/"
-const REINFORCEMENT_SETUP_DIR: String = "res://game/data/resources/initial_setup/reinforcement_setup/"
-const PIECE_TYPE_DIR: String = "res://game/data/resources/pieces/"
-const REGION_DATA_DIR: String = "res://game/data/resources/regions/"
+const ARMY_SETUP_DIR: String = "res://game/data/initial_setup/region_army/region_initial_setup_resources/"
+const REINFORCEMENT_SETUP_DIR: String = "res://game/data/initial_setup/reinforcement/reinforcement_initial_setup_resources/"
+const PIECE_TYPE_DIR: String = "res://game/data/pieces/piece_type_resources/"
+const REGION_DATA_DIR: String = "res://game/data/regions/region_data_resources/"
