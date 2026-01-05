@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RegionInitialSetup" load_steps=4 format=3 uid="uid://dl1u5sivtpjow"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/pieces/piece_type.gd" id="1_t6ibh"]
+[ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/initial_setup/region_army/region_initial_pieces_setup.gd" id="2_h47h6"]
+[ext_resource type="Resource" uid="uid://duw4eq70rpb5p" path="res://game/data/pieces/piece_type_resources/north_regular.tres" id="2_luagv"]
+
+[resource]
+script = ExtResource("2_h47h6")
+region_id = 60
+pieces = Array[ExtResource("1_t6ibh")]([ExtResource("2_luagv")])
+metadata/_custom_type_script = "uid://dhyigns7t1cbi"

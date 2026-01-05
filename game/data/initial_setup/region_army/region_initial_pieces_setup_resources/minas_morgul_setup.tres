@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RegionInitialSetup" load_steps=4 format=3 uid="uid://c781k3u0rudqs"]
+
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/pieces/piece_type.gd" id="1_ukgn0"]
+[ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/initial_setup/region_army/region_initial_pieces_setup.gd" id="2_fkait"]
+[ext_resource type="Resource" uid="uid://pmyxaua7iuue" path="res://game/data/pieces/piece_type_resources/sauron_regular.tres" id="2_xmqta"]
+
+[resource]
+script = ExtResource("2_fkait")
+region_id = 97
+pieces = Array[ExtResource("1_ukgn0")]([ExtResource("2_xmqta"), ExtResource("2_xmqta"), ExtResource("2_xmqta"), ExtResource("2_xmqta"), ExtResource("2_xmqta")])
+metadata/_custom_type_script = "uid://dhyigns7t1cbi"
