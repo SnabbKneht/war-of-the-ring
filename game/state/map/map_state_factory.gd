@@ -4,6 +4,6 @@ extends RefCounted
 
 static func create() -> MapState:
 	var map_state: MapState = MapState.new()
-	for region_id: int in RegionDatabase.get_all_region_ids():
-		map_state.region_states[region_id] = RegionStateFactory.create(region_id)
+	for region_data: RegionData in GameData.get_all_region_data():
+		map_state.region_states[region_data.id] = RegionState.new(region_data)
 	return map_state
