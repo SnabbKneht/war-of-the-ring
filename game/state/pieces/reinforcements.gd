@@ -14,6 +14,11 @@ func add(piece: Piece) -> void:
 			_shadow.append(piece)
 
 
+func add_all(pieces: Array[Piece]) -> void:
+	for piece: Piece in pieces:
+		add(piece)
+
+
 func remove(piece: Piece) -> void:
 	if piece in _free_peoples:
 		_free_peoples.erase(piece)
