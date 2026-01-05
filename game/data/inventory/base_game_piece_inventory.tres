@@ -1,0 +1,156 @@
+[gd_resource type="Resource" script_class="PieceInventory" load_steps=45 format=3 uid="uid://bcm6q57cab0x7"]
+
+[ext_resource type="Script" uid="uid://ciq2r7tutxmln" path="res://game/data/inventory/piece_inventory_entry.gd" id="1_tyo3p"]
+[ext_resource type="Resource" uid="uid://c5hn6dut5kil4" path="res://game/data/pieces/piece_type_resources/isengard_regular.tres" id="2_ctt5f"]
+[ext_resource type="Script" uid="uid://ilyxn3j1pvux" path="res://game/data/inventory/piece_inventory.gd" id="2_osj8r"]
+[ext_resource type="Resource" uid="uid://c17lqvvhfvpbc" path="res://game/data/pieces/piece_type_resources/isengard_elite.tres" id="3_tr51s"]
+[ext_resource type="Resource" uid="uid://pmyxaua7iuue" path="res://game/data/pieces/piece_type_resources/sauron_regular.tres" id="4_v8t4p"]
+[ext_resource type="Resource" uid="uid://my05o36iipad" path="res://game/data/pieces/piece_type_resources/sauron_elite.tres" id="5_ltqwb"]
+[ext_resource type="Resource" uid="uid://dd7m0komx0sje" path="res://game/data/pieces/piece_type_resources/easterling_regular.tres" id="6_3owyi"]
+[ext_resource type="Resource" uid="uid://bmtmhh8o2l62m" path="res://game/data/pieces/piece_type_resources/easterling_elite.tres" id="7_pswry"]
+[ext_resource type="Resource" uid="uid://pf7t2kiv2vkm" path="res://game/data/pieces/piece_type_resources/dwarf_regular.tres" id="8_68wyu"]
+[ext_resource type="Resource" uid="uid://db7x2lrh3u2ag" path="res://game/data/pieces/piece_type_resources/dwarf_elite.tres" id="9_u6ljc"]
+[ext_resource type="Resource" uid="uid://c6vwgr3ov7jni" path="res://game/data/pieces/piece_type_resources/dwarf_leader.tres" id="10_ibaiy"]
+[ext_resource type="Resource" uid="uid://4vn0bdp377o0" path="res://game/data/pieces/piece_type_resources/elf_regular.tres" id="11_c7oir"]
+[ext_resource type="Resource" uid="uid://b4k5c1rw4iac3" path="res://game/data/pieces/piece_type_resources/elf_elite.tres" id="12_cysqt"]
+[ext_resource type="Resource" uid="uid://hoctk8t04fj7" path="res://game/data/pieces/piece_type_resources/elf_leader.tres" id="13_afmsj"]
+[ext_resource type="Resource" uid="uid://gvsqkpbf1e3w" path="res://game/data/pieces/piece_type_resources/gondor_regular.tres" id="14_fefhg"]
+[ext_resource type="Resource" uid="uid://ccw0g1ujslqvo" path="res://game/data/pieces/piece_type_resources/gondor_elite.tres" id="15_odmtc"]
+[ext_resource type="Resource" uid="uid://cdfko47h4pe3q" path="res://game/data/pieces/piece_type_resources/gondor_leader.tres" id="16_3w71j"]
+[ext_resource type="Resource" uid="uid://duw4eq70rpb5p" path="res://game/data/pieces/piece_type_resources/north_regular.tres" id="17_ubtkn"]
+[ext_resource type="Resource" uid="uid://b8uf413qbiy70" path="res://game/data/pieces/piece_type_resources/north_elite.tres" id="18_xu7vm"]
+[ext_resource type="Resource" uid="uid://bk2oiq2smapgw" path="res://game/data/pieces/piece_type_resources/north_leader.tres" id="19_xrbxy"]
+[ext_resource type="Resource" uid="uid://dfg6y0yhqbfe0" path="res://game/data/pieces/piece_type_resources/rohan_regular.tres" id="20_7a74c"]
+[ext_resource type="Resource" uid="uid://dsqufyhj6xcla" path="res://game/data/pieces/piece_type_resources/rohan_elite.tres" id="21_25ulu"]
+[ext_resource type="Resource" uid="uid://dchrq3k61vibs" path="res://game/data/pieces/piece_type_resources/rohan_leader.tres" id="22_7q1xe"]
+
+[sub_resource type="Resource" id="Resource_a4r2d"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("2_ctt5f")
+count = 12
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_alh52"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("3_tr51s")
+count = 6
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_x6rg1"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("4_v8t4p")
+count = 36
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_j8yie"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("5_ltqwb")
+count = 6
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_exij1"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("6_3owyi")
+count = 24
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_g4hew"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("7_pswry")
+count = 6
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_g6i15"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("8_68wyu")
+count = 5
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_fq0qs"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("9_u6ljc")
+count = 5
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_dycnn"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("10_ibaiy")
+count = 4
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_7ym03"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("11_c7oir")
+count = 5
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_e11of"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("12_cysqt")
+count = 10
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_d7rnc"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("13_afmsj")
+count = 4
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_cbp6x"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("14_fefhg")
+count = 15
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_soc8v"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("15_odmtc")
+count = 5
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_llkkl"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("16_3w71j")
+count = 4
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_v5g7n"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("17_ubtkn")
+count = 10
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_p6mlh"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("18_xu7vm")
+count = 5
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_6wddl"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("19_xrbxy")
+count = 4
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_j0brp"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("20_7a74c")
+count = 10
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_m88ot"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("21_25ulu")
+count = 5
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[sub_resource type="Resource" id="Resource_lurq3"]
+script = ExtResource("1_tyo3p")
+piece_type = ExtResource("22_7q1xe")
+count = 4
+metadata/_custom_type_script = "uid://ciq2r7tutxmln"
+
+[resource]
+script = ExtResource("2_osj8r")
+entries = Array[ExtResource("1_tyo3p")]([SubResource("Resource_a4r2d"), SubResource("Resource_alh52"), SubResource("Resource_x6rg1"), SubResource("Resource_j8yie"), SubResource("Resource_exij1"), SubResource("Resource_g4hew"), SubResource("Resource_g6i15"), SubResource("Resource_fq0qs"), SubResource("Resource_dycnn"), SubResource("Resource_7ym03"), SubResource("Resource_e11of"), SubResource("Resource_d7rnc"), SubResource("Resource_cbp6x"), SubResource("Resource_soc8v"), SubResource("Resource_llkkl"), SubResource("Resource_v5g7n"), SubResource("Resource_p6mlh"), SubResource("Resource_6wddl"), SubResource("Resource_j0brp"), SubResource("Resource_m88ot"), SubResource("Resource_lurq3")])
+metadata/_custom_type_script = "uid://ilyxn3j1pvux"
