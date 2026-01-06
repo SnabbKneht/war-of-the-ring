@@ -1,3 +1,4 @@
+# autoload GameData
 extends Node
 
 
@@ -20,6 +21,10 @@ func get_all_region_data() -> Array[RegionData]:
 
 func get_region_by_id(id: int) -> RegionData:
 	return _region_by_id[id]
+
+
+func get_all_region_ids() -> Array[int]:
+	return _region_by_id.keys()
 
 
 func get_all_region_initial_pieces_setups() -> Array[RegionInitialPiecesSetup]:

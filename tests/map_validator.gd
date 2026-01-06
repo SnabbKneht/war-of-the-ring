@@ -12,35 +12,32 @@ static func validate_all() -> void:
 
 
 static func validate_region_count() -> void:
-	assert(RegionDatabase.regions.size() == 105, "Region count mismatch: is " + str(RegionDatabase.regions.size()) + ", should be 105.")
+	assert(GameData.get_all_region_data().size() == 105, "Region count mismatch: is " + str(GameData.get_all_region_data().size()) + ", should be 105.")
 
 
 static func validate_region_ids() -> void:
 	for id: int in range(1, 106):
-		assert(RegionDatabase.regions.keys().has(id), "Missing region id: " + str(id))
+		assert(GameData.get_all_region_ids().has(id), "Missing region id: " + str(id))
 
 
 static func validate_no_null_regions() -> void:
-	for id: int in RegionDatabase.regions.keys():
-		assert(RegionDatabase.get_region(id) != null, "Region " + str(id) + " is null")
+	for id: int in range(1, 106):
+		assert(GameData.get_region_by_id(id) != null, "Region " + str(id) + " is null")
 
 
 static func validate_no_null_neighbors() -> void:
-	for id: int in RegionDatabase.regions.keys():
-		var region: RegionData = RegionDatabase.get_region(id)
-		for neighbor_id: int in region.neighbors:
-			assert(RegionDatabase.get_region(neighbor_id) != null, "Region " + str(id) + " has a null neighbor.")
+	for region_data: RegionData in GameData.get_all_region_data():
+		for neighbor_id: int in region_data.neighbors:
+			assert(GameData.get_region_by_id(neighbor_id) != null, "Region " + str(region_data.id) + " has a null neighbor.")
 
 
 static func validate_no_self_neighbors() -> void:
-	for id: int in RegionDatabase.regions.keys():
-		var region: RegionData = RegionDatabase.get_region(id)
-		assert(region.id not in region.neighbors, "Region " + str(id) + " is its own neighbor.")
+	for region_data: RegionData in GameData.get_all_region_data():
+		assert(region_data.id not in region_data.neighbors, "Region " + str(region_data.id) + " is its own neighbor.")
 
 
 static func validate_mutual_neighbors() -> void:
-	for id: int in RegionDatabase.regions.keys():
-		var region: RegionData = RegionDatabase.get_region(id)
+	for region: RegionData in GameData.get_all_region_data():
 		for neighbor_id: int in region.neighbors:
-			var neighbor: RegionData = RegionDatabase.get_region(neighbor_id)
+			var neighbor: RegionData = GameData.get_region_by_id(neighbor_id)
 			assert(neighbor.neighbors.has(region.id), "Neighbor mismatch: Region " + str(neighbor_id) + " is a neighbor of region " + str(region.id) + " but not the other way around.")
