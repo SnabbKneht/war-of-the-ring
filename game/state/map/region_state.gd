@@ -9,6 +9,15 @@ func _init(region_data: RegionData) -> void:
 
 
 var region_data: RegionData
-var pieces: Array[Piece] = []
+var _pieces: Array[Piece] = []
 var controlled_by: Enums.Side
 var is_conquered: bool
+
+
+func add_pieces(pieces: Array[Piece]) -> void:
+	_pieces.append_array(pieces)
+
+
+func remove_pieces(pieces: Array[Piece]) -> void:
+	for p: Piece in pieces:
+		_pieces.erase(p)
