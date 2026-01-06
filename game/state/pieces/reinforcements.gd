@@ -20,6 +20,7 @@ func add_all(pieces: Array[Piece]) -> void:
 
 
 func remove(piece: Piece) -> void:
+	assert(_free_peoples.has(piece) or _shadow.has(piece))
 	if piece in _free_peoples:
 		_free_peoples.erase(piece)
 	elif piece in _shadow:
