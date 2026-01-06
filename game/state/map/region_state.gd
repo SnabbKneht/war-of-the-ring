@@ -14,6 +14,10 @@ var controlled_by: Enums.Side
 var is_conquered: bool
 
 
+func add_piece(piece: Piece) -> void:
+	_pieces.append(piece)
+
+
 func add_pieces(pieces: Array[Piece]) -> void:
 	_pieces.append_array(pieces)
 

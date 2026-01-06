@@ -10,5 +10,9 @@ func get_region_state_by_id(id: int) -> RegionState:
 	return _region_states[id]
 
 
+func add_piece_to_region(id: int, piece: Piece) -> void:
+	get_region_state_by_id(id).add_piece(piece)
+
+
 func add_pieces_to_region(id: int, pieces: Array[Piece]) -> void:
 	get_region_state_by_id(id).add_pieces(pieces)
