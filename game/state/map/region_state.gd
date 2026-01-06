@@ -20,4 +20,5 @@ func add_pieces(pieces: Array[Piece]) -> void:
 
 func remove_pieces(pieces: Array[Piece]) -> void:
 	for p: Piece in pieces:
+		assert(_pieces.has(p))
 		_pieces.erase(p)
