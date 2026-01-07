@@ -3,6 +3,6 @@ extends RefCounted
 
 
 var map_state: MapState
-var piece_pool: PiecePool
-var reinforcements: Reinforcements
-var casualties: Casualties
+var piece_pool: PiecePool = PiecePool.new()
+var reinforcements: Reinforcements = Reinforcements.new()
+var casualties: Casualties = Casualties.new()
