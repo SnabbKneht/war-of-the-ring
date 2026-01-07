@@ -87,3 +87,7 @@ func _init_can_move_army() -> void:
 
 func _init_counts_to_unit_cap() -> void:
 	counts_to_unit_cap = Role.UNIT in roles
+
+
+func _to_string() -> String:
+	return "Piece #" + str(id) + " (" + piece_type.id + ")"
