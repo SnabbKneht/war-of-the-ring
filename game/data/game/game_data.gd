@@ -27,6 +27,10 @@ func get_all_region_ids() -> Array[int]:
 	return _region_by_id.keys()
 
 
+func get_all_piece_types() -> Array[PieceType]:
+	return _data.all_piece_types
+
+
 func get_all_region_initial_pieces_setups() -> Array[RegionInitialPiecesSetup]:
 	return _data.all_region_initial_pieces_setups
 
