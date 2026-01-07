@@ -4,7 +4,10 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	RegionDataValidator.validate_all()
-	print("Map validation finished")
+	print("Region data validation finished")
+	
+	PieceDataValidator.validate_all()
+	print("Piece data validation finished")
 	
 	var game_state: GameState = GameStateFactory.create()
 	print("Game state created")
