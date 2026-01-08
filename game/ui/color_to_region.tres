@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ColorToRegion" load_steps=2 format=3 uid="uid://dt18440tr15q"]
+
+[ext_resource type="Script" uid="uid://yuyio15tracb" path="res://game/ui/color_to_region.gd" id="1_4e7c7"]
+
+[resource]
+script = ExtResource("1_4e7c7")
+color_to_region = Dictionary[Color, int]({
+Color(0.9647059, 0.6, 0.53333336, 1): 1,
+Color(0.9529412, 0.42352942, 0.3764706, 1): 2
+})
+metadata/_custom_type_script = "uid://yuyio15tracb"
