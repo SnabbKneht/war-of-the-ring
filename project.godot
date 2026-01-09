@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameData="*res://game/data/game/game_data.gd"
+UIData="*res://game/ui/data/ui_data.gd"
 
 [debug]
 
