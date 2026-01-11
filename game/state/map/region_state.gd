@@ -26,3 +26,8 @@ func remove_pieces(pieces: Array[Piece]) -> void:
 	for p: Piece in pieces:
 		assert(_pieces.has(p))
 		_pieces.erase(p)
+
+
+func get_info() -> String:
+	var info: String = region_data.name + ": " + str(_pieces)
+	return info
