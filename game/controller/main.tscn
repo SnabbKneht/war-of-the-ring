@@ -12,3 +12,4 @@
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("3_a6gla")
+zoom_sensitivity = 0.1

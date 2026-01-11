@@ -3,14 +3,35 @@ extends Camera2D
 
 
 var _is_panning: bool = false
-var _mouse_delta: Vector2 = Vector2.ZERO
+@export var zoom_sensitivity: float = 1.0
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	_handle_panning(event)
+	_handle_zoom(event)
+
+
+func _handle_panning(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_RIGHT:
 			_is_panning = event.pressed
 	
 	if _is_panning and event is InputEventMouseMotion:
-		_mouse_delta = event.relative
-		translate(_mouse_delta * -1)
+		translate(event.relative / zoom * -1)
+
+
+func _handle_zoom(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		match event.button_index:
+			MOUSE_BUTTON_WHEEL_UP:
+				_zoom_in()
+			MOUSE_BUTTON_WHEEL_DOWN:
+				_zoom_out()
+
+
+func _zoom_in() -> void:
+	zoom *= 1.0 + zoom_sensitivity
+
+
+func _zoom_out() -> void:
+	zoom /= 1.0 + zoom_sensitivity
