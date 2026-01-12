@@ -9,8 +9,6 @@ script = ExtResource("1_uxdsf")
 
 [node name="RegionColorMap" type="Sprite2D" parent="."]
 texture = ExtResource("1_2fvys")
-centered = false
 
 [node name="Map" type="Sprite2D" parent="."]
 texture = ExtResource("3_taev8")
-centered = false

@@ -6,6 +6,7 @@ var _is_panning: bool = false
 @export var zoom_sensitivity: float = 1.0
 @export var min_zoom: float = 1.0
 @export var max_zoom: float = 1.0
+@export var boundary: Rect2
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -20,6 +21,7 @@ func _handle_panning(event: InputEvent) -> void:
 	
 	if _is_panning and event is InputEventMouseMotion:
 		translate(event.relative / zoom * -1)
+		position = position.clamp(boundary.position, boundary.end)
 
 
 func _handle_zoom(event: InputEvent) -> void:

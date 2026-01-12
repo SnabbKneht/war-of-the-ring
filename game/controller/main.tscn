@@ -15,3 +15,4 @@ script = ExtResource("3_a6gla")
 zoom_sensitivity = 0.1
 min_zoom = 0.5
 max_zoom = 4.0
+boundary = Rect2(-2254, -1547, 4508, 3094)
