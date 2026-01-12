@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dox0tvq5s5id8"]
+
+[ext_resource type="Script" uid="uid://bjvnlsjgoqyf1" path="res://game/ui/map/map_camera.gd" id="1_r55w4"]
+
+[node name="MapCamera" type="Camera2D"]
+script = ExtResource("1_r55w4")
+zoom_sensitivity = 0.1
+min_zoom = 0.5
+max_zoom = 4.0
+boundary = Rect2(-2254, -1547, 4508, 3094)

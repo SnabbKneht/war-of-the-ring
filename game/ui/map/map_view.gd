@@ -1,4 +1,4 @@
-class_name MapRoot
+class_name MapView
 extends Node2D
 
 

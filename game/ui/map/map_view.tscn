@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://cy4mk6xcuh1cf"]
 
 [ext_resource type="Texture2D" uid="uid://bajolp0u0avcc" path="res://game/ui/images/region_picker.png" id="1_2fvys"]
-[ext_resource type="Script" uid="uid://cp61lbqe8ihyv" path="res://game/ui/map/map_root.gd" id="1_uxdsf"]
+[ext_resource type="Script" uid="uid://cp61lbqe8ihyv" path="res://game/ui/map/map_view.gd" id="1_uxdsf"]
 [ext_resource type="Texture2D" uid="uid://d2llijouvugt" path="res://game/ui/images/region_view.png" id="3_taev8"]
 
-[node name="MapRoot" type="Node2D"]
+[node name="MapView" type="Node2D"]
 script = ExtResource("1_uxdsf")
 
 [node name="RegionColorMap" type="Sprite2D" parent="."]

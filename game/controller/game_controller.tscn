@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://cst53tq1mi22h"]
+[gd_scene load_steps=3 format=3 uid="uid://cst53tq1mi22h"]
 
 [ext_resource type="Script" uid="uid://dn4j5nidpurxj" path="res://game/controller/game_controller.gd" id="1_8ttgu"]
+[ext_resource type="PackedScene" uid="uid://d3w630rhniw7x" path="res://game/ui/root/game_ui.tscn" id="2_31mgp"]
 
 [node name="GameController" type="Node"]
 script = ExtResource("1_8ttgu")
+
+[node name="GameUI" parent="." instance=ExtResource("2_31mgp")]

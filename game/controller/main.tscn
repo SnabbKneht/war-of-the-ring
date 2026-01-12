@@ -1,18 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bg6u5og37v4lm"]
+[gd_scene load_steps=2 format=3 uid="uid://bg6u5og37v4lm"]
 
 [ext_resource type="PackedScene" uid="uid://cst53tq1mi22h" path="res://game/controller/game_controller.tscn" id="1_xgmy8"]
-[ext_resource type="PackedScene" uid="uid://cy4mk6xcuh1cf" path="res://game/ui/map/map_root.tscn" id="2_a6gla"]
-[ext_resource type="Script" uid="uid://bjvnlsjgoqyf1" path="res://game/ui/map/map_camera.gd" id="3_a6gla"]
 
 [node name="Main" type="Node"]
 
 [node name="GameController" parent="." instance=ExtResource("1_xgmy8")]
-
-[node name="MapRoot" parent="GameController" instance=ExtResource("2_a6gla")]
-
-[node name="Camera2D" type="Camera2D" parent="."]
-script = ExtResource("3_a6gla")
-zoom_sensitivity = 0.1
-min_zoom = 0.5
-max_zoom = 4.0
-boundary = Rect2(-2254, -1547, 4508, 3094)
