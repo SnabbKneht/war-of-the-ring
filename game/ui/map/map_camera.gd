@@ -4,6 +4,8 @@ extends Camera2D
 
 var _is_panning: bool = false
 @export var zoom_sensitivity: float = 1.0
+@export var min_zoom: float = 1.0
+@export var max_zoom: float = 1.0
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -31,7 +33,9 @@ func _handle_zoom(event: InputEvent) -> void:
 
 func _zoom_in() -> void:
 	zoom *= 1.0 + zoom_sensitivity
+	zoom = zoom.clampf(min_zoom, max_zoom)
 
 
 func _zoom_out() -> void:
 	zoom /= 1.0 + zoom_sensitivity
+	zoom = zoom.clampf(min_zoom, max_zoom)
