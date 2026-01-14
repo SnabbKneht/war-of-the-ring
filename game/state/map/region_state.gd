@@ -34,6 +34,10 @@ func remove_pieces(pieces: Array[Piece]) -> void:
 	changed.emit()
 
 
+func get_pieces() -> Array[Piece]:
+	return _pieces
+
+
 func get_total_combat_value() -> int:
 	var result: int = 0
 	for piece: Piece in _pieces:

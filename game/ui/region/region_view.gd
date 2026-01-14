@@ -26,6 +26,7 @@ func _refresh() -> void:
 		_army_panel.show()
 		_refresh_combat_label()
 		_refresh_leadership_panel()
+		_refresh_tooltip()
 
 
 func _refresh_combat_label() -> void:
@@ -38,3 +39,10 @@ func _refresh_leadership_panel() -> void:
 	else:
 		_leadership_panel.show()
 		_leadership_label.text = str(_region_state.get_total_leadership_value())
+
+
+func _refresh_tooltip() -> void:
+	var text: String = ""
+	for piece: Piece in _region_state.get_pieces():
+		text += piece.piece_type.id + "\n"
+	_army_panel.tooltip_text = text
