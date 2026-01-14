@@ -4,6 +4,8 @@ extends Node2D
 
 @onready var _combat_label: Label = $ArmyPanel/CombatLabel
 @onready var _army_panel: Panel = $ArmyPanel
+@onready var _leadership_panel: Panel = $ArmyPanel/LeadershipPanel
+@onready var _leadership_label: Label = $ArmyPanel/LeadershipPanel/LeadershipLabel
 
 
 @export var region_id: int = 0
@@ -22,4 +24,17 @@ func _refresh() -> void:
 		_army_panel.hide()
 	else:
 		_army_panel.show()
-		_combat_label.text = str(combat_value)
+		_refresh_combat_label()
+		_refresh_leadership_panel()
+
+
+func _refresh_combat_label() -> void:
+	_combat_label.text = str(_region_state.get_total_combat_value())
+
+
+func _refresh_leadership_panel() -> void:
+	if _region_state.get_total_leadership_value() == 0:
+		_leadership_panel.hide()
+	else:
+		_leadership_panel.show()
+		_leadership_label.text = str(_region_state.get_total_leadership_value())
