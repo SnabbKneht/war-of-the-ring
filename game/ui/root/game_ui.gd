@@ -6,4 +6,4 @@ extends Node
 
 
 func set_game_state(game_state: GameState) -> void:
-	map_view.game_state = game_state
+	map_view.set_map_state(game_state.map_state)

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cy4mk6xcuh1cf"]
+[gd_scene load_steps=5 format=3 uid="uid://cy4mk6xcuh1cf"]
 
 [ext_resource type="Texture2D" uid="uid://bajolp0u0avcc" path="res://game/ui/images/region_picker.png" id="1_2fvys"]
 [ext_resource type="Script" uid="uid://cp61lbqe8ihyv" path="res://game/ui/map/map_view.gd" id="1_uxdsf"]
 [ext_resource type="Texture2D" uid="uid://d2llijouvugt" path="res://game/ui/images/region_view.png" id="3_taev8"]
+[ext_resource type="PackedScene" uid="uid://b3y3bb5axh587" path="res://game/ui/region/region_view.tscn" id="4_14mc1"]
 
 [node name="MapView" type="Node2D"]
 script = ExtResource("1_uxdsf")
@@ -12,3 +13,25 @@ texture = ExtResource("1_2fvys")
 
 [node name="Map" type="Sprite2D" parent="."]
 texture = ExtResource("3_taev8")
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="RegionView1" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-397, -692)
+region_id = 1
+
+[node name="RegionView2" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-279, -720)
+region_id = 2
+
+[node name="RegionView3" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-134, -708)
+region_id = 3
+
+[node name="RegionView4" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(30, -704)
+region_id = 4
+
+[node name="RegionView5" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(34, -544)
+region_id = 5

@@ -1,11 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3y3bb5axh587"]
+[gd_scene load_steps=3 format=3 uid="uid://b3y3bb5axh587"]
+
+[ext_resource type="Script" uid="uid://c5ch513rovxll" path="res://game/ui/region/region_view.gd" id="1_pjg4h"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4051d"]
 bg_color = Color(0, 0.39999992, 0.6, 1)
 
 [node name="RegionView" type="Node2D"]
+script = ExtResource("1_pjg4h")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="ArmyPanel" type="Panel" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -19,12 +22,19 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-tooltip_text = "x regular units
-x elite units
-x leaders"
+tooltip_text = "regular
+regular
+regular
+regular
+regular
+elite
+elite
+elite
+leader
+leader"
 theme_override_styles/panel = SubResource("StyleBoxFlat_4051d")
 
-[node name="Label" type="Label" parent="Panel"]
+[node name="CombatLabel" type="Label" parent="ArmyPanel"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
