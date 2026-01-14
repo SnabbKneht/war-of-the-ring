@@ -35,3 +35,403 @@ region_id = 4
 [node name="RegionView5" parent="Regions" instance=ExtResource("4_14mc1")]
 position = Vector2(34, -544)
 region_id = 5
+
+[node name="RegionView6" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-70, -493)
+region_id = 6
+
+[node name="RegionView7" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-167, -602)
+region_id = 7
+
+[node name="RegionView8" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-307, -571)
+region_id = 8
+
+[node name="RegionView9" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-445, -576)
+region_id = 9
+
+[node name="RegionView10" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-552, -604)
+region_id = 10
+
+[node name="RegionView11" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-702, -506)
+region_id = 11
+
+[node name="RegionView12" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-588, -502)
+region_id = 12
+
+[node name="RegionView13" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-625, -390)
+region_id = 13
+
+[node name="RegionView14" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-510, -357)
+region_id = 14
+
+[node name="RegionView15" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-695, -233)
+region_id = 15
+
+[node name="RegionView16" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-481, -251)
+region_id = 16
+
+[node name="RegionView17" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-420, -407)
+region_id = 17
+
+[node name="RegionView18" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-318, -349)
+region_id = 18
+
+[node name="RegionView19" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-321, -453)
+region_id = 19
+
+[node name="RegionView20" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-242, -495)
+region_id = 20
+
+[node name="RegionView21" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-149, -493)
+region_id = 21
+
+[node name="RegionView22" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-153, -351)
+region_id = 22
+
+[node name="RegionView23" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-284, -237)
+region_id = 23
+
+[node name="RegionView24" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-422, -101)
+region_id = 24
+
+[node name="RegionView25" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(128, -585)
+region_id = 25
+
+[node name="RegionView26" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(200, -463)
+region_id = 26
+
+[node name="RegionView27" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(125, -472)
+region_id = 27
+
+[node name="RegionView28" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(44, -436)
+region_id = 28
+
+[node name="RegionView29" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-19, -402)
+region_id = 29
+
+[node name="RegionView30" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-54, -278)
+region_id = 30
+
+[node name="RegionView31" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(65, -314)
+region_id = 31
+
+[node name="RegionView32" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(176, -375)
+region_id = 32
+
+[node name="RegionView33" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(185, -290)
+region_id = 33
+
+[node name="RegionView34" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(121, -216)
+region_id = 34
+
+[node name="RegionView35" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-65, -168)
+region_id = 35
+
+[node name="RegionView36" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-235, -97)
+region_id = 36
+
+[node name="RegionView37" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-95, -55)
+region_id = 37
+
+[node name="RegionView38" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(75, -51)
+region_id = 38
+
+[node name="RegionView39" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(181, -111)
+region_id = 39
+
+[node name="RegionView40" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(240, 19)
+region_id = 40
+
+[node name="RegionView41" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(146, 105)
+region_id = 41
+
+[node name="RegionView42" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(13, 195)
+region_id = 42
+
+[node name="RegionView43" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-89, 153)
+region_id = 43
+
+[node name="RegionView44" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-38, 47)
+region_id = 44
+
+[node name="RegionView45" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-177, 77)
+region_id = 45
+
+[node name="RegionView46" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-310, 51)
+region_id = 46
+
+[node name="RegionView47" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-275, 191)
+region_id = 47
+
+[node name="RegionView48" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-356, 390)
+region_id = 48
+
+[node name="RegionView49" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(-148, 365)
+region_id = 49
+
+[node name="RegionView50" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(28, 293)
+region_id = 50
+
+[node name="RegionView51" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(178, 198)
+region_id = 51
+
+[node name="RegionView52" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(257, 193)
+region_id = 52
+
+[node name="RegionView53" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(336, 193)
+region_id = 53
+
+[node name="RegionView54" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(198, 331)
+region_id = 54
+
+[node name="RegionView55" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(100, 473)
+region_id = 55
+
+[node name="RegionView56" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(267, 492)
+region_id = 56
+
+[node name="RegionView57" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(304, 383)
+region_id = 57
+
+[node name="RegionView58" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(374, 309)
+region_id = 58
+
+[node name="RegionView59" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(451, 327)
+region_id = 59
+
+[node name="RegionView60" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(242, -551)
+region_id = 60
+
+[node name="RegionView61" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(324, -630)
+region_id = 61
+
+[node name="RegionView62" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(428, -646)
+region_id = 62
+
+[node name="RegionView63" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(541, -646)
+region_id = 63
+
+[node name="RegionView64" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(826, -638)
+region_id = 64
+
+[node name="RegionView65" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(987, -360)
+region_id = 65
+
+[node name="RegionView66" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(799, -332)
+region_id = 66
+
+[node name="RegionView67" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(663, -422)
+region_id = 67
+
+[node name="RegionView68" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(549, -462)
+region_id = 68
+
+[node name="RegionView69" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(422, -482)
+region_id = 69
+
+[node name="RegionView70" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(315, -517)
+region_id = 70
+
+[node name="RegionView71" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(273, -406)
+region_id = 71
+
+[node name="RegionView72" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(395, -414)
+region_id = 72
+
+[node name="RegionView73" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(281, -306)
+region_id = 73
+
+[node name="RegionView74" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(371, -334)
+region_id = 74
+
+[node name="RegionView75" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(445, -330)
+region_id = 75
+
+[node name="RegionView76" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(524, -328)
+region_id = 76
+
+[node name="RegionView77" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(646, -324)
+region_id = 77
+
+[node name="RegionView78" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(713, -236)
+region_id = 78
+
+[node name="RegionView79" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(572, -218)
+region_id = 79
+
+[node name="RegionView80" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(448, -216)
+region_id = 80
+
+[node name="RegionView81" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(350, -191)
+region_id = 81
+
+[node name="RegionView82" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(248, -195)
+region_id = 82
+
+[node name="RegionView83" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(355, -73)
+region_id = 83
+
+[node name="RegionView84" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(480, -100)
+region_id = 84
+
+[node name="RegionView85" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(604, -72)
+region_id = 85
+
+[node name="RegionView86" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(706, -101)
+region_id = 86
+
+[node name="RegionView87" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(966, -36)
+region_id = 87
+
+[node name="RegionView88" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(757, 45)
+region_id = 88
+
+[node name="RegionView89" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(648, 65)
+region_id = 89
+
+[node name="RegionView90" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(510, 4)
+region_id = 90
+
+[node name="RegionView91" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(368, 43)
+region_id = 91
+
+[node name="RegionView92" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(427, 133)
+region_id = 92
+
+[node name="RegionView93" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(518, 203)
+region_id = 93
+
+[node name="RegionView94" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(639, 182)
+region_id = 94
+
+[node name="RegionView95" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(815, 172)
+region_id = 95
+
+[node name="RegionView96" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(803, 310)
+region_id = 96
+
+[node name="RegionView97" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(618, 312)
+region_id = 97
+
+[node name="RegionView98" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(520, 411)
+region_id = 98
+
+[node name="RegionView99" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(348, 597)
+region_id = 99
+
+[node name="RegionView100" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(503, 562)
+region_id = 100
+
+[node name="RegionView101" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(717, 472)
+region_id = 101
+
+[node name="RegionView102" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(880, 536)
+region_id = 102
+
+[node name="RegionView103" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(859, 695)
+region_id = 103
+
+[node name="RegionView104" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(504, 708)
+region_id = 104
+
+[node name="RegionView105" parent="Regions" instance=ExtResource("4_14mc1")]
+position = Vector2(273, 736)
+region_id = 105
