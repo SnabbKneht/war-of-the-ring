@@ -2,4 +2,6 @@ class_name UIDataResource
 extends Resource
 
 
+@export var free_peoples_theme: Theme
+@export var shadow_theme: Theme
 @export var color_to_region_resource: ColorToRegion
