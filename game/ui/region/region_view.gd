@@ -19,8 +19,7 @@ func set_region_state(region_state: RegionState) -> void:
 
 
 func _refresh() -> void:
-	var combat_value: int = _region_state.get_total_combat_value()
-	if combat_value == 0:
+	if _region_state.get_army_side() == Enums.Side.NONE:
 		_army_panel.hide()
 	else:
 		_army_panel.show()

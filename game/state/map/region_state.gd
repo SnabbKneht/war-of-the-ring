@@ -38,6 +38,13 @@ func get_pieces() -> Array[Piece]:
 	return _pieces
 
 
+func get_army_side() -> Enums.Side:
+	if _pieces.is_empty():
+		return Enums.Side.NONE
+	else:
+		return _pieces[0].piece_type.side
+
+
 func get_total_combat_value() -> int:
 	var result: int = 0
 	for piece: Piece in _pieces:
