@@ -15,6 +15,14 @@ func _init() -> void:
 	_init_color_to_region_dictionary()
 
 
+func get_free_peoples_theme() -> Theme:
+	return _data.free_peoples_theme
+
+
+func get_shadow_theme() -> Theme:
+	return _data.shadow_theme
+
+
 func get_all_region_colors() -> Array[Color]:
 	return _color_to_region_dictionary.keys()
 
