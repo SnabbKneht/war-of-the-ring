@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2llijouvugt"
-path="res://.godot/imported/region_view.png-d4ccc9cf3a55d60d27e3aab662c96528.ctex"
+uid="uid://d3s2lwf3cjwhq"
+path="res://.godot/imported/sauron.svg-a3e469ca2fa5f3251f549b48b1b1457d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui/images/region_view.png"
-dest_files=["res://.godot/imported/region_view.png-d4ccc9cf3a55d60d27e3aab662c96528.ctex"]
+source_file="res://game/ui/assets/icons/nations/sauron.svg"
+dest_files=["res://.godot/imported/sauron.svg-a3e469ca2fa5f3251f549b48b1b1457d.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

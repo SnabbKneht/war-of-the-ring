@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cy4mk6xcuh1cf"]
 
-[ext_resource type="Texture2D" uid="uid://bajolp0u0avcc" path="res://game/ui/images/region_picker.png" id="1_2fvys"]
+[ext_resource type="Texture2D" uid="uid://bajolp0u0avcc" path="res://game/ui/assets/images/region_picker.png" id="1_2fvys"]
 [ext_resource type="Script" uid="uid://cp61lbqe8ihyv" path="res://game/ui/map/map_view.gd" id="1_uxdsf"]
-[ext_resource type="Texture2D" uid="uid://d2llijouvugt" path="res://game/ui/images/region_view.png" id="3_taev8"]
+[ext_resource type="Texture2D" uid="uid://d2llijouvugt" path="res://game/ui/assets/images/region_view.png" id="3_taev8"]
 [ext_resource type="PackedScene" uid="uid://b3y3bb5axh587" path="res://game/ui/region/region_view.tscn" id="4_14mc1"]
 
 [node name="MapView" type="Node2D"]
