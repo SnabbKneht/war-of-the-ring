@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmg3rfs4plfpy"
-path="res://.godot/imported/sauron.svg-a3e469ca2fa5f3251f549b48b1b1457d.ctex"
+uid="uid://dvghl57dwnu8u"
+path="res://.godot/imported/rohan_active.svg-a7405fc1a76bd28c39f01821560dd75c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui/assets/icons/nations/sauron.svg"
-dest_files=["res://.godot/imported/sauron.svg-a3e469ca2fa5f3251f549b48b1b1457d.ctex"]
+source_file="res://game/ui/assets/icons/nations/rohan_active.svg"
+dest_files=["res://.godot/imported/rohan_active.svg-a7405fc1a76bd28c39f01821560dd75c.ctex"]
 
 [params]
 

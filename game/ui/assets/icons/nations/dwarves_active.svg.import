@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmg3rfs4plfpy"
-path="res://.godot/imported/sauron.svg-a3e469ca2fa5f3251f549b48b1b1457d.ctex"
+uid="uid://dv0030germbmv"
+path="res://.godot/imported/dwarves_active.svg-6f11b0137f6d4067555619cbbba42f79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui/assets/icons/nations/sauron.svg"
-dest_files=["res://.godot/imported/sauron.svg-a3e469ca2fa5f3251f549b48b1b1457d.ctex"]
+source_file="res://game/ui/assets/icons/nations/dwarves_active.svg"
+dest_files=["res://.godot/imported/dwarves_active.svg-6f11b0137f6d4067555619cbbba42f79.ctex"]
 
 [params]
 

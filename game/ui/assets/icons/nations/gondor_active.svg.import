@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmg3rfs4plfpy"
-path="res://.godot/imported/sauron.svg-a3e469ca2fa5f3251f549b48b1b1457d.ctex"
+uid="uid://cl4bm207yucrf"
+path="res://.godot/imported/gondor_active.svg-271adfe28f9b1ccccdf8a094686f45f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui/assets/icons/nations/sauron.svg"
-dest_files=["res://.godot/imported/sauron.svg-a3e469ca2fa5f3251f549b48b1b1457d.ctex"]
+source_file="res://game/ui/assets/icons/nations/gondor_active.svg"
+dest_files=["res://.godot/imported/gondor_active.svg-271adfe28f9b1ccccdf8a094686f45f4.ctex"]
 
 [params]
 
