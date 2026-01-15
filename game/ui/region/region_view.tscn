@@ -1,9 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3y3bb5axh587"]
+[gd_scene load_steps=3 format=3 uid="uid://b3y3bb5axh587"]
 
 [ext_resource type="Script" uid="uid://c5ch513rovxll" path="res://game/ui/region/region_view.gd" id="1_pjg4h"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4051d"]
-bg_color = Color(0, 0.39999992, 0.6, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pjg4h"]
 
@@ -34,7 +31,6 @@ elite
 elite
 leader
 leader"
-theme_override_styles/panel = SubResource("StyleBoxFlat_4051d")
 
 [node name="CombatLabel" type="Label" parent="ArmyPanel"]
 layout_mode = 1

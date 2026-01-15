@@ -26,6 +26,7 @@ func _refresh() -> void:
 		_refresh_combat_label()
 		_refresh_leadership_panel()
 		_refresh_tooltip()
+		_refresh_theme()
 
 
 func _refresh_combat_label() -> void:
@@ -45,3 +46,10 @@ func _refresh_tooltip() -> void:
 	for piece: Piece in _region_state.get_pieces():
 		text += piece.piece_type.id + "\n"
 	_army_panel.tooltip_text = text
+
+
+func _refresh_theme() -> void:
+	if _region_state.get_army_side() == Enums.Side.FREE_PEOPLES:
+		_army_panel.theme = UIData.get_free_peoples_theme()
+	else:
+		_army_panel.theme = UIData.get_shadow_theme()
