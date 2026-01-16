@@ -1,23 +1,32 @@
-[gd_resource type="Resource" script_class="GameDataResource" load_steps=176 format=3 uid="uid://eup5g72urqul"]
+[gd_resource type="Resource" script_class="GameDataResource" load_steps=185 format=3 uid="uid://eup5g72urqul"]
 
 [ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_bi60c"]
+[ext_resource type="Script" uid="uid://k0ttbrf01bng" path="res://game/data/initial_setup/nations/nation_initial_setup.gd" id="1_kuf82"]
 [ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/pieces/piece_type.gd" id="1_n1m45"]
 [ext_resource type="Resource" uid="uid://db7x2lrh3u2ag" path="res://game/data/pieces/piece_type_resources/dwarf_elite.tres" id="2_n2sku"]
 [ext_resource type="Resource" uid="uid://cppyf31smt2n3" path="res://game/data/regions/region_data_resources/andrast.tres" id="2_tryda"]
+[ext_resource type="Resource" uid="uid://diyx5t5vm7bbc" path="res://game/data/initial_setup/nations/nation_initial_setup_resources/dwarf_nation.tres" id="2_yhorm"]
 [ext_resource type="Resource" uid="uid://b4b7e0jtpeq3i" path="res://game/data/regions/region_data_resources/anfalas.tres" id="3_6o5js"]
+[ext_resource type="Resource" uid="uid://ddgujik18isjj" path="res://game/data/initial_setup/nations/nation_initial_setup_resources/easterling_nation.tres" id="3_nr3ds"]
 [ext_resource type="Resource" uid="uid://c6vwgr3ov7jni" path="res://game/data/pieces/piece_type_resources/dwarf_leader.tres" id="3_wmvmk"]
 [ext_resource type="Resource" uid="uid://pf7t2kiv2vkm" path="res://game/data/pieces/piece_type_resources/dwarf_regular.tres" id="4_0sfrx"]
 [ext_resource type="Resource" uid="uid://cifoygp26vbju" path="res://game/data/regions/region_data_resources/angmar.tres" id="4_oojr8"]
+[ext_resource type="Resource" uid="uid://3ryctljrbka" path="res://game/data/initial_setup/nations/nation_initial_setup_resources/elf_nation.tres" id="4_s037g"]
 [ext_resource type="Resource" uid="uid://clh3ddv6x3x3j" path="res://game/data/regions/region_data_resources/arnor.tres" id="5_gqstj"]
+[ext_resource type="Resource" uid="uid://8y00j13ox0o8" path="res://game/data/initial_setup/nations/nation_initial_setup_resources/gondor_nation.tres" id="5_wnt1h"]
 [ext_resource type="Resource" uid="uid://bmtmhh8o2l62m" path="res://game/data/pieces/piece_type_resources/easterling_elite.tres" id="5_wr1c0"]
 [ext_resource type="Resource" uid="uid://bpnkb8ju6tmnl" path="res://game/data/regions/region_data_resources/ash_mountains.tres" id="6_2rref"]
+[ext_resource type="Resource" uid="uid://dft7kw3k1oc8x" path="res://game/data/initial_setup/nations/nation_initial_setup_resources/isengard_nation.tres" id="6_6amb3"]
 [ext_resource type="Resource" uid="uid://dd7m0komx0sje" path="res://game/data/pieces/piece_type_resources/easterling_regular.tres" id="6_7l2gk"]
+[ext_resource type="Resource" uid="uid://c3jxifcx58mj4" path="res://game/data/initial_setup/nations/nation_initial_setup_resources/north_nation.tres" id="7_u60ud"]
 [ext_resource type="Resource" uid="uid://c4200jl30w855" path="res://game/data/regions/region_data_resources/barad_dur.tres" id="7_whx6e"]
 [ext_resource type="Resource" uid="uid://b4k5c1rw4iac3" path="res://game/data/pieces/piece_type_resources/elf_elite.tres" id="7_xwjmu"]
 [ext_resource type="Resource" uid="uid://hoctk8t04fj7" path="res://game/data/pieces/piece_type_resources/elf_leader.tres" id="8_8juo5"]
 [ext_resource type="Resource" uid="uid://chka5der6jlb6" path="res://game/data/regions/region_data_resources/bree.tres" id="8_jlcrp"]
+[ext_resource type="Resource" uid="uid://csw6qxab12wal" path="res://game/data/initial_setup/nations/nation_initial_setup_resources/rohan_nation.tres" id="8_wh3hg"]
 [ext_resource type="Resource" uid="uid://4vn0bdp377o0" path="res://game/data/pieces/piece_type_resources/elf_regular.tres" id="9_16ube"]
 [ext_resource type="Resource" uid="uid://bro6u88ahvwp7" path="res://game/data/regions/region_data_resources/buckland.tres" id="9_fxh0n"]
+[ext_resource type="Resource" uid="uid://buegm4083e0dp" path="res://game/data/initial_setup/nations/nation_initial_setup_resources/sauron_nation.tres" id="9_la4wc"]
 [ext_resource type="Resource" uid="uid://chl8j71ka1h5c" path="res://game/data/regions/region_data_resources/cardolan.tres" id="10_gax3w"]
 [ext_resource type="Resource" uid="uid://ccw0g1ujslqvo" path="res://game/data/pieces/piece_type_resources/gondor_elite.tres" id="10_kuf82"]
 [ext_resource type="Resource" uid="uid://0oodq4oymeqe" path="res://game/data/regions/region_data_resources/carrock.tres" id="11_hfp73"]
@@ -183,4 +192,5 @@ all_piece_types = Array[ExtResource("1_n1m45")]([ExtResource("2_n2sku"), ExtReso
 all_region_initial_pieces_setups = Array[ExtResource("107_pj8pp")]([ExtResource("108_1jq7k"), ExtResource("109_wxjiv"), ExtResource("110_cawei"), ExtResource("111_7gimd"), ExtResource("112_7j6ey"), ExtResource("113_q5j1q"), ExtResource("114_rmv5k"), ExtResource("115_rjjsc"), ExtResource("116_bsi2o"), ExtResource("117_8qejo"), ExtResource("118_q7b4u"), ExtResource("119_s1kn5"), ExtResource("120_e261e"), ExtResource("121_jur1y"), ExtResource("122_y11b2"), ExtResource("123_t4vj1"), ExtResource("124_dxyrw"), ExtResource("125_7n033"), ExtResource("126_dlel5"), ExtResource("127_dn1hn"), ExtResource("128_i8jx8"), ExtResource("129_ascao"), ExtResource("130_qykw6"), ExtResource("131_xc4bn"), ExtResource("132_8nnd2"), ExtResource("133_wny47"), ExtResource("134_gd5ag"), ExtResource("135_qxhtu"), ExtResource("136_iac41"), ExtResource("137_8jlqo"), ExtResource("138_m7q13"), ExtResource("139_l2t1b"), ExtResource("140_c2hva"), ExtResource("141_v1bgf"), ExtResource("142_8dutf")])
 all_reinforcement_initial_setups = Array[ExtResource("143_blsm7")]([ExtResource("144_0rc3w"), ExtResource("145_t7pab"), ExtResource("146_d8p33"), ExtResource("147_jj6ub"), ExtResource("148_vjja2"), ExtResource("149_k11pj"), ExtResource("150_f5cvx"), ExtResource("151_638an")])
 base_game_piece_inventory = ExtResource("152_5jbxp")
+all_nation_initial_setups = Array[ExtResource("1_kuf82")]([ExtResource("2_yhorm"), ExtResource("3_nr3ds"), ExtResource("4_s037g"), ExtResource("5_wnt1h"), ExtResource("6_6amb3"), ExtResource("7_u60ud"), ExtResource("8_wh3hg"), ExtResource("9_la4wc")])
 metadata/_custom_type_script = "uid://b2eh484koe8a6"

@@ -43,6 +43,10 @@ func get_base_game_piece_inventory() -> PieceInventory:
 	return _data.base_game_piece_inventory
 
 
+func get_all_nation_initial_setups() -> Array[NationInitialSetup]:
+	return _data.all_nation_initial_setups
+
+
 func _init_region_dictionary() -> void:
 	for region_data: RegionData in get_all_region_data():
 		_region_by_id[region_data.id] = region_data
