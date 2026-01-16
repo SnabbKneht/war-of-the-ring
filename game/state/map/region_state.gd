@@ -5,8 +5,8 @@ extends RefCounted
 signal changed
 
 
-func _init(region_data: RegionData) -> void:
-	self.region_data = region_data
+func _init(p_region_data: RegionData) -> void:
+	region_data = p_region_data
 	controlled_by = region_data.side
 	is_conquered = false
 

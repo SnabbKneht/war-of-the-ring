@@ -26,9 +26,9 @@ var can_move_army: bool
 var counts_to_unit_cap: bool
 
 
-func _init(id: int, piece_type: PieceType) -> void:
-	self.id = id
-	self.piece_type = piece_type
+func _init(p_id: int, p_piece_type: PieceType) -> void:
+	id = p_id
+	piece_type = p_piece_type
 	_init_roles()
 	_init_combat_value()
 	_init_leadership_value()
