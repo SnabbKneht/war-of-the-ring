@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="NationInitialSetup" load_steps=2 format=3 uid="uid://diyx5t5vm7bbc"]
+
+[ext_resource type="Script" uid="uid://k0ttbrf01bng" path="res://game/data/initial_setup/nations/nation_initial_setup.gd" id="1_vbip7"]
+
+[resource]
+script = ExtResource("1_vbip7")
+political_step = 1
+metadata/_custom_type_script = "uid://k0ttbrf01bng"
