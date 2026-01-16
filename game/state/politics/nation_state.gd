@@ -11,14 +11,22 @@ var _political_step: int
 var _is_active: bool
 
 
-func _init(nation: Enums.Nation, political_step: int, is_active: bool) -> void:
-	_nation = nation
-	_political_step = political_step
-	_is_active = is_active
+func _init(p_nation: Enums.Nation, p_political_step: int, p_is_active: bool) -> void:
+	_nation = p_nation
+	_political_step = p_political_step
+	_is_active = p_is_active
 
 
 func get_nation() -> Enums.Nation:
 	return _nation
+
+
+func get_step() -> int:
+	return _political_step
+
+
+func is_active() -> bool:
+	return _is_active
 
 
 func advance() -> void:
