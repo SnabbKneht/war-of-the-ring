@@ -2,6 +2,9 @@ class_name NationState
 extends RefCounted
 
 
+signal changed
+
+
 const _MIN_POLITICAL_STEP: int = 1
 const _MAX_POLITICAL_STEP: int = 4
 
@@ -32,12 +35,15 @@ func is_active() -> bool:
 func advance() -> void:
 	if _political_step < _MAX_POLITICAL_STEP:
 		_political_step += 1
+		changed.emit()
 
 
 func move_back() -> void:
 	if _political_step > _MIN_POLITICAL_STEP:
 		_political_step -= 1
+		changed.emit()
 
 
 func activate() -> void:
 	_is_active = true
+	changed.emit()
