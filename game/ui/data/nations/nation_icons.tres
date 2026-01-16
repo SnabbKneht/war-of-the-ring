@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="NationIcons" load_steps=11 format=3 uid="uid://diyoddo2yxl84"]
+
+[ext_resource type="Texture2D" uid="uid://cba445rgwnkbn" path="res://game/ui/assets/icons/nations/dwarves.svg" id="1_nekcg"]
+[ext_resource type="Script" uid="uid://bcn0wy3revavu" path="res://game/ui/data/nations/nation_icons.gd" id="1_reto3"]
+[ext_resource type="Texture2D" uid="uid://5oon4f6vwvre" path="res://game/ui/assets/icons/nations/elves.svg" id="2_ll13o"]
+[ext_resource type="Texture2D" uid="uid://tndlrwy7l3ag" path="res://game/ui/assets/icons/nations/north.svg" id="3_5uvut"]
+[ext_resource type="Texture2D" uid="uid://bo3lnms7kyrki" path="res://game/ui/assets/icons/nations/rohan.svg" id="4_d6r6h"]
+[ext_resource type="Texture2D" uid="uid://c5y3k0f72b3ql" path="res://game/ui/assets/icons/nations/gondor.svg" id="5_6ubp4"]
+[ext_resource type="Texture2D" uid="uid://56vppuh45o4e" path="res://game/ui/assets/icons/nations/isengard.svg" id="6_c8xri"]
+[ext_resource type="Texture2D" uid="uid://dmg3rfs4plfpy" path="res://game/ui/assets/icons/nations/sauron.svg" id="7_aqphk"]
+[ext_resource type="Texture2D" uid="uid://cuxv6rebc6e41" path="res://game/ui/assets/icons/nations/easterlings.svg" id="8_1kfo7"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_it3rm"]
+
+[resource]
+script = ExtResource("1_reto3")
+nation_to_icon = Dictionary[int, Texture2D]({
+0: ExtResource("1_nekcg"),
+1: ExtResource("2_ll13o"),
+2: ExtResource("3_5uvut"),
+3: ExtResource("4_d6r6h"),
+4: ExtResource("5_6ubp4"),
+5: ExtResource("6_c8xri"),
+6: ExtResource("7_aqphk"),
+7: ExtResource("8_1kfo7"),
+8: SubResource("PlaceholderTexture2D_it3rm")
+})
+metadata/_custom_type_script = "uid://bcn0wy3revavu"

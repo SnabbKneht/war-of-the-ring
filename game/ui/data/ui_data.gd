@@ -32,6 +32,16 @@ func get_region_id_by_color(color: Color) -> int:
 	return _color_to_region_dictionary[color]
 
 
+func get_nation_icon(nation: Enums.Nation) -> Texture2D:
+	assert(nation in _data.nation_icons.nation_to_icon.keys())
+	return _data.nation_icons.nation_to_icon[nation]
+
+
+func get_active_nation_icon(nation: Enums.Nation) -> Texture2D:
+	assert(nation in _data.active_nation_icons.nation_to_icon.keys())
+	return _data.active_nation_icons.nation_to_icon[nation]
+
+
 func _init_color_to_region_dictionary() -> void:
 	for entry: ColorToRegionEntry in _data.color_to_region_resource.color_to_region:
 		_color_to_region_dictionary[entry.color] = entry.region_id
