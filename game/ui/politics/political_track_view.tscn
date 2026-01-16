@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjxjskdp1viq7"]
+
+[ext_resource type="PackedScene" uid="uid://dh08c5n1u028x" path="res://game/ui/politics/nation_track_view.tscn" id="1_7hm8x"]
+[ext_resource type="Script" uid="uid://dgbehdw0c8n2g" path="res://game/ui/politics/political_track_view.gd" id="1_xjoo3"]
+
+[node name="PoliticalTrackView" type="FoldableContainer"]
+offset_right = 276.0
+offset_bottom = 103.0
+title = "Political Track"
+script = ExtResource("1_xjoo3")
+
+[node name="NationTracks" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="NationTrackView" parent="NationTracks" instance=ExtResource("1_7hm8x")]
+layout_mode = 2
+
+[node name="NationTrackView2" parent="NationTracks" instance=ExtResource("1_7hm8x")]
+layout_mode = 2
+nation = 2
+
+[node name="NationTrackView3" parent="NationTracks" instance=ExtResource("1_7hm8x")]
+layout_mode = 2
+nation = 1
+
+[node name="NationTrackView4" parent="NationTracks" instance=ExtResource("1_7hm8x")]
+layout_mode = 2
+nation = 3
+
+[node name="NationTrackView5" parent="NationTracks" instance=ExtResource("1_7hm8x")]
+layout_mode = 2
+nation = 4
+
+[node name="NationTrackView6" parent="NationTracks" instance=ExtResource("1_7hm8x")]
+layout_mode = 2
+nation = 6
+
+[node name="NationTrackView7" parent="NationTracks" instance=ExtResource("1_7hm8x")]
+layout_mode = 2
+nation = 5
+
+[node name="NationTrackView8" parent="NationTracks" instance=ExtResource("1_7hm8x")]
+layout_mode = 2
+nation = 7
