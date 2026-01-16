@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dh08c5n1u028x"]
+[gd_scene load_steps=3 format=3 uid="uid://dh08c5n1u028x"]
 
 [ext_resource type="Texture2D" uid="uid://cba445rgwnkbn" path="res://game/ui/assets/icons/nations/dwarves.svg" id="1_2r1rb"]
+[ext_resource type="Script" uid="uid://myvqgsdit0l" path="res://game/ui/politics/nation_track_view.gd" id="1_vkrcg"]
 
-[node name="NationTrack" type="HBoxContainer"]
+[node name="NationTrackView" type="HBoxContainer"]
+script = ExtResource("1_vkrcg")
 
 [node name="Square1" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(64, 64)
