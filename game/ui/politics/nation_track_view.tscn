@@ -4,76 +4,38 @@
 [ext_resource type="Script" uid="uid://myvqgsdit0l" path="res://game/ui/politics/nation_track_view.gd" id="1_vkrcg"]
 
 [node name="NationTrackView" type="HBoxContainer"]
+offset_right = 313.0
+offset_bottom = 64.0
 script = ExtResource("1_vkrcg")
 
-[node name="Square1" type="ColorRect" parent="."]
+[node name="NationIcon" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
-color = Color(0.61960787, 0.61960787, 0.61960787, 1)
+size_flags_horizontal = 0
+texture = ExtResource("1_2r1rb")
+expand_mode = 1
+stretch_mode = 5
 
-[node name="NationIcon" type="TextureRect" parent="Square1"]
-custom_minimum_size = Vector2(64, 64)
+[node name="ProgressBar" type="ProgressBar" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+min_value = 1.0
+max_value = 4.0
+step = 1.0
+value = 1.0
+rounded = true
+show_percentage = false
+
+[node name="WarLabel" type="Label" parent="ProgressBar"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 0
-texture = ExtResource("1_2r1rb")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Square2" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(64, 64)
-layout_mode = 2
-color = Color(0.61960787, 0.61960787, 0.61960787, 1)
-
-[node name="NationIcon2" type="TextureRect" parent="Square2"]
-custom_minimum_size = Vector2(64, 64)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 0
-texture = ExtResource("1_2r1rb")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Square3" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(64, 64)
-layout_mode = 2
-color = Color(0.61960787, 0.61960787, 0.61960787, 1)
-
-[node name="NationIcon3" type="TextureRect" parent="Square3"]
-custom_minimum_size = Vector2(64, 64)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 0
-texture = ExtResource("1_2r1rb")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Square4" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(64, 64)
-layout_mode = 2
-color = Color(0.9098039, 0.30588236, 0.2509804, 1)
-
-[node name="NationIcon4" type="TextureRect" parent="Square4"]
-custom_minimum_size = Vector2(64, 64)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 0
-texture = ExtResource("1_2r1rb")
-expand_mode = 1
-stretch_mode = 5
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "AT WAR"
+horizontal_alignment = 1
+vertical_alignment = 1
