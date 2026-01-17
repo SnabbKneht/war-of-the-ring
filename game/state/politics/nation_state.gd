@@ -28,6 +28,10 @@ func get_step() -> int:
 	return _political_step
 
 
+func is_at_war() -> bool:
+	return _political_step == 4
+
+
 func is_active() -> bool:
 	return _is_active
 
