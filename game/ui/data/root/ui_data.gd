@@ -2,7 +2,7 @@
 extends Node
 
 
-const UI_DATA_PATH: String = "res://game/ui/data/ui_data_resource.tres"
+const UI_DATA_PATH: String = "res://game/ui/data/root/ui_data_resource.tres"
 
 
 var _data: UIDataResource = preload(UI_DATA_PATH)

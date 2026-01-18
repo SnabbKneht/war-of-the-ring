@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="UIDataResource" load_steps=7 format=3 uid="uid://dn4gel6fvrv5m"]
 
 [ext_resource type="Resource" uid="uid://bjhvu200d3dqa" path="res://game/ui/data/nations/active_nation_icons.tres" id="1_6382b"]
-[ext_resource type="Script" uid="uid://ch4s3f2xvdgjw" path="res://game/ui/data/ui_data_resource.gd" id="1_or6gj"]
+[ext_resource type="Script" uid="uid://ch4s3f2xvdgjw" path="res://game/ui/data/root/ui_data_resource.gd" id="1_or6gj"]
 [ext_resource type="Theme" uid="uid://g6kewgs7fv7t" path="res://game/ui/data/themes/free_peoples_theme.tres" id="2_flv06"]
 [ext_resource type="Resource" uid="uid://dt18440tr15q" path="res://game/ui/data/map/color_to_region.tres" id="2_p1i2h"]
 [ext_resource type="Theme" uid="uid://clib1jv6rvsd6" path="res://game/ui/data/themes/shadow_theme.tres" id="4_fieqn"]
