@@ -4,5 +4,9 @@
 [ext_resource type="Script" uid="uid://h6u3dp6smqmq" path="res://game/ui/structure/structure_view.gd" id="2_ri1kx"]
 
 [node name="StructureView" type="Sprite2D"]
+scale = Vector2(0.12, 0.12)
 texture = ExtResource("1_ri1kx")
 script = ExtResource("2_ri1kx")
+stronghold_scale = 0.12
+city_scale = 0.09
+town_scale = 0.06

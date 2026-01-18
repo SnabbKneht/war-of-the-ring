@@ -6,6 +6,7 @@ extends Node2D
 @onready var _army_panel: Panel = $ArmyPanel
 @onready var _leadership_panel: Panel = $ArmyPanel/LeadershipPanel
 @onready var _leadership_label: Label = $ArmyPanel/LeadershipPanel/LeadershipLabel
+@onready var structure_view: StructureView = $StructureView
 
 
 @export var region_id: int = 0
@@ -27,6 +28,7 @@ func _refresh() -> void:
 		_refresh_leadership_panel()
 		_refresh_tooltip()
 		_refresh_theme()
+	_refresh_structure_view()
 
 
 func _refresh_combat_label() -> void:
@@ -53,3 +55,14 @@ func _refresh_theme() -> void:
 		_army_panel.theme = UIData.get_free_peoples_theme()
 	else:
 		_army_panel.theme = UIData.get_shadow_theme()
+
+
+func _refresh_structure_view() -> void:
+	if _region_state.region_data.structure == Enums.RegionStructure.NONE:
+		structure_view.hide()
+	elif _region_state.region_data.structure == Enums.RegionStructure.FORTIFICATION:
+		structure_view.display_fortification()
+		structure_view.show()
+	else:
+		structure_view.display_settlement(_region_state.controlled_by, _region_state.region_data.structure)
+		structure_view.show()
