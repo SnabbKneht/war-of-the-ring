@@ -42,6 +42,19 @@ func get_active_nation_icon(nation: Enums.Nation) -> Texture2D:
 	return _data.active_nation_icons.nation_to_icon[nation]
 
 
+func get_settlement_icon(side: Enums.Side, type: Enums.RegionStructure) -> Texture2D:
+	assert(side != Enums.Side.NONE)
+	assert(type != Enums.RegionStructure.NONE && type != Enums.RegionStructure.FORTIFICATION)
+	if side == Enums.Side.FREE_PEOPLES:
+		return _data.structure_icons.free_peoples_settlements[type]
+	else:
+		return _data.structure_icons.shadow_settlements[type]
+
+
+func get_fortification_icon() -> Texture2D:
+	return _data.structure_icons.fortification
+
+
 func _init_color_to_region_dictionary() -> void:
 	for entry: ColorToRegionEntry in _data.color_to_region_resource.color_to_region:
 		_color_to_region_dictionary[entry.color] = entry.region_id

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="StructureIcons" load_steps=9 format=3 uid="uid://c4kk2cgb8bifu"]
+
+[ext_resource type="Texture2D" uid="uid://ywoq4k8n73e5" path="res://game/ui/assets/icons/structures/fortification.svg" id="1_eyuuh"]
+[ext_resource type="Script" uid="uid://bvg2y7gaqpgqg" path="res://game/ui/data/structures/structure_icons.gd" id="1_vpels"]
+[ext_resource type="Texture2D" uid="uid://by26e5hp51kxk" path="res://game/ui/assets/icons/structures/free_city.svg" id="2_fgjiw"]
+[ext_resource type="Texture2D" uid="uid://cv7vx21fd10ci" path="res://game/ui/assets/icons/structures/free_stronghold.svg" id="3_mhbsi"]
+[ext_resource type="Texture2D" uid="uid://cpnetib66xmss" path="res://game/ui/assets/icons/structures/free_town.svg" id="4_jbatq"]
+[ext_resource type="Texture2D" uid="uid://c07t2c2s7rjho" path="res://game/ui/assets/icons/structures/shadow_city.svg" id="6_y2shi"]
+[ext_resource type="Texture2D" uid="uid://d0x0pg3gdp2ph" path="res://game/ui/assets/icons/structures/shadow_stronghold.svg" id="7_j71ri"]
+[ext_resource type="Texture2D" uid="uid://cm423etiuias3" path="res://game/ui/assets/icons/structures/shadow_town.svg" id="8_fwghv"]
+
+[resource]
+script = ExtResource("1_vpels")
+free_peoples_settlements = Dictionary[int, Texture2D]({
+1: ExtResource("4_jbatq"),
+2: ExtResource("2_fgjiw"),
+3: ExtResource("3_mhbsi")
+})
+shadow_settlements = Dictionary[int, Texture2D]({
+1: ExtResource("8_fwghv"),
+2: ExtResource("6_y2shi"),
+3: ExtResource("7_j71ri")
+})
+fortification = ExtResource("1_eyuuh")
+metadata/_custom_type_script = "uid://bvg2y7gaqpgqg"
