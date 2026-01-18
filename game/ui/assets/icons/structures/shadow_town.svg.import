@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6gp5k3oekv1g"
-path="res://.godot/imported/free_town.svg-c4d1461e6a1406ee339437c2b8c0ccea.ctex"
+uid="uid://cm423etiuias3"
+path="res://.godot/imported/shadow_town.svg-93727e1f490ecec74615e1f6791e2286.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui/assets/icons/settlements/free_town.svg"
-dest_files=["res://.godot/imported/free_town.svg-c4d1461e6a1406ee339437c2b8c0ccea.ctex"]
+source_file="res://game/ui/assets/icons/structures/shadow_town.svg"
+dest_files=["res://.godot/imported/shadow_town.svg-93727e1f490ecec74615e1f6791e2286.ctex"]
 
 [params]
 

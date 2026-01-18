@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3w4kd3evklsf"
-path="res://.godot/imported/free_stronghold.svg-3a91a3f4f733f6d0a7aeb1a2b0f08c7b.ctex"
+uid="uid://ywoq4k8n73e5"
+path="res://.godot/imported/fortification.svg-0cdf00166878407cd0d9c209667207bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui/assets/icons/settlements/free_stronghold.svg"
-dest_files=["res://.godot/imported/free_stronghold.svg-3a91a3f4f733f6d0a7aeb1a2b0f08c7b.ctex"]
+source_file="res://game/ui/assets/icons/structures/fortification.svg"
+dest_files=["res://.godot/imported/fortification.svg-0cdf00166878407cd0d9c209667207bb.ctex"]
 
 [params]
 

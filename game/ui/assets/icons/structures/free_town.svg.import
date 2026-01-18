@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cimrnxwqkrbdu"
-path="res://.godot/imported/free_city.svg-ea554f55febbe9739486d44242b5b032.ctex"
+uid="uid://cpnetib66xmss"
+path="res://.godot/imported/free_town.svg-7b6644e934882f5a17aee3414494e31b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui/assets/icons/settlements/free_city.svg"
-dest_files=["res://.godot/imported/free_city.svg-ea554f55febbe9739486d44242b5b032.ctex"]
+source_file="res://game/ui/assets/icons/structures/free_town.svg"
+dest_files=["res://.godot/imported/free_town.svg-7b6644e934882f5a17aee3414494e31b.ctex"]
 
 [params]
 

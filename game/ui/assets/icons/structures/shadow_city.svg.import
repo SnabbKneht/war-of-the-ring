@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caj0qqa5v6ico"
-path="res://.godot/imported/shadow_city.svg-9b32c17c88b85cafb97e2bb803beb2e2.ctex"
+uid="uid://c07t2c2s7rjho"
+path="res://.godot/imported/shadow_city.svg-ebabc00efdb6715592735ada13d8c51f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui/assets/icons/settlements/shadow_city.svg"
-dest_files=["res://.godot/imported/shadow_city.svg-9b32c17c88b85cafb97e2bb803beb2e2.ctex"]
+source_file="res://game/ui/assets/icons/structures/shadow_city.svg"
+dest_files=["res://.godot/imported/shadow_city.svg-ebabc00efdb6715592735ada13d8c51f.ctex"]
 
 [params]
 

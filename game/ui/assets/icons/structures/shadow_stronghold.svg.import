@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0wyd5s6fhnqt"
-path="res://.godot/imported/shadow_town.svg-aad32479e51bc9e9f81898109ac0eb5e.ctex"
+uid="uid://d0x0pg3gdp2ph"
+path="res://.godot/imported/shadow_stronghold.svg-7246ee3d686f04ef2573c59c57b58c98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui/assets/icons/settlements/shadow_town.svg"
-dest_files=["res://.godot/imported/shadow_town.svg-aad32479e51bc9e9f81898109ac0eb5e.ctex"]
+source_file="res://game/ui/assets/icons/structures/shadow_stronghold.svg"
+dest_files=["res://.godot/imported/shadow_stronghold.svg-7246ee3d686f04ef2573c59c57b58c98.ctex"]
 
 [params]
 

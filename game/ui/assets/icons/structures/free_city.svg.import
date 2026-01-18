@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bo0egxeu01dgu"
-path="res://.godot/imported/shadow_stronghold.svg-f61856d4ada7297004bd98ed0564af9f.ctex"
+uid="uid://by26e5hp51kxk"
+path="res://.godot/imported/free_city.svg-0018356199c69d4107c6b525f8d0dda7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/ui/assets/icons/settlements/shadow_stronghold.svg"
-dest_files=["res://.godot/imported/shadow_stronghold.svg-f61856d4ada7297004bd98ed0564af9f.ctex"]
+source_file="res://game/ui/assets/icons/structures/free_city.svg"
+dest_files=["res://.godot/imported/free_city.svg-0018356199c69d4107c6b525f8d0dda7.ctex"]
 
 [params]
 
