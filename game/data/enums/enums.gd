@@ -14,8 +14,18 @@ enum Nation {
 	NONE
 }
 
+
 enum Side {
 	NONE,
 	FREE_PEOPLES,
 	SHADOW
+}
+
+
+enum RegionStructure {
+	NONE,
+	TOWN,
+	CITY,
+	STRONGHOLD,
+	FORTIFICATION
 }
