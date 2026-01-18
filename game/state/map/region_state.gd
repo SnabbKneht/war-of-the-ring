@@ -59,6 +59,14 @@ func get_total_leadership_value() -> int:
 	return result
 
 
+func has_settlement() -> bool:
+	return region_data.structure in [
+		Enums.RegionStructure.TOWN,
+		Enums.RegionStructure.CITY,
+		Enums.RegionStructure.STRONGHOLD
+	]
+
+
 func _to_string() -> String:
 	var info: String = region_data.name + ": " + str(_pieces)
 	return info
