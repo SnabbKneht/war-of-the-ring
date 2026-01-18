@@ -9,4 +9,5 @@ name = "Orthanc"
 neighbors = Array[int]([43, 45])
 side = 2
 nation = 5
+structure = 3
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

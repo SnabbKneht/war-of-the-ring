@@ -9,4 +9,5 @@ name = "Bree"
 neighbors = Array[int]([8, 21, 22, 19])
 side = 1
 nation = 2
+structure = 1
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

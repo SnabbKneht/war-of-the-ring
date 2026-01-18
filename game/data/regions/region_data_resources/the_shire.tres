@@ -9,4 +9,5 @@ name = "The Shire"
 neighbors = Array[int]([9, 19, 18, 16, 14])
 side = 1
 nation = 2
+structure = 2
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

@@ -9,4 +9,5 @@ name = "Fords of Isen"
 neighbors = Array[int]([38, 41, 42, 47, 45, 44])
 side = 1
 nation = 3
+structure = 4
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

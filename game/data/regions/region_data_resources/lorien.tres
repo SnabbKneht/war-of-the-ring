@@ -9,4 +9,5 @@ name = "Lorien"
 neighbors = Array[int]([33, 39])
 side = 1
 nation = 1
+structure = 3
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

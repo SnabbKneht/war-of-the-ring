@@ -9,4 +9,5 @@ name = "Mount Gundabad"
 neighbors = Array[int]([25, 3])
 side = 2
 nation = 6
+structure = 3
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

@@ -9,4 +9,5 @@ name = "Edoras"
 neighbors = Array[int]([41, 52])
 side = 1
 nation = 3
+structure = 2
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

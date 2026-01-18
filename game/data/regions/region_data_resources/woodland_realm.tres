@@ -9,4 +9,5 @@ name = "Woodland Realm"
 neighbors = Array[int]([61, 62, 68, 72, 70])
 side = 1
 nation = 1
+structure = 3
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

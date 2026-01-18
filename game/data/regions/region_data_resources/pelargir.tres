@@ -9,4 +9,5 @@ name = "Pelargir"
 neighbors = Array[int]([54, 57, 59, 99])
 side = 1
 nation = 4
+structure = 2
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

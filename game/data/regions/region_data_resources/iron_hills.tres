@@ -8,4 +8,5 @@ id = 64
 name = "Iron Hills"
 neighbors = Array[int]([65, 67, 68, 63])
 side = 1
+structure = 1
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

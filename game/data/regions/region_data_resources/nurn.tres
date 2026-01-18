@@ -9,4 +9,5 @@ name = "Nurn"
 neighbors = Array[int]([96])
 side = 2
 nation = 6
+structure = 1
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

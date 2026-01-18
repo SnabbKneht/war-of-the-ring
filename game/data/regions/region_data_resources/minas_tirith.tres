@@ -9,4 +9,5 @@ name = "Minas Tirith"
 neighbors = Array[int]([53, 59, 57])
 side = 1
 nation = 4
+structure = 3
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

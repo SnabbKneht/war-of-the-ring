@@ -9,4 +9,5 @@ name = "Westemnet"
 neighbors = Array[int]([38, 40, 52, 51, 42, 43])
 side = 1
 nation = 3
+structure = 1
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

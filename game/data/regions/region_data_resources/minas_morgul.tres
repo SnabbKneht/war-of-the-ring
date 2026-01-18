@@ -9,4 +9,5 @@ name = "Minas Morgul"
 neighbors = Array[int]([96, 93, 98])
 side = 2
 nation = 6
+structure = 3
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"

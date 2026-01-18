@@ -9,4 +9,5 @@ name = "Angmar"
 neighbors = Array[int]([3, 7, 1])
 side = 2
 nation = 6
+structure = 2
 metadata/_custom_type_script = "uid://b7qn6tlr0m3li"
