@@ -13,12 +13,17 @@ signal move_back_nation_requested(nation: Enums.Nation)
 
 @export var nation: Enums.Nation
 var _nation_state: NationState
+var _game_state: GameState
 
 
 func set_nation_state(nation_state: NationState) -> void:
 	_nation_state = nation_state
 	_nation_state.changed.connect(_refresh)
 	_refresh()
+
+
+func set_game_state(game_state: GameState) -> void:
+	_game_state = game_state
 
 
 func _refresh() -> void:

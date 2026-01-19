@@ -10,13 +10,18 @@ signal move_back_nation_requested(nation: Enums.Nation)
 @onready var political_track_view: PoliticalTrackView = $HUD/PoliticalTrackView
 
 
+var _game_state: GameState
+
+
 func _ready() -> void:
 	political_track_view.advance_nation_requested.connect(_on_advance_nation_requested)
 	political_track_view.move_back_nation_requested.connect(_on_move_back_nation_requested)
 
 
 func set_game_state(game_state: GameState) -> void:
+	_game_state = game_state
 	map_view.set_map_state(game_state.map_state)
+	political_track_view.set_game_state(game_state)
 	political_track_view.set_political_state(game_state.political_state)
 
 
