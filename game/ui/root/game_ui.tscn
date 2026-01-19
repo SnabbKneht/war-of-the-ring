@@ -15,4 +15,3 @@ script = ExtResource("1_1bwvd")
 [node name="HUD" type="CanvasLayer" parent="."]
 
 [node name="PoliticalTrackView" parent="HUD" instance=ExtResource("4_www8g")]
-offset_bottom = 579.0

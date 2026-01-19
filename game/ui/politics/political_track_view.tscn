@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://dgbehdw0c8n2g" path="res://game/ui/politics/political_track_view.gd" id="1_xjoo3"]
 
 [node name="PoliticalTrackView" type="FoldableContainer"]
-offset_right = 276.0
-offset_bottom = 103.0
+offset_right = 373.0
+offset_bottom = 579.0
 title = "Political Track"
 script = ExtResource("1_xjoo3")
 

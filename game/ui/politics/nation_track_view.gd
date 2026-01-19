@@ -2,6 +2,10 @@ class_name NationTrackView
 extends HBoxContainer
 
 
+signal advance_nation_requested(nation: Enums.Nation)
+signal move_back_nation_requested(nation: Enums.Nation)
+
+
 @onready var nation_icon: TextureRect = $NationIcon
 @onready var progress_bar: ProgressBar = $ProgressBar
 @onready var war_label: Label = $ProgressBar/WarLabel
@@ -39,3 +43,11 @@ func _refresh_war_label() -> void:
 		war_label.show()
 	else:
 		war_label.hide()
+
+
+func _on_advance_button_pressed() -> void:
+	advance_nation_requested.emit(nation)
+
+
+func _on_move_back_button_pressed() -> void:
+	move_back_nation_requested.emit(nation)

@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://myvqgsdit0l" path="res://game/ui/politics/nation_track_view.gd" id="1_vkrcg"]
 
 [node name="NationTrackView" type="HBoxContainer"]
-offset_right = 313.0
+offset_right = 374.0
 offset_bottom = 64.0
 script = ExtResource("1_vkrcg")
 
@@ -39,3 +39,20 @@ theme_override_font_sizes/font_size = 32
 text = "AT WAR"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="MoveBackButton" type="Button" parent="."]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 32
+text = "-"
+
+[node name="AdvanceButton" type="Button" parent="."]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 32
+text = "+"
+
+[connection signal="pressed" from="MoveBackButton" to="." method="_on_move_back_button_pressed"]
+[connection signal="pressed" from="AdvanceButton" to="." method="_on_advance_button_pressed"]
