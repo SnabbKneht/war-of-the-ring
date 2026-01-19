@@ -25,8 +25,8 @@ func set_political_state(political_state: PoliticalState) -> void:
 
 func _init_nation_views() -> void:
 	for nation_view: NationTrackView in nation_tracks.get_children():
-		nation_view.set_nation_state(_political_state.get_nation_state(nation_view.nation))
 		nation_view.set_game_state(_game_state)
+		nation_view.set_nation_state(_political_state.get_nation_state(nation_view.nation))
 		_nation_views[nation_view.nation] = nation_view
 		nation_view.advance_nation_requested.connect(_on_advance_nation_requested)
 		nation_view.move_back_nation_requested.connect(_on_move_back_nation_requested)

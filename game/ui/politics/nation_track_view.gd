@@ -9,6 +9,8 @@ signal move_back_nation_requested(nation: Enums.Nation)
 @onready var nation_icon: TextureRect = $NationIcon
 @onready var progress_bar: ProgressBar = $ProgressBar
 @onready var war_label: Label = $ProgressBar/WarLabel
+@onready var move_back_button: Button = $MoveBackButton
+@onready var advance_button: Button = $AdvanceButton
 
 
 @export var nation: Enums.Nation
@@ -30,6 +32,8 @@ func _refresh() -> void:
 	_refresh_icon_texture()
 	_refresh_progress_bar()
 	_refresh_war_label()
+	
+	_refresh_button_availability()
 
 
 func _refresh_icon_texture() -> void:
@@ -48,6 +52,17 @@ func _refresh_war_label() -> void:
 		war_label.show()
 	else:
 		war_label.hide()
+
+
+func _refresh_button_availability() -> void:
+	if PoliticalLogic.can_advance_nation(_game_state, nation):
+		advance_button.disabled = false
+	else:
+		advance_button.disabled = true
+	if PoliticalLogic.can_move_back_nation(_game_state, nation):
+		move_back_button.disabled = false
+	else:
+		move_back_button.disabled = true
 
 
 func _on_advance_button_pressed() -> void:
