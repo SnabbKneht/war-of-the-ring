@@ -14,6 +14,7 @@ func can_apply(game_state: GameState) -> bool:
 
 
 func apply(game_state: GameState) -> void:
+	assert(can_apply(game_state))
 	game_state.political_state.move_back_nation(_nation)
 
 
