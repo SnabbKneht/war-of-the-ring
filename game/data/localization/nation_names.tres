@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="NationNames" load_steps=2 format=3 uid="uid://dypgcc1sd5vwe"]
+
+[ext_resource type="Script" uid="uid://cmmk1h4tgtqhr" path="res://game/data/localization/nation_names.gd" id="1_n3vv3"]
+
+[resource]
+script = ExtResource("1_n3vv3")
+nation_names = Dictionary[int, String]({
+0: "Dwarves",
+1: "Elves",
+2: "The North",
+3: "Rohan",
+4: "Gondor",
+5: "Isengard",
+6: "Sauron",
+7: "Southrons & Easterlings"
+})
+metadata/_custom_type_script = "uid://cmmk1h4tgtqhr"

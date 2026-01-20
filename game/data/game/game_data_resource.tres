@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="GameDataResource" load_steps=185 format=3 uid="uid://eup5g72urqul"]
+[gd_resource type="Resource" script_class="GameDataResource" load_steps=186 format=3 uid="uid://eup5g72urqul"]
 
 [ext_resource type="Script" uid="uid://b7qn6tlr0m3li" path="res://game/data/regions/region_data.gd" id="1_bi60c"]
 [ext_resource type="Script" uid="uid://k0ttbrf01bng" path="res://game/data/initial_setup/nations/nation_initial_setup.gd" id="1_kuf82"]
@@ -184,6 +184,7 @@
 [ext_resource type="Resource" uid="uid://2pp4etmwt4yq" path="res://game/data/initial_setup/reinforcement/reinforcement_initial_setup_resources/sauron_reinforcement.tres" id="151_638an"]
 [ext_resource type="Resource" uid="uid://bcm6q57cab0x7" path="res://game/data/inventory/base_game_piece_inventory.tres" id="152_5jbxp"]
 [ext_resource type="Script" uid="uid://b2eh484koe8a6" path="res://game/data/game/game_data_resource.gd" id="153_se0mx"]
+[ext_resource type="Resource" uid="uid://dypgcc1sd5vwe" path="res://game/data/localization/nation_names.tres" id="184_yhorm"]
 
 [resource]
 script = ExtResource("153_se0mx")
@@ -193,4 +194,5 @@ all_region_initial_pieces_setups = Array[ExtResource("107_pj8pp")]([ExtResource(
 all_reinforcement_initial_setups = Array[ExtResource("143_blsm7")]([ExtResource("144_0rc3w"), ExtResource("145_t7pab"), ExtResource("146_d8p33"), ExtResource("147_jj6ub"), ExtResource("148_vjja2"), ExtResource("149_k11pj"), ExtResource("150_f5cvx"), ExtResource("151_638an")])
 base_game_piece_inventory = ExtResource("152_5jbxp")
 all_nation_initial_setups = Array[ExtResource("1_kuf82")]([ExtResource("2_yhorm"), ExtResource("3_nr3ds"), ExtResource("4_s037g"), ExtResource("5_wnt1h"), ExtResource("6_6amb3"), ExtResource("7_u60ud"), ExtResource("8_wh3hg"), ExtResource("9_la4wc")])
+nation_names = ExtResource("184_yhorm")
 metadata/_custom_type_script = "uid://b2eh484koe8a6"
