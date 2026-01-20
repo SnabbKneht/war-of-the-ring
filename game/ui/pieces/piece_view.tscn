@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8do8s5kxvps3"]
+
+[ext_resource type="Script" uid="uid://ceaypferk5yw7" path="res://game/ui/pieces/piece_view.gd" id="1_rl60q"]
+
+[node name="PieceView" type="PanelContainer"]
+offset_right = 238.0
+offset_bottom = 147.0
+script = ExtResource("1_rl60q")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="FreePieces" type="ItemList" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+item_count = 3
+item_0/text = "elem1"
+item_1/text = "elem2"
+item_2/text = "elem3"
+
+[node name="ShadowPieces" type="ItemList" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+item_count = 3
+item_0/text = "elem1"
+item_1/text = "elem2"
+item_2/text = "elem3"
