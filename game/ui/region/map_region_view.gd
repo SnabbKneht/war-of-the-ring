@@ -1,4 +1,4 @@
-class_name RegionView
+class_name MapRegionView
 extends Node2D
 
 

@@ -7,7 +7,7 @@ extends Node2D
 
 
 var _map_state: MapState
-var _region_views: Dictionary[int, RegionView] = {}
+var _region_views: Dictionary[int, MapRegionView] = {}
 
 
 func _input(event: InputEvent) -> void:
@@ -20,7 +20,7 @@ func set_map_state(map_state: MapState) -> void:
 
 
 func _init_region_views() -> void:
-	for region_view: RegionView in regions_node.get_children():
+	for region_view: MapRegionView in regions_node.get_children():
 		_region_views[region_view.region_id] = region_view
 		region_view.set_region_state(_map_state.get_region_state_by_id(region_view.region_id))
 
