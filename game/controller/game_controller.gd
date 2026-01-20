@@ -10,8 +10,13 @@ func _ready() -> void:
 	game_state = GameStateFactory.create()
 	game_ui.set_game_state(game_state)
 	
+	game_ui.region_selected.connect(_on_region_selected)
 	game_ui.advance_nation_requested.connect(_on_advance_nation_requested)
 	game_ui.move_back_nation_requested.connect(_on_move_back_nation_requested)
+
+
+func _on_region_selected(region_id: int) -> void:
+	print(GameData.get_region_by_id(region_id).name)
 
 
 func _on_advance_nation_requested(nation: Enums.Nation) -> void:

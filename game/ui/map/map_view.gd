@@ -2,6 +2,9 @@ class_name MapView
 extends Node2D
 
 
+signal region_selected(region_id: int)
+
+
 @onready var color_sprite: Sprite2D = $RegionColorMap
 @onready var regions_node: Node2D = $Regions
 
@@ -34,6 +37,4 @@ func _handle_region_click(event: InputEvent) -> void:
 		var color_clicked: Color = color_sprite.texture.get_image().get_pixelv(image_pos)
 		if color_clicked in UIData.get_all_region_colors():
 			var region_id: int = UIData.get_region_id_by_color(color_clicked)
-			print(_map_state.get_region_state_by_id(region_id))
-		else:
-			print("Unknown region")
+			region_selected.emit(region_id)
