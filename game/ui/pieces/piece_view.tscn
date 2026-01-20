@@ -13,6 +13,7 @@ layout_mode = 2
 [node name="FreePieces" type="ItemList" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+focus_mode = 0
 item_count = 3
 item_0/text = "elem1"
 item_1/text = "elem2"
@@ -21,6 +22,7 @@ item_2/text = "elem3"
 [node name="ShadowPieces" type="ItemList" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+focus_mode = 0
 item_count = 3
 item_0/text = "elem1"
 item_1/text = "elem2"
