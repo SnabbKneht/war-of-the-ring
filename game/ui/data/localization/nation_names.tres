@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="NationNames" load_steps=2 format=3 uid="uid://dypgcc1sd5vwe"]
 
-[ext_resource type="Script" uid="uid://cmmk1h4tgtqhr" path="res://game/data/localization/nation_names.gd" id="1_n3vv3"]
+[ext_resource type="Script" uid="uid://cmmk1h4tgtqhr" path="res://game/ui/data/localization/nation_names.gd" id="1_n3vv3"]
 
 [resource]
 script = ExtResource("1_n3vv3")

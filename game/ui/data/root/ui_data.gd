@@ -58,3 +58,7 @@ func get_fortification_icon() -> Texture2D:
 func _init_color_to_region_dictionary() -> void:
 	for entry: ColorToRegionEntry in _data.color_to_region_resource.color_to_region:
 		_color_to_region_dictionary[entry.color] = entry.region_id
+
+
+func get_nation_name(nation: Enums.Nation) -> String:
+	return _data.nation_names.nation_to_string[nation]

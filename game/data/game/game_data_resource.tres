@@ -184,7 +184,7 @@
 [ext_resource type="Resource" uid="uid://2pp4etmwt4yq" path="res://game/data/initial_setup/reinforcement/reinforcement_initial_setup_resources/sauron_reinforcement.tres" id="151_638an"]
 [ext_resource type="Resource" uid="uid://bcm6q57cab0x7" path="res://game/data/inventory/base_game_piece_inventory.tres" id="152_5jbxp"]
 [ext_resource type="Script" uid="uid://b2eh484koe8a6" path="res://game/data/game/game_data_resource.gd" id="153_se0mx"]
-[ext_resource type="Resource" uid="uid://dypgcc1sd5vwe" path="res://game/data/localization/nation_names.tres" id="184_yhorm"]
+[ext_resource type="Resource" uid="uid://dypgcc1sd5vwe" path="res://game/ui/data/localization/nation_names.tres" id="184_yhorm"]
 
 [resource]
 script = ExtResource("153_se0mx")

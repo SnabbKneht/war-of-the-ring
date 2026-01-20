@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="UIDataResource" load_steps=8 format=3 uid="uid://dn4gel6fvrv5m"]
+[gd_resource type="Resource" script_class="UIDataResource" load_steps=9 format=3 uid="uid://dn4gel6fvrv5m"]
 
 [ext_resource type="Resource" uid="uid://bjhvu200d3dqa" path="res://game/ui/data/nations/active_nation_icons.tres" id="1_6382b"]
 [ext_resource type="Script" uid="uid://ch4s3f2xvdgjw" path="res://game/ui/data/root/ui_data_resource.gd" id="1_or6gj"]
@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://dt18440tr15q" path="res://game/ui/data/map/color_to_region.tres" id="2_p1i2h"]
 [ext_resource type="Theme" uid="uid://clib1jv6rvsd6" path="res://game/ui/data/themes/shadow_theme.tres" id="4_fieqn"]
 [ext_resource type="Resource" uid="uid://diyoddo2yxl84" path="res://game/ui/data/nations/nation_icons.tres" id="4_p08p8"]
+[ext_resource type="Resource" uid="uid://dypgcc1sd5vwe" path="res://game/ui/data/localization/nation_names.tres" id="5_f45ds"]
 [ext_resource type="Resource" uid="uid://c4kk2cgb8bifu" path="res://game/ui/data/structures/structure_icons.tres" id="7_lne17"]
 
 [resource]
@@ -16,4 +17,5 @@ color_to_region_resource = ExtResource("2_p1i2h")
 nation_icons = ExtResource("4_p08p8")
 active_nation_icons = ExtResource("1_6382b")
 structure_icons = ExtResource("7_lne17")
+nation_names = ExtResource("5_f45ds")
 metadata/_custom_type_script = "uid://ch4s3f2xvdgjw"

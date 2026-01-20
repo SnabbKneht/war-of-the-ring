@@ -50,7 +50,3 @@ func get_all_nation_initial_setups() -> Array[NationInitialSetup]:
 func _init_region_dictionary() -> void:
 	for region_data: RegionData in get_all_region_data():
 		_region_by_id[region_data.id] = region_data
-
-
-func get_nation_name(nation: Enums.Nation) -> String:
-	return _data.nation_names.nation_to_string[nation]
