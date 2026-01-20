@@ -4,7 +4,7 @@ extends PanelContainer
 
 @onready var region_label: Label = $MarginContainer/VBoxContainer/PanelContainer/RegionLabel
 @onready var nation_label: Label = $MarginContainer/VBoxContainer/PanelContainer2/NationLabel
-@onready var structure_icon: TextureRect = $MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/StructureIcon
+@onready var structure_icon: TextureRect = $MarginContainer/VBoxContainer/StructureContainer/PanelContainer/StructureIcon
 @onready var structure_container: HBoxContainer = $MarginContainer/VBoxContainer/StructureContainer
 @onready var stronghold_piece_view: PieceView = $MarginContainer/VBoxContainer/StructureContainer/StrongholdPieceView
 @onready var region_piece_view: PieceView = $MarginContainer/VBoxContainer/RegionPieceView
@@ -15,7 +15,6 @@ var _region_state: RegionState
 
 func set_region_state(region_state: RegionState) -> void:
 	_region_state = region_state
-	_region_state.changed.connect(_refresh)
 	_refresh()
 
 
@@ -31,7 +30,11 @@ func _refresh_region_label() -> void:
 
 
 func _refresh_nation_details() -> void:
-	nation_label.text = GameData.get_nation_name(_region_state.region_data.nation)
+	if _region_state.belongs_to_any_nation():
+		nation_label.text = UIData.get_nation_name(_region_state.region_data.nation)
+		nation_label.show()
+	else:
+		nation_label.hide()
 
 
 func _refresh_structure_details() -> void:

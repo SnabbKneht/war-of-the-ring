@@ -79,6 +79,10 @@ func has_fortification() -> bool:
 	return region_data.structure == Enums.RegionStructure.FORTIFICATION
 
 
+func belongs_to_any_nation() -> bool:
+	return region_data.nation != Enums.Nation.NONE
+
+
 func _to_string() -> String:
 	var info: String = region_data.name + ": " + str(_pieces)
 	return info

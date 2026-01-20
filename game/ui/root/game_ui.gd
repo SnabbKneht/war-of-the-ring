@@ -9,6 +9,7 @@ signal move_back_nation_requested(nation: Enums.Nation)
 
 @onready var map_view: MapView = $MapView
 @onready var political_track_view: PoliticalTrackView = $HUD/PoliticalTrackView
+@onready var region_details_view: RegionDetailsView = $HUD/RegionDetailsView
 
 
 var _game_state: GameState
@@ -25,6 +26,11 @@ func set_game_state(game_state: GameState) -> void:
 	map_view.set_map_state(game_state.map_state)
 	political_track_view.set_game_state(game_state)
 	political_track_view.set_political_state(game_state.political_state)
+
+
+func show_region_details(region_state: RegionState) -> void:
+	region_details_view.set_region_state(region_state)
+	region_details_view.show()
 
 
 func _on_region_selected(region_id: int) -> void:
