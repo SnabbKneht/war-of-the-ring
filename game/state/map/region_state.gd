@@ -67,6 +67,10 @@ func has_settlement() -> bool:
 	]
 
 
+func has_stronghold() -> bool:
+	return region_data.structure == Enums.RegionStructure.STRONGHOLD
+
+
 func _to_string() -> String:
 	var info: String = region_data.name + ": " + str(_pieces)
 	return info
