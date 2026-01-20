@@ -16,7 +16,6 @@ func _ready() -> void:
 
 
 func _on_region_selected(region_id: int) -> void:
-	print(GameData.get_region_by_id(region_id).name)
 	game_ui.show_region_details(game_state.map_state.get_region_state_by_id(region_id))
 
 
