@@ -15,16 +15,14 @@ func _ready() -> void:
 
 
 func _on_advance_nation_requested(nation: Enums.Nation) -> void:
-	if PoliticalLogic.can_advance_nation(game_state, nation):
-		var action: GameAction = PoliticalLogic.create_advance_nation_action(nation)
-		if action.can_apply(game_state):
-			action.apply(game_state)
-			# Add action to history
+	var action: GameAction = PoliticalLogic.create_advance_nation_action(nation)
+	if action.can_apply(game_state):
+		action.apply(game_state)
+		# Add action to history
 
 
 func _on_move_back_nation_requested(nation: Enums.Nation) -> void:
-	if PoliticalLogic.can_move_back_nation(game_state, nation):
-		var action: GameAction = PoliticalLogic.create_move_back_nation_action(nation)
-		if action.can_apply(game_state):
-			action.apply(game_state)
-			# Add action to history
+	var action: GameAction = PoliticalLogic.create_move_back_nation_action(nation)
+	if action.can_apply(game_state):
+		action.apply(game_state)
+		# Add action to history
