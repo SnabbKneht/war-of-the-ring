@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_itkaa")
-id = "easterling_elite"
+id = &"easterling_elite"
 side = 2
 nation = 7
 category = 1

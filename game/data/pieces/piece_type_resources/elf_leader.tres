@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_jv7qf")
-id = "elf_leader"
+id = &"elf_leader"
 side = 1
 nation = 1
 category = 2

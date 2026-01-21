@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_jnbbq")
-id = "north_elite"
+id = &"north_elite"
 side = 1
 nation = 2
 category = 1

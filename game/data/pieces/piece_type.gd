@@ -12,7 +12,7 @@ enum Category {
 }
 
 
-@export var id: String
+@export var id: StringName
 @export var side: Enums.Side
 @export var nation: Enums.Nation
 @export var category: Category

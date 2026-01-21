@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_oid5l")
-id = "gondor_elite"
+id = &"gondor_elite"
 side = 1
 nation = 4
 category = 1

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_dnrpn")
-id = "north_regular"
+id = &"north_regular"
 side = 1
 nation = 2
 metadata/_custom_type_script = "uid://c77r01bpric5s"

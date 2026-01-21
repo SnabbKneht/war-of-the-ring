@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_3csv2")
-id = "dwarf_regular"
+id = &"dwarf_regular"
 side = 1
 metadata/_custom_type_script = "uid://c77r01bpric5s"

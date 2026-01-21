@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_juart")
-id = "isengard_elite"
+id = &"isengard_elite"
 side = 2
 nation = 5
 category = 1

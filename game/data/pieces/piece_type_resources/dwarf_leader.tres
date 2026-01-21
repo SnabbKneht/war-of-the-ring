@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_uubxd")
-id = "dwarf_leader"
+id = &"dwarf_leader"
 side = 1
 category = 2
 metadata/_custom_type_script = "uid://c77r01bpric5s"

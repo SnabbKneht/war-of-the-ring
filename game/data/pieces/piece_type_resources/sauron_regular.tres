@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_tqt5g")
-id = "sauron_regular"
+id = &"sauron_regular"
 side = 2
 nation = 6
 metadata/_custom_type_script = "uid://c77r01bpric5s"
