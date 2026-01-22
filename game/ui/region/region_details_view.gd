@@ -2,9 +2,9 @@ class_name RegionDetailsView
 extends PanelContainer
 
 
-@onready var region_label: Label = $MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/RegionLabel
-@onready var nation_icon: TextureRect = $MarginContainer/VBoxContainer/HBoxContainer/NationIcon
-@onready var neighbors_icon: TextureRect = $MarginContainer/VBoxContainer/HBoxContainer/NeighborsIcon
+@onready var region_label: Label = $MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/RegionLabel
+@onready var nation_icon: TextureRect = $MarginContainer/NationIcon
+@onready var neighbors_icon: TextureRect = $MarginContainer/NeighborsIcon
 @onready var structure_icon: TextureRect = $MarginContainer/VBoxContainer/StructureContainer/PanelContainer/StructureIcon
 @onready var structure_container: HBoxContainer = $MarginContainer/VBoxContainer/StructureContainer
 @onready var stronghold_piece_view: PieceView = $MarginContainer/VBoxContainer/StructureContainer/StrongholdPieceView

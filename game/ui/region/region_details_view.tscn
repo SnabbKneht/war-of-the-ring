@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://l1ap1jwj6kcr"]
+[gd_scene load_steps=6 format=3 uid="uid://l1ap1jwj6kcr"]
 
 [ext_resource type="Script" uid="uid://bxabm7jb0dr35" path="res://game/ui/region/region_details_view.gd" id="1_p1y7a"]
 [ext_resource type="Texture2D" uid="uid://cba445rgwnkbn" path="res://game/ui/assets/icons/nations/dwarves.svg" id="2_4eppg"]
 [ext_resource type="PackedScene" uid="uid://b8do8s5kxvps3" path="res://game/ui/pieces/piece_view.tscn" id="2_p1y7a"]
 [ext_resource type="Texture2D" uid="uid://d0x0pg3gdp2ph" path="res://game/ui/assets/icons/structures/shadow_stronghold.svg" id="2_ppese"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_4eppg"]
 
 [node name="RegionDetailsView" type="PanelContainer"]
 offset_right = 840.0
@@ -24,10 +26,16 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_horizontal = 6
 
-[node name="RegionLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_right = 32
+
+[node name="RegionLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "Region Name"
@@ -57,7 +65,7 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="NationIcon" type="TextureRect" parent="MarginContainer"]
-custom_minimum_size = Vector2(67, 67)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
@@ -66,10 +74,10 @@ expand_mode = 1
 stretch_mode = 4
 
 [node name="NeighborsIcon" type="TextureRect" parent="MarginContainer"]
-custom_minimum_size = Vector2(67, 67)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
-texture = ExtResource("2_4eppg")
+texture = SubResource("PlaceholderTexture2D_4eppg")
 expand_mode = 1
 stretch_mode = 4
