@@ -55,6 +55,11 @@ func get_fortification_icon() -> Texture2D:
 	return _data.structure_icons.fortification
 
 
+func get_neighbor_icon(number: int) -> Texture2D:
+	assert(number in _data.neighbor_icons.number_to_icon.keys())
+	return _data.neighbor_icons.number_to_icon[number]
+
+
 func _init_color_to_region_dictionary() -> void:
 	for entry: ColorToRegionEntry in _data.color_to_region_resource.color_to_region:
 		_color_to_region_dictionary[entry.color] = entry.region_id

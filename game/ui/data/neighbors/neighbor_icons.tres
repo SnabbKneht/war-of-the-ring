@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="NeighborIcons" load_steps=11 format=3 uid="uid://4mxc3hji1qhk"]
+
+[ext_resource type="Script" uid="uid://4d7jnhkeqpd7" path="res://game/ui/data/neighbors/neighbor_icons.gd" id="1_jyphf"]
+[ext_resource type="Texture2D" uid="uid://ctfg2cxct3540" path="res://game/ui/assets/icons/neighbors/neighbor_1.svg" id="1_n5lnd"]
+[ext_resource type="Texture2D" uid="uid://iccnipwqcmtq" path="res://game/ui/assets/icons/neighbors/neighbor_2.svg" id="2_1ejp5"]
+[ext_resource type="Texture2D" uid="uid://nkdto8jd1gji" path="res://game/ui/assets/icons/neighbors/neighbor_3.svg" id="3_fp1l2"]
+[ext_resource type="Texture2D" uid="uid://ckdvg1cvsdgo6" path="res://game/ui/assets/icons/neighbors/neighbor_4.svg" id="4_akbhl"]
+[ext_resource type="Texture2D" uid="uid://bsj3yc7cq483d" path="res://game/ui/assets/icons/neighbors/neighbor_5.svg" id="5_y04qv"]
+[ext_resource type="Texture2D" uid="uid://cckwthwvlq5b2" path="res://game/ui/assets/icons/neighbors/neighbor_6.svg" id="6_gbxj2"]
+[ext_resource type="Texture2D" uid="uid://sdyntvnwdgpb" path="res://game/ui/assets/icons/neighbors/neighbor_7.svg" id="7_56x23"]
+[ext_resource type="Texture2D" uid="uid://jy03mraupxjt" path="res://game/ui/assets/icons/neighbors/neighbor_8.svg" id="8_ueg0x"]
+[ext_resource type="Texture2D" uid="uid://ys006pbndwnq" path="res://game/ui/assets/icons/neighbors/neighbor_9.svg" id="9_2cc40"]
+
+[resource]
+script = ExtResource("1_jyphf")
+number_to_icon = Dictionary[int, Texture2D]({
+1: ExtResource("1_n5lnd"),
+2: ExtResource("2_1ejp5"),
+3: ExtResource("3_fp1l2"),
+4: ExtResource("4_akbhl"),
+5: ExtResource("5_y04qv"),
+6: ExtResource("6_gbxj2"),
+7: ExtResource("7_56x23"),
+8: ExtResource("8_ueg0x"),
+9: ExtResource("9_2cc40")
+})
+metadata/_custom_type_script = "uid://4d7jnhkeqpd7"

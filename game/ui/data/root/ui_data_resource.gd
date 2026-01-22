@@ -8,6 +8,7 @@ extends Resource
 @export var nation_icons: NationIcons
 @export var active_nation_icons: NationIcons
 @export var structure_icons: StructureIcons
+@export var neighbor_icons: NeighborIcons
 
 # Localization
 
