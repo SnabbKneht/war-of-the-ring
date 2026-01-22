@@ -67,3 +67,8 @@ func _init_color_to_region_dictionary() -> void:
 
 func get_nation_name(nation: Enums.Nation) -> String:
 	return _data.nation_names.nation_to_string[nation]
+
+
+func get_piece_name(piece_type_id: StringName) -> String:
+	assert(piece_type_id in _data.piece_names.piece_type_id_to_string.keys())
+	return _data.piece_names.piece_type_id_to_string[piece_type_id]

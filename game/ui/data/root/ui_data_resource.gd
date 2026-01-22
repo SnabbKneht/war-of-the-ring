@@ -13,3 +13,4 @@ extends Resource
 # Localization
 
 @export var nation_names: NationNames
+@export var piece_names: PieceNames
