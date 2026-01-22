@@ -2,8 +2,9 @@ class_name RegionDetailsView
 extends PanelContainer
 
 
-@onready var region_label: Label = $MarginContainer/VBoxContainer/PanelContainer/RegionLabel
-@onready var nation_label: Label = $MarginContainer/VBoxContainer/PanelContainer2/NationLabel
+@onready var region_label: Label = $MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/RegionLabel
+@onready var nation_icon: TextureRect = $MarginContainer/VBoxContainer/HBoxContainer/NationIcon
+@onready var neighbors_icon: TextureRect = $MarginContainer/VBoxContainer/HBoxContainer/NeighborsIcon
 @onready var structure_icon: TextureRect = $MarginContainer/VBoxContainer/StructureContainer/PanelContainer/StructureIcon
 @onready var structure_container: HBoxContainer = $MarginContainer/VBoxContainer/StructureContainer
 @onready var stronghold_piece_view: PieceView = $MarginContainer/VBoxContainer/StructureContainer/StrongholdPieceView
@@ -20,7 +21,7 @@ func set_region_state(region_state: RegionState) -> void:
 
 func _refresh() -> void:
 	_refresh_region_label()
-	_refresh_nation_details()
+	_refresh_nation_icon()
 	_refresh_structure_details()
 	_refresh_region_piece_view()
 
@@ -29,12 +30,12 @@ func _refresh_region_label() -> void:
 	region_label.text = _region_state.region_data.name
 
 
-func _refresh_nation_details() -> void:
+func _refresh_nation_icon() -> void:
 	if _region_state.belongs_to_any_nation():
-		nation_label.text = UIData.get_nation_name(_region_state.region_data.nation)
-		nation_label.show()
+		nation_icon.texture = UIData.get_nation_icon(_region_state.region_data.nation)
+		nation_icon.show()
 	else:
-		nation_label.hide()
+		nation_icon.hide()
 
 
 func _refresh_structure_details() -> void:
