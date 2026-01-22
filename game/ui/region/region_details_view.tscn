@@ -73,7 +73,7 @@ texture = ExtResource("2_4eppg")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="NeighborsIcon" type="TextureRect" parent="MarginContainer"]
+[node name="NeighborIcon" type="TextureRect" parent="MarginContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 8

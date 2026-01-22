@@ -4,7 +4,7 @@ extends PanelContainer
 
 @onready var region_label: Label = $MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/RegionLabel
 @onready var nation_icon: TextureRect = $MarginContainer/NationIcon
-@onready var neighbors_icon: TextureRect = $MarginContainer/NeighborsIcon
+@onready var neighbor_icon: TextureRect = $MarginContainer/NeighborIcon
 @onready var structure_icon: TextureRect = $MarginContainer/VBoxContainer/StructureContainer/PanelContainer/StructureIcon
 @onready var structure_container: HBoxContainer = $MarginContainer/VBoxContainer/StructureContainer
 @onready var stronghold_piece_view: PieceView = $MarginContainer/VBoxContainer/StructureContainer/StrongholdPieceView
@@ -22,6 +22,7 @@ func set_region_state(region_state: RegionState) -> void:
 func _refresh() -> void:
 	_refresh_region_label()
 	_refresh_nation_icon()
+	_refresh_neighbor_icon()
 	_refresh_structure_details()
 	_refresh_region_piece_view()
 
@@ -36,6 +37,10 @@ func _refresh_nation_icon() -> void:
 		nation_icon.show()
 	else:
 		nation_icon.hide()
+
+
+func _refresh_neighbor_icon() -> void:
+	neighbor_icon.texture = UIData.get_neighbor_icon(_region_state.get_neighbor_count())
 
 
 func _refresh_structure_details() -> void:
