@@ -3,12 +3,18 @@
 [ext_resource type="Texture2D" uid="uid://cba445rgwnkbn" path="res://game/ui/assets/icons/nations/dwarves.svg" id="1_2r1rb"]
 [ext_resource type="Script" uid="uid://myvqgsdit0l" path="res://game/ui/politics/nation_track_view.gd" id="1_vkrcg"]
 
-[node name="NationTrackView" type="HBoxContainer"]
+[node name="NationTrackView" type="PanelContainer"]
 offset_right = 374.0
 offset_bottom = 64.0
 script = ExtResource("1_vkrcg")
 
-[node name="NationIcon" type="TextureRect" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="NationIcon" type="TextureRect" parent="HBoxContainer/PanelContainer"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 size_flags_horizontal = 0
@@ -16,43 +22,49 @@ texture = ExtResource("1_2r1rb")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="ProgressBar" type="ProgressBar" parent="."]
+[node name="PanelContainer2" type="PanelContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ProgressBar" type="ProgressBar" parent="HBoxContainer/PanelContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 min_value = 1.0
 max_value = 4.0
 step = 1.0
-value = 1.0
+value = 4.0
 rounded = true
 show_percentage = false
 
-[node name="WarLabel" type="Label" parent="ProgressBar"]
+[node name="WarLabel" type="Label" parent="HBoxContainer/PanelContainer2/ProgressBar"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_color = Color(0.72156864, 0.011764706, 0.011764706, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 32
 text = "AT WAR"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MoveBackButton" type="Button" parent="."]
+[node name="MoveBackButton" type="Button" parent="HBoxContainer"]
 custom_minimum_size = Vector2(64, 0)
 layout_mode = 2
 focus_mode = 0
 theme_override_font_sizes/font_size = 32
 text = "-"
 
-[node name="AdvanceButton" type="Button" parent="."]
+[node name="AdvanceButton" type="Button" parent="HBoxContainer"]
 custom_minimum_size = Vector2(64, 0)
 layout_mode = 2
 focus_mode = 0
 theme_override_font_sizes/font_size = 32
 text = "+"
 
-[connection signal="pressed" from="MoveBackButton" to="." method="_on_move_back_button_pressed"]
-[connection signal="pressed" from="AdvanceButton" to="." method="_on_advance_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/MoveBackButton" to="." method="_on_move_back_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/AdvanceButton" to="." method="_on_advance_button_pressed"]

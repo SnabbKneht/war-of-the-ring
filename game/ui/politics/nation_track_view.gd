@@ -1,16 +1,16 @@
 class_name NationTrackView
-extends HBoxContainer
+extends PanelContainer
 
 
 signal advance_nation_requested(nation: Enums.Nation)
 signal move_back_nation_requested(nation: Enums.Nation)
 
 
-@onready var nation_icon: TextureRect = $NationIcon
-@onready var progress_bar: ProgressBar = $ProgressBar
-@onready var war_label: Label = $ProgressBar/WarLabel
-@onready var move_back_button: Button = $MoveBackButton
-@onready var advance_button: Button = $AdvanceButton
+@onready var nation_icon: TextureRect = $HBoxContainer/PanelContainer/NationIcon
+@onready var progress_bar: ProgressBar = $HBoxContainer/PanelContainer2/ProgressBar
+@onready var war_label: Label = $HBoxContainer/PanelContainer2/ProgressBar/WarLabel
+@onready var move_back_button: Button = $HBoxContainer/MoveBackButton
+@onready var advance_button: Button = $HBoxContainer/AdvanceButton
 
 
 @export var nation: Enums.Nation
