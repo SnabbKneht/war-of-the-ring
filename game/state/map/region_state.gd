@@ -38,6 +38,10 @@ func get_pieces() -> Array[Piece]:
 	return _pieces
 
 
+func has_any_pieces() -> bool:
+	return _pieces.size() > 0
+
+
 func get_army_side() -> Enums.Side:
 	if _pieces.is_empty():
 		return Enums.Side.NONE

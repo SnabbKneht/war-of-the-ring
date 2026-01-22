@@ -26,6 +26,10 @@ var can_move_army: bool
 var counts_to_unit_cap: bool
 
 
+func get_side() -> Enums.Side:
+	return piece_type.side
+
+
 func _init(p_id: int, p_piece_type: PieceType) -> void:
 	id = p_id
 	piece_type = p_piece_type

@@ -66,8 +66,12 @@ func _refresh_structure_icon() -> void:
 
 
 func _refresh_stronghold_piece_view() -> void:
-	pass
+	stronghold_piece_view.hide()
 
 
 func _refresh_region_piece_view() -> void:
-	pass
+	if _region_state.has_any_pieces():
+		region_piece_view.display(_region_state.get_pieces())
+		region_piece_view.show()
+	else:
+		region_piece_view.hide()
