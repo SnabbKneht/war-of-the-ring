@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="PieceNames" load_steps=2 format=3 uid="uid://cjrrs2q4ev167"]
+
+[ext_resource type="Script" uid="uid://bd83fxqjb5fpm" path="res://game/ui/data/localization/piece_names.gd" id="2_p0yb7"]
+
+[resource]
+script = ExtResource("2_p0yb7")
+piece_type_id_to_string = Dictionary[StringName, String]({
+&"dwarf_elite": "Dwarf Elite",
+&"dwarf_leader": "Dwarf Leader",
+&"dwarf_regular": "Dwarf Regular",
+&"easterling_elite": "Easterling Elite",
+&"easterling_regular": "Easterling Regular",
+&"elf_elite": "Elf Elite",
+&"elf_leader": "Elf Leader",
+&"elf_regular": "Elf Regular",
+&"gondor_elite": "Gondor Elite",
+&"gondor_leader": "Gondor Leader",
+&"gondor_regular": "Gondor Regular",
+&"isengard_elite": "Isengard Elite",
+&"isengard_regular": "Isengard Regular",
+&"north_elite": "North Elite",
+&"north_leader": "North Leader",
+&"north_regular": "North Regular",
+&"rohan_elite": "Rohan Elite",
+&"rohan_leader": "Rohan Leader",
+&"rohan_regular": "Rohan Regular",
+&"sauron_elite": "Sauron Elite",
+&"sauron_regular": "Sauron Regular"
+})
+metadata/_custom_type_script = "uid://bd83fxqjb5fpm"
