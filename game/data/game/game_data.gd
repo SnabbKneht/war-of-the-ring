@@ -39,8 +39,13 @@ func get_all_reinforcement_initial_setups() -> Array[ReinforcementInitialSetup]:
 	return _data.all_reinforcement_initial_setups
 
 
-func get_base_game_piece_inventory() -> PieceInventory:
-	return _data.base_game_piece_inventory
+func get_all_piece_ids() -> Array[StringName]:
+	return _data.base_game_piece_inventory.pieces.keys()
+
+
+func get_piece_type_by_piece_id(piece_id: StringName) -> PieceType:
+	assert(piece_id in _data.base_game_piece_inventory.pieces.keys())
+	return _data.base_game_piece_inventory.pieces[piece_id]
 
 
 func get_all_nation_initial_setups() -> Array[NationInitialSetup]:
