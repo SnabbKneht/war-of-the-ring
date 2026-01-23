@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="PieceInventory" load_steps=45 format=3 uid="uid://bcm6q57cab0x7"]
+[gd_resource type="Resource" script_class="PieceInventory" load_steps=24 format=3 uid="uid://bcm6q57cab0x7"]
 
-[ext_resource type="Script" uid="uid://ciq2r7tutxmln" path="res://game/data/inventory/piece_inventory_entry.gd" id="1_tyo3p"]
+[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/pieces/piece_type.gd" id="1_s43dg"]
 [ext_resource type="Resource" uid="uid://c5hn6dut5kil4" path="res://game/data/pieces/piece_type_resources/isengard_regular.tres" id="2_ctt5f"]
 [ext_resource type="Script" uid="uid://ilyxn3j1pvux" path="res://game/data/inventory/piece_inventory.gd" id="2_osj8r"]
 [ext_resource type="Resource" uid="uid://c17lqvvhfvpbc" path="res://game/data/pieces/piece_type_resources/isengard_elite.tres" id="3_tr51s"]
@@ -24,133 +24,193 @@
 [ext_resource type="Resource" uid="uid://dsqufyhj6xcla" path="res://game/data/pieces/piece_type_resources/rohan_elite.tres" id="21_25ulu"]
 [ext_resource type="Resource" uid="uid://dchrq3k61vibs" path="res://game/data/pieces/piece_type_resources/rohan_leader.tres" id="22_7q1xe"]
 
-[sub_resource type="Resource" id="Resource_a4r2d"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("2_ctt5f")
-count = 12
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_alh52"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("3_tr51s")
-count = 6
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_x6rg1"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("4_v8t4p")
-count = 36
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_j8yie"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("5_ltqwb")
-count = 6
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_exij1"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("6_3owyi")
-count = 24
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_g4hew"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("7_pswry")
-count = 6
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_g6i15"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("8_68wyu")
-count = 5
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_fq0qs"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("9_u6ljc")
-count = 5
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_dycnn"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("10_ibaiy")
-count = 4
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_7ym03"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("11_c7oir")
-count = 5
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_e11of"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("12_cysqt")
-count = 10
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_d7rnc"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("13_afmsj")
-count = 4
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_cbp6x"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("14_fefhg")
-count = 15
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_soc8v"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("15_odmtc")
-count = 5
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_llkkl"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("16_3w71j")
-count = 4
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_v5g7n"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("17_ubtkn")
-count = 10
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_p6mlh"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("18_xu7vm")
-count = 5
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_6wddl"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("19_xrbxy")
-count = 4
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_j0brp"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("20_7a74c")
-count = 10
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_m88ot"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("21_25ulu")
-count = 5
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
-[sub_resource type="Resource" id="Resource_lurq3"]
-script = ExtResource("1_tyo3p")
-piece_type = ExtResource("22_7q1xe")
-count = 4
-metadata/_custom_type_script = "uid://ciq2r7tutxmln"
-
 [resource]
 script = ExtResource("2_osj8r")
-entries = Array[ExtResource("1_tyo3p")]([SubResource("Resource_a4r2d"), SubResource("Resource_alh52"), SubResource("Resource_x6rg1"), SubResource("Resource_j8yie"), SubResource("Resource_exij1"), SubResource("Resource_g4hew"), SubResource("Resource_g6i15"), SubResource("Resource_fq0qs"), SubResource("Resource_dycnn"), SubResource("Resource_7ym03"), SubResource("Resource_e11of"), SubResource("Resource_d7rnc"), SubResource("Resource_cbp6x"), SubResource("Resource_soc8v"), SubResource("Resource_llkkl"), SubResource("Resource_v5g7n"), SubResource("Resource_p6mlh"), SubResource("Resource_6wddl"), SubResource("Resource_j0brp"), SubResource("Resource_m88ot"), SubResource("Resource_lurq3")])
+pieces = Dictionary[StringName, ExtResource("1_s43dg")]({
+&"dwarf_elite_01": ExtResource("9_u6ljc"),
+&"dwarf_elite_02": ExtResource("9_u6ljc"),
+&"dwarf_elite_03": ExtResource("9_u6ljc"),
+&"dwarf_elite_04": ExtResource("9_u6ljc"),
+&"dwarf_elite_05": ExtResource("9_u6ljc"),
+&"dwarf_leader_01": ExtResource("10_ibaiy"),
+&"dwarf_leader_02": ExtResource("10_ibaiy"),
+&"dwarf_leader_03": ExtResource("10_ibaiy"),
+&"dwarf_leader_04": ExtResource("10_ibaiy"),
+&"dwarf_regular_01": ExtResource("8_68wyu"),
+&"dwarf_regular_02": ExtResource("8_68wyu"),
+&"dwarf_regular_03": ExtResource("8_68wyu"),
+&"dwarf_regular_04": ExtResource("8_68wyu"),
+&"dwarf_regular_05": ExtResource("8_68wyu"),
+&"easterling_elite_01": ExtResource("7_pswry"),
+&"easterling_elite_02": ExtResource("7_pswry"),
+&"easterling_elite_03": ExtResource("7_pswry"),
+&"easterling_elite_04": ExtResource("7_pswry"),
+&"easterling_elite_05": ExtResource("7_pswry"),
+&"easterling_elite_06": ExtResource("7_pswry"),
+&"easterling_regular_01": ExtResource("6_3owyi"),
+&"easterling_regular_02": ExtResource("6_3owyi"),
+&"easterling_regular_03": ExtResource("6_3owyi"),
+&"easterling_regular_04": ExtResource("6_3owyi"),
+&"easterling_regular_05": ExtResource("6_3owyi"),
+&"easterling_regular_06": ExtResource("6_3owyi"),
+&"easterling_regular_07": ExtResource("6_3owyi"),
+&"easterling_regular_08": ExtResource("6_3owyi"),
+&"easterling_regular_09": ExtResource("6_3owyi"),
+&"easterling_regular_10": ExtResource("6_3owyi"),
+&"easterling_regular_11": ExtResource("6_3owyi"),
+&"easterling_regular_12": ExtResource("6_3owyi"),
+&"easterling_regular_13": ExtResource("6_3owyi"),
+&"easterling_regular_14": ExtResource("6_3owyi"),
+&"easterling_regular_15": ExtResource("6_3owyi"),
+&"easterling_regular_16": ExtResource("6_3owyi"),
+&"easterling_regular_17": ExtResource("6_3owyi"),
+&"easterling_regular_18": ExtResource("6_3owyi"),
+&"easterling_regular_19": ExtResource("6_3owyi"),
+&"easterling_regular_20": ExtResource("6_3owyi"),
+&"easterling_regular_21": ExtResource("6_3owyi"),
+&"easterling_regular_22": ExtResource("6_3owyi"),
+&"easterling_regular_23": ExtResource("6_3owyi"),
+&"easterling_regular_24": ExtResource("6_3owyi"),
+&"elf_elite_01": ExtResource("12_cysqt"),
+&"elf_elite_02": ExtResource("12_cysqt"),
+&"elf_elite_03": ExtResource("12_cysqt"),
+&"elf_elite_04": ExtResource("12_cysqt"),
+&"elf_elite_05": ExtResource("12_cysqt"),
+&"elf_elite_06": ExtResource("12_cysqt"),
+&"elf_elite_07": ExtResource("12_cysqt"),
+&"elf_elite_08": ExtResource("12_cysqt"),
+&"elf_elite_09": ExtResource("12_cysqt"),
+&"elf_elite_10": ExtResource("12_cysqt"),
+&"elf_leader_01": ExtResource("13_afmsj"),
+&"elf_leader_02": ExtResource("13_afmsj"),
+&"elf_leader_03": ExtResource("13_afmsj"),
+&"elf_leader_04": ExtResource("13_afmsj"),
+&"elf_regular_01": ExtResource("11_c7oir"),
+&"elf_regular_02": ExtResource("11_c7oir"),
+&"elf_regular_03": ExtResource("11_c7oir"),
+&"elf_regular_04": ExtResource("11_c7oir"),
+&"elf_regular_05": ExtResource("11_c7oir"),
+&"gondor_elite_01": ExtResource("15_odmtc"),
+&"gondor_elite_02": ExtResource("15_odmtc"),
+&"gondor_elite_03": ExtResource("15_odmtc"),
+&"gondor_elite_04": ExtResource("15_odmtc"),
+&"gondor_elite_05": ExtResource("15_odmtc"),
+&"gondor_leader_01": ExtResource("16_3w71j"),
+&"gondor_leader_02": ExtResource("16_3w71j"),
+&"gondor_leader_03": ExtResource("16_3w71j"),
+&"gondor_leader_04": ExtResource("16_3w71j"),
+&"gondor_regular_01": ExtResource("14_fefhg"),
+&"gondor_regular_02": ExtResource("14_fefhg"),
+&"gondor_regular_03": ExtResource("14_fefhg"),
+&"gondor_regular_04": ExtResource("14_fefhg"),
+&"gondor_regular_05": ExtResource("14_fefhg"),
+&"gondor_regular_06": ExtResource("14_fefhg"),
+&"gondor_regular_07": ExtResource("14_fefhg"),
+&"gondor_regular_08": ExtResource("14_fefhg"),
+&"gondor_regular_09": ExtResource("14_fefhg"),
+&"gondor_regular_10": ExtResource("14_fefhg"),
+&"gondor_regular_11": ExtResource("14_fefhg"),
+&"gondor_regular_12": ExtResource("14_fefhg"),
+&"gondor_regular_13": ExtResource("14_fefhg"),
+&"gondor_regular_14": ExtResource("14_fefhg"),
+&"gondor_regular_15": ExtResource("14_fefhg"),
+&"isengard_elite_01": ExtResource("3_tr51s"),
+&"isengard_elite_02": ExtResource("3_tr51s"),
+&"isengard_elite_03": ExtResource("3_tr51s"),
+&"isengard_elite_04": ExtResource("3_tr51s"),
+&"isengard_elite_05": ExtResource("3_tr51s"),
+&"isengard_elite_06": ExtResource("3_tr51s"),
+&"isengard_regular_01": ExtResource("2_ctt5f"),
+&"isengard_regular_02": ExtResource("2_ctt5f"),
+&"isengard_regular_03": ExtResource("2_ctt5f"),
+&"isengard_regular_04": ExtResource("2_ctt5f"),
+&"isengard_regular_05": ExtResource("2_ctt5f"),
+&"isengard_regular_06": ExtResource("2_ctt5f"),
+&"isengard_regular_07": ExtResource("2_ctt5f"),
+&"isengard_regular_08": ExtResource("2_ctt5f"),
+&"isengard_regular_09": ExtResource("2_ctt5f"),
+&"isengard_regular_10": ExtResource("2_ctt5f"),
+&"isengard_regular_11": ExtResource("2_ctt5f"),
+&"isengard_regular_12": ExtResource("2_ctt5f"),
+&"north_elite_01": ExtResource("18_xu7vm"),
+&"north_elite_02": ExtResource("18_xu7vm"),
+&"north_elite_03": ExtResource("18_xu7vm"),
+&"north_elite_04": ExtResource("18_xu7vm"),
+&"north_elite_05": ExtResource("18_xu7vm"),
+&"north_leader_01": ExtResource("19_xrbxy"),
+&"north_leader_02": ExtResource("19_xrbxy"),
+&"north_leader_03": ExtResource("19_xrbxy"),
+&"north_leader_04": ExtResource("19_xrbxy"),
+&"north_regular_01": ExtResource("17_ubtkn"),
+&"north_regular_02": ExtResource("17_ubtkn"),
+&"north_regular_03": ExtResource("17_ubtkn"),
+&"north_regular_04": ExtResource("17_ubtkn"),
+&"north_regular_05": ExtResource("17_ubtkn"),
+&"north_regular_06": ExtResource("17_ubtkn"),
+&"north_regular_07": ExtResource("17_ubtkn"),
+&"north_regular_08": ExtResource("17_ubtkn"),
+&"north_regular_09": ExtResource("17_ubtkn"),
+&"north_regular_10": ExtResource("17_ubtkn"),
+&"rohan_elite_01": ExtResource("21_25ulu"),
+&"rohan_elite_02": ExtResource("21_25ulu"),
+&"rohan_elite_03": ExtResource("21_25ulu"),
+&"rohan_elite_04": ExtResource("21_25ulu"),
+&"rohan_elite_05": ExtResource("21_25ulu"),
+&"rohan_leader_01": ExtResource("22_7q1xe"),
+&"rohan_leader_02": ExtResource("22_7q1xe"),
+&"rohan_leader_03": ExtResource("22_7q1xe"),
+&"rohan_leader_04": ExtResource("22_7q1xe"),
+&"rohan_regular_01": ExtResource("20_7a74c"),
+&"rohan_regular_02": ExtResource("20_7a74c"),
+&"rohan_regular_03": ExtResource("20_7a74c"),
+&"rohan_regular_04": ExtResource("20_7a74c"),
+&"rohan_regular_05": ExtResource("20_7a74c"),
+&"rohan_regular_06": ExtResource("20_7a74c"),
+&"rohan_regular_07": ExtResource("20_7a74c"),
+&"rohan_regular_08": ExtResource("20_7a74c"),
+&"rohan_regular_09": ExtResource("20_7a74c"),
+&"rohan_regular_10": ExtResource("20_7a74c"),
+&"sauron_elite_01": ExtResource("5_ltqwb"),
+&"sauron_elite_02": ExtResource("5_ltqwb"),
+&"sauron_elite_03": ExtResource("5_ltqwb"),
+&"sauron_elite_04": ExtResource("5_ltqwb"),
+&"sauron_elite_05": ExtResource("5_ltqwb"),
+&"sauron_elite_06": ExtResource("5_ltqwb"),
+&"sauron_regular_01": ExtResource("4_v8t4p"),
+&"sauron_regular_02": ExtResource("4_v8t4p"),
+&"sauron_regular_03": ExtResource("4_v8t4p"),
+&"sauron_regular_04": ExtResource("4_v8t4p"),
+&"sauron_regular_05": ExtResource("4_v8t4p"),
+&"sauron_regular_06": ExtResource("4_v8t4p"),
+&"sauron_regular_07": ExtResource("4_v8t4p"),
+&"sauron_regular_08": ExtResource("4_v8t4p"),
+&"sauron_regular_09": ExtResource("4_v8t4p"),
+&"sauron_regular_10": ExtResource("4_v8t4p"),
+&"sauron_regular_11": ExtResource("4_v8t4p"),
+&"sauron_regular_12": ExtResource("4_v8t4p"),
+&"sauron_regular_13": ExtResource("4_v8t4p"),
+&"sauron_regular_14": ExtResource("4_v8t4p"),
+&"sauron_regular_15": ExtResource("4_v8t4p"),
+&"sauron_regular_16": ExtResource("4_v8t4p"),
+&"sauron_regular_17": ExtResource("4_v8t4p"),
+&"sauron_regular_18": ExtResource("4_v8t4p"),
+&"sauron_regular_19": ExtResource("4_v8t4p"),
+&"sauron_regular_20": ExtResource("4_v8t4p"),
+&"sauron_regular_21": ExtResource("4_v8t4p"),
+&"sauron_regular_22": ExtResource("4_v8t4p"),
+&"sauron_regular_23": ExtResource("4_v8t4p"),
+&"sauron_regular_24": ExtResource("4_v8t4p"),
+&"sauron_regular_25": ExtResource("4_v8t4p"),
+&"sauron_regular_26": ExtResource("4_v8t4p"),
+&"sauron_regular_27": ExtResource("4_v8t4p"),
+&"sauron_regular_28": ExtResource("4_v8t4p"),
+&"sauron_regular_29": ExtResource("4_v8t4p"),
+&"sauron_regular_30": ExtResource("4_v8t4p"),
+&"sauron_regular_31": ExtResource("4_v8t4p"),
+&"sauron_regular_32": ExtResource("4_v8t4p"),
+&"sauron_regular_33": ExtResource("4_v8t4p"),
+&"sauron_regular_34": ExtResource("4_v8t4p"),
+&"sauron_regular_35": ExtResource("4_v8t4p"),
+&"sauron_regular_36": ExtResource("4_v8t4p")
+})
 metadata/_custom_type_script = "uid://ilyxn3j1pvux"
