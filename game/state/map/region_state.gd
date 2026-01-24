@@ -42,27 +42,6 @@ func has_any_pieces() -> bool:
 	return _pieces.size() > 0
 
 
-func get_army_side() -> Enums.Side:
-	if _pieces.is_empty():
-		return Enums.Side.NONE
-	else:
-		return _pieces[0].piece_type.side
-
-
-func get_total_combat_value() -> int:
-	var result: int = 0
-	for piece: Piece in _pieces:
-		result += piece.combat_value
-	return result
-
-
-func get_total_leadership_value() -> int:
-	var result: int = 0
-	for piece: Piece in _pieces:
-		result += piece.leadership_value
-	return result
-
-
 func has_settlement() -> bool:
 	return region_data.structure in [
 		Enums.RegionStructure.TOWN,

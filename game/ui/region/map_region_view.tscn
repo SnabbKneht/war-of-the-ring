@@ -1,80 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3y3bb5axh587"]
+[gd_scene load_steps=3 format=3 uid="uid://b3y3bb5axh587"]
 
 [ext_resource type="Script" uid="uid://c5ch513rovxll" path="res://game/ui/region/map_region_view.gd" id="1_o6lks"]
 [ext_resource type="PackedScene" uid="uid://dh7s68clc7f3u" path="res://game/ui/structure/structure_view.tscn" id="2_f17np"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pjg4h"]
 
 [node name="MapRegionView" type="Node2D"]
 script = ExtResource("1_o6lks")
 
 [node name="StructureView" parent="." instance=ExtResource("2_f17np")]
-
-[node name="ArmyPanel" type="Panel" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 3.0
-offset_top = 14.0
-offset_right = 43.0
-offset_bottom = 54.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-tooltip_text = "regular
-regular
-regular
-regular
-regular
-elite
-elite
-elite
-leader
-leader"
-
-[node name="CombatLabel" type="Label" parent="ArmyPanel"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 30
-text = "10"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="LeadershipPanel" type="Panel" parent="ArmyPanel"]
-layout_mode = 0
-offset_left = 20.0
-offset_top = -23.0
-offset_right = 50.0
-offset_bottom = 7.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_pjg4h")
-
-[node name="LeadershipLabel" type="Label" parent="ArmyPanel/LeadershipPanel"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 25
-text = "5"
-horizontal_alignment = 1
-vertical_alignment = 1
