@@ -6,6 +6,14 @@ var _id: StringName
 var _piece_type: PieceType
 
 
+func get_id() -> StringName:
+	return _id
+
+
+func get_piece_type() -> PieceType:
+	return _piece_type
+
+
 func get_side() -> Enums.Side:
 	return _piece_type.side
 
