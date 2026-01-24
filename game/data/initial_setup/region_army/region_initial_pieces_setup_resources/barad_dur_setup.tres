@@ -1,12 +1,9 @@
-[gd_resource type="Resource" script_class="RegionInitialPiecesSetup" load_steps=5 format=3 uid="uid://bpbdjjf2vay10"]
+[gd_resource type="Resource" script_class="RegionInitialPiecesSetup" load_steps=2 format=3 uid="uid://bpbdjjf2vay10"]
 
-[ext_resource type="Script" uid="uid://c77r01bpric5s" path="res://game/data/pieces/piece_type.gd" id="1_7ll5w"]
-[ext_resource type="Resource" uid="uid://pmyxaua7iuue" path="res://game/data/pieces/piece_type_resources/sauron_regular.tres" id="2_y24dr"]
-[ext_resource type="Resource" uid="uid://my05o36iipad" path="res://game/data/pieces/piece_type_resources/sauron_elite.tres" id="3_ju80h"]
 [ext_resource type="Script" uid="uid://dhyigns7t1cbi" path="res://game/data/initial_setup/region_army/region_initial_pieces_setup.gd" id="4_xt8rj"]
 
 [resource]
 script = ExtResource("4_xt8rj")
 region_id = 95
-pieces = Array[ExtResource("1_7ll5w")]([ExtResource("2_y24dr"), ExtResource("2_y24dr"), ExtResource("2_y24dr"), ExtResource("2_y24dr"), ExtResource("3_ju80h")])
+piece_ids = Array[StringName]([&"sauron_regular_01", &"sauron_regular_02", &"sauron_regular_03", &"sauron_regular_04", &"sauron_elite_01"])
 metadata/_custom_type_script = "uid://dhyigns7t1cbi"

@@ -3,4 +3,4 @@ extends Resource
 
 
 @export var region_id: int
-@export var pieces: Array[PieceType]
+@export var piece_ids: Array[StringName]
