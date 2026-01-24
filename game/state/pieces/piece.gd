@@ -10,6 +10,10 @@ func get_id() -> StringName:
 	return _id
 
 
+func get_piece_type_id() -> StringName:
+	return _piece_type.id
+
+
 func get_piece_type() -> PieceType:
 	return _piece_type
 

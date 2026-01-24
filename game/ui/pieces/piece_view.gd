@@ -24,11 +24,11 @@ func display(pieces: Array[Piece]) -> void:
 
 
 func _add_to_free_peoples_list(piece: Piece) -> void:
-	free_peoples_list.add_item(UIData.get_piece_name(piece.piece_type.id))
+	free_peoples_list.add_item(UIData.get_piece_name(piece.get_piece_type_id()))
 
 
 func _add_to_shadow_list(piece: Piece) -> void:
-	shadow_list.add_item(UIData.get_piece_name(piece.piece_type.id))
+	shadow_list.add_item(UIData.get_piece_name(piece.get_piece_type_id()))
 
 
 func _clear_lists() -> void:

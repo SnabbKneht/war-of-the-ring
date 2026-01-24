@@ -7,7 +7,7 @@ var _shadow: Array[Piece] = []
 
 
 func add(piece: Piece) -> void:
-	match piece.piece_type.side:
+	match piece.get_side():
 		Enums.Side.FREE_PEOPLES:
 			_free_peoples.append(piece)
 		Enums.Side.SHADOW:
