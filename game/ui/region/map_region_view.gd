@@ -26,5 +26,5 @@ func _refresh_structure_view() -> void:
 		structure_view.display_fortification()
 		structure_view.show()
 	else:
-		structure_view.display_settlement(_region_state.controlled_by, _region_state.region_data.structure)
+		structure_view.display_settlement(_region_state.get_controlling_side(), _region_state.region_data.structure)
 		structure_view.show()

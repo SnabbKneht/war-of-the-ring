@@ -7,14 +7,14 @@ signal changed
 
 func _init(p_region_data: RegionData) -> void:
 	region_data = p_region_data
-	controlled_by = region_data.side
-	is_conquered = false
+	_controlled_by = region_data.side
+	_is_conquered = false
 
 
 var region_data: RegionData
 var _pieces: Array[Piece] = []
-var controlled_by: Enums.Side
-var is_conquered: bool
+var _controlled_by: Enums.Side
+var _is_conquered: bool
 
 
 func add_piece(piece: Piece) -> void:
@@ -42,6 +42,15 @@ func has_any_pieces() -> bool:
 	return _pieces.size() > 0
 
 
+func get_army_side() -> Enums.Side:
+	if _pieces.is_empty():
+		return Enums.Side.NONE
+	for piece: Piece in _pieces:
+		if piece.is_army_unit():
+			return piece.get_side()
+	return Enums.Side.NONE
+
+
 func has_settlement() -> bool:
 	return region_data.structure in [
 		Enums.RegionStructure.TOWN,
@@ -64,6 +73,16 @@ func has_fortification() -> bool:
 
 func belongs_to_any_nation() -> bool:
 	return region_data.nation != Enums.Nation.NONE
+
+
+func get_controlling_side() -> Enums.Side:
+	if has_settlement():
+		if _is_conquered:
+			return Enums.opposing_side(region_data.side)
+		else:
+			return region_data.side
+	else:
+		return Enums.Side.NONE
 
 
 func get_neighbor_count() -> int:

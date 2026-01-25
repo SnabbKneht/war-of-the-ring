@@ -22,6 +22,10 @@ func get_side() -> Enums.Side:
 	return _piece_type.side
 
 
+func is_army_unit() -> bool:
+	return _piece_type.category == PieceType.Category.REGULAR or _piece_type.category == PieceType.Category.ELITE
+
+
 func _init(p_id: StringName, p_piece_type: PieceType) -> void:
 	_id = p_id
 	_piece_type = p_piece_type

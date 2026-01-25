@@ -60,7 +60,7 @@ func _refresh_structure_details() -> void:
 func _refresh_structure_icon() -> void:
 	assert(_region_state.has_fortification() or _region_state.has_settlement())
 	if _region_state.has_settlement():
-		structure_icon.texture = UIData.get_settlement_icon(_region_state.controlled_by, _region_state.region_data.structure)
+		structure_icon.texture = UIData.get_settlement_icon(_region_state.get_controlling_side(), _region_state.region_data.structure)
 	elif _region_state.has_fortification():
 		structure_icon.texture = UIData.get_fortification_icon()
 
