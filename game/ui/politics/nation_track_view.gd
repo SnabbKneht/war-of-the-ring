@@ -55,14 +55,8 @@ func _refresh_war_label() -> void:
 
 
 func _refresh_button_availability() -> void:
-	if PoliticalLogic.can_advance_nation(_game_state, nation):
-		advance_button.disabled = false
-	else:
-		advance_button.disabled = true
-	if PoliticalLogic.can_move_back_nation(_game_state, nation):
-		move_back_button.disabled = false
-	else:
-		move_back_button.disabled = true
+	advance_button.disabled = not PoliticalLogic.can_advance_nation(_game_state, nation)
+	move_back_button.disabled = not PoliticalLogic.can_move_back_nation(_game_state, nation)
 
 
 func _on_advance_button_pressed() -> void:
