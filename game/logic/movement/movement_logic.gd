@@ -2,8 +2,11 @@ class_name MovementLogic
 extends RefCounted
 
 
-static func can_move_army(game_state: GameState, piece_ids: Array[StringName], from_region: int, to_region: int) -> bool:
-	return true
+static func can_move_army(game_state: GameState, piece_ids: Array[StringName], to_region: int) -> bool:
+	var side: Enums.Side = game_state.piece_pool.get_piece(piece_ids.front()).get_side()
+	var target_nation: Enums.Nation = GameData.get_region_by_id(to_region).nation
+	return RegionLogic.is_region_free_for_army(game_state, to_region, side) \
+	and _can_all_pieces_enter_nation(game_state, piece_ids, target_nation)
 
 
 static func _can_piece_enter_nation(game_state: GameState, piece_id: StringName, nation: Enums.Nation) -> bool:
