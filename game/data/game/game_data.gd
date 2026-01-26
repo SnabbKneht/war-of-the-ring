@@ -20,11 +20,17 @@ func get_all_region_data() -> Array[RegionData]:
 
 
 func get_region_by_id(id: int) -> RegionData:
+	assert(id in _region_by_id.keys())
 	return _region_by_id[id]
 
 
 func get_all_region_ids() -> Array[int]:
 	return _region_by_id.keys()
+
+
+func are_regions_adjacent(region_id_1: int, region_id_2: int) -> bool:
+	assert(region_id_1 in _region_by_id.keys())
+	return _region_by_id[region_id_1].neighbors.has(region_id_2)
 
 
 func get_all_piece_types() -> Array[PieceType]:
