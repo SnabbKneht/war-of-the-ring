@@ -2,6 +2,14 @@ class_name MovementLogic
 extends RefCounted
 
 
+static func get_valid_move_targets(game_state: GameState, piece_ids: Array[StringName], from_region: int) -> Array[int]:
+	var targets: Array[int] = []
+	for neighbor_id: int in GameData.get_region_by_id(from_region).neighbors:
+		if can_move_army(game_state, piece_ids, neighbor_id):
+			targets.append(neighbor_id)
+	return targets
+
+
 static func can_move_army(game_state: GameState, piece_ids: Array[StringName], to_region: int) -> bool:
 	var side: Enums.Side = game_state.piece_pool.get_piece(piece_ids.front()).get_side()
 	var target_nation: Enums.Nation = GameData.get_region_by_id(to_region).nation
