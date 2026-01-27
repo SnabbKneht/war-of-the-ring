@@ -3,6 +3,7 @@ extends Node
 
 
 signal region_selected(region_id: int)
+signal region_hovered(region_id: int)
 signal advance_nation_requested(nation: Enums.Nation)
 signal move_back_nation_requested(nation: Enums.Nation)
 
@@ -17,6 +18,7 @@ var _game_state: GameState
 
 func _ready() -> void:
 	map_view.region_selected.connect(_on_region_selected)
+	map_view.region_hovered.connect(_on_region_hovered)
 	political_track_view.advance_nation_requested.connect(_on_advance_nation_requested)
 	political_track_view.move_back_nation_requested.connect(_on_move_back_nation_requested)
 
@@ -39,6 +41,10 @@ func highlight_regions(region_ids: Array[int]) -> void:
 
 func _on_region_selected(region_id: int) -> void:
 	region_selected.emit(region_id)
+
+
+func _on_region_hovered(region_id: int) -> void:
+	region_hovered.emit(region_id)
 
 
 func _on_advance_nation_requested(nation: Enums.Nation) -> void:

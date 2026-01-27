@@ -16,7 +16,7 @@ void fragment() {
 	vec4 mask = texelFetch(region_mask, coord, 0);
 
 	if(mask.r > 0.5) {
-		COLOR = vec4(1.0, 1.0, 1.0, 1.0);
+		COLOR = vec4(1.0, 1.0, 1.0, 0.5);
 	} else {
 		COLOR = vec4(0.0, 0.0, 0.0, 0.0);
 	}

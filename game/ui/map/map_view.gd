@@ -3,6 +3,7 @@ extends Node2D
 
 
 signal region_selected(region_id: int)
+signal region_hovered(region_id: int)
 
 
 @onready var color_sprite: Sprite2D = $RegionColorMap
@@ -16,6 +17,7 @@ var _region_views: Dictionary[int, MapRegionView] = {}
 
 func _input(event: InputEvent) -> void:
 	_handle_region_click(event)
+	_handle_region_hover(event)
 
 
 func set_map_state(map_state: MapState) -> void:
@@ -35,11 +37,25 @@ func _init_region_views() -> void:
 
 func _handle_region_click(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed():
-		var image_pos: Vector2 = color_sprite.to_local(get_global_mouse_position()) + color_sprite.texture.get_size() * 0.5
-		var image_bounds: Rect2 = Rect2(Vector2.ZERO, color_sprite.texture.get_size())
-		if(not image_bounds.has_point(image_pos)):
-			return
-		var color_clicked: Color = color_sprite.texture.get_image().get_pixelv(image_pos)
-		if color_clicked in UIData.get_all_region_colors():
-			var region_id: int = UIData.get_region_id_by_color(color_clicked)
+		var region_id: int = _get_region_id_at_mouse_pos()
+		if region_id in GameData.get_all_region_ids():
 			region_selected.emit(region_id)
+
+
+func _handle_region_hover(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		var region_id: int = _get_region_id_at_mouse_pos()
+		region_hovered.emit(region_id)
+
+
+func _get_region_id_at_mouse_pos() -> int:
+	var image_pos: Vector2 = color_sprite.to_local(get_global_mouse_position()) + color_sprite.texture.get_size() * 0.5
+	var image_bounds: Rect2 = Rect2(Vector2.ZERO, color_sprite.texture.get_size())
+	if(not image_bounds.has_point(image_pos)):
+		return 0
+	var color: Color = color_sprite.texture.get_image().get_pixelv(image_pos)
+	if color in UIData.get_all_region_colors():
+		var region_id: int = UIData.get_region_id_by_color(color)
+		return region_id
+	else:
+		return 0
