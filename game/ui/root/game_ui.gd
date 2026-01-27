@@ -33,6 +33,10 @@ func show_region_details(region_state: RegionState) -> void:
 	region_details_view.show()
 
 
+func highlight_regions(region_ids: Array[int]) -> void:
+	map_view.highlight_regions(region_ids)
+
+
 func _on_region_selected(region_id: int) -> void:
 	region_selected.emit(region_id)
 

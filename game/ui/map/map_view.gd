@@ -6,6 +6,7 @@ signal region_selected(region_id: int)
 
 
 @onready var color_sprite: Sprite2D = $RegionColorMap
+@onready var region_highlight_overlay: RegionHighlighOverlay = $RegionHighlightOverlay
 @onready var regions_node: Node2D = $Regions
 
 
@@ -20,6 +21,10 @@ func _input(event: InputEvent) -> void:
 func set_map_state(map_state: MapState) -> void:
 	_map_state = map_state
 	_init_region_views()
+
+
+func highlight_regions(region_ids: Array[int]) -> void:
+	region_highlight_overlay.highlight(region_ids)
 
 
 func _init_region_views() -> void:

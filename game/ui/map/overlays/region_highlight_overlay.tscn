@@ -1,0 +1,17 @@
+[gd_scene load_steps=7 format=3 uid="uid://cwl1d6sko30s0"]
+
+[ext_resource type="Shader" uid="uid://j7hv8dqptb6w" path="res://shaders/region_highlight.gdshader" id="1_c2b7t"]
+[ext_resource type="Script" uid="uid://hbfq6bs8m0cy" path="res://game/ui/map/overlays/region_highlight_overlay.gd" id="1_kggy0"]
+[ext_resource type="Texture2D" uid="uid://crccqhxnhrll7" path="res://game/ui/assets/images/region_picker_grayscale.png" id="3_0mlny"]
+[ext_resource type="Texture2D" uid="uid://dbjxbhk5v87lp" path="res://shaders/empty_highlight.png" id="3_emd7o"]
+[ext_resource type="Texture2D" uid="uid://d2llijouvugt" path="res://game/ui/assets/images/region_view.png" id="4_nc45e"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nc45e"]
+shader = ExtResource("1_c2b7t")
+shader_parameter/id_map = ExtResource("3_0mlny")
+shader_parameter/region_mask = ExtResource("3_emd7o")
+
+[node name="RegionHighlightOverlay" type="Sprite2D"]
+material = SubResource("ShaderMaterial_nc45e")
+texture = ExtResource("4_nc45e")
+script = ExtResource("1_kggy0")
