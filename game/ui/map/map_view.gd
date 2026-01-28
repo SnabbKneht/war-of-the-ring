@@ -8,7 +8,8 @@ signal region_hovered(region_id: int)
 
 
 @onready var color_sprite: Sprite2D = $RegionColorMap
-@onready var region_highlight_overlay: RegionShaderOverlay = $RegionHighlightOverlay
+@onready var region_highlight_overlay: RegionShaderOverlay = $Overlays/RegionHighlightOverlay
+@onready var region_select_overlay: RegionShaderOverlay = $Overlays/RegionSelectOverlay
 @onready var regions_node: Node2D = $Regions
 
 
@@ -28,6 +29,14 @@ func set_map_state(map_state: MapState) -> void:
 
 func highlight_regions(region_ids: Array[int]) -> void:
 	region_highlight_overlay.enable(region_ids)
+
+
+func draw_selection_border(region_ids: Array[int]) -> void:
+	region_select_overlay.enable(region_ids)
+
+
+func clear_selection_border() -> void:
+	region_select_overlay.disable()
 
 
 func _init_region_views() -> void:

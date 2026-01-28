@@ -45,6 +45,14 @@ func highlight_regions(region_ids: Array[int]) -> void:
 	map_view.highlight_regions(region_ids)
 
 
+func draw_selection_border(region_ids: Array[int]) -> void:
+	map_view.draw_selection_border(region_ids)
+
+
+func clear_selection_border() -> void:
+	map_view.clear_selection_border()
+
+
 func _on_region_selected(region_id: int) -> void:
 	region_selected.emit(region_id)
 

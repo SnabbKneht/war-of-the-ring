@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://d2llijouvugt" path="res://game/ui/assets/images/region_view.png" id="3_taev8"]
 [ext_resource type="PackedScene" uid="uid://b3y3bb5axh587" path="res://game/ui/region/map_region_view.tscn" id="4_14mc1"]
 [ext_resource type="PackedScene" uid="uid://cwl1d6sko30s0" path="res://game/ui/map/overlays/region_shader_overlay.tscn" id="4_tdayu"]
+[ext_resource type="Material" uid="uid://4pyfnott0csh" path="res://game/ui/shaders/region/highlight/region_highlight_material.tres" id="5_eafrq"]
+[ext_resource type="Material" uid="uid://c25lcx44x3op3" path="res://game/ui/shaders/region/select/region_select_material.tres" id="6_38i3k"]
 
 [node name="MapView" type="Node2D" unique_id=1965174897]
 script = ExtResource("1_uxdsf")
@@ -15,7 +17,13 @@ texture = ExtResource("1_2fvys")
 [node name="Map" type="Sprite2D" parent="." unique_id=800739690]
 texture = ExtResource("3_taev8")
 
-[node name="RegionHighlightOverlay" parent="." unique_id=900208222 instance=ExtResource("4_tdayu")]
+[node name="Overlays" type="Node2D" parent="." unique_id=291274254]
+
+[node name="RegionHighlightOverlay" parent="Overlays" unique_id=900208222 instance=ExtResource("4_tdayu")]
+shader_material = ExtResource("5_eafrq")
+
+[node name="RegionSelectOverlay" parent="Overlays" unique_id=1617974426 instance=ExtResource("4_tdayu")]
+shader_material = ExtResource("6_38i3k")
 
 [node name="Regions" type="Node2D" parent="." unique_id=2122615350]
 

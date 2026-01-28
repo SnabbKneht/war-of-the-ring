@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cwl1d6sko30s0"]
 
-[ext_resource type="Shader" uid="uid://j7hv8dqptb6w" path="res://game/ui/shaders/region_highlight.gdshader" id="1_sbg2w"]
+[ext_resource type="Shader" uid="uid://j7hv8dqptb6w" path="res://game/ui/shaders/region/highlight/region_highlight.gdshader" id="1_sbg2w"]
 [ext_resource type="Texture2D" uid="uid://crccqhxnhrll7" path="res://game/ui/assets/images/region_picker_grayscale.png" id="2_qqbsl"]
-[ext_resource type="Texture2D" uid="uid://dbjxbhk5v87lp" path="res://game/ui/shaders/empty_highlight.png" id="3_62n61"]
+[ext_resource type="Texture2D" uid="uid://dbjxbhk5v87lp" path="res://game/ui/shaders/region/mask/empty_region_mask.png" id="3_62n61"]
 [ext_resource type="Texture2D" uid="uid://d2llijouvugt" path="res://game/ui/assets/images/region_view.png" id="4_i2n4a"]
 [ext_resource type="Script" uid="uid://hbfq6bs8m0cy" path="res://game/ui/map/overlays/region_shader_overlay.gd" id="5_4svaj"]
 

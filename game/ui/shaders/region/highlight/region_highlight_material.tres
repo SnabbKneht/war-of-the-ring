@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://4pyfnott0csh"]
+
+[ext_resource type="Shader" uid="uid://j7hv8dqptb6w" path="res://game/ui/shaders/region/highlight/region_highlight.gdshader" id="1_udce2"]
+[ext_resource type="Texture2D" uid="uid://crccqhxnhrll7" path="res://game/ui/assets/images/region_picker_grayscale.png" id="2_41s65"]
+[ext_resource type="Texture2D" uid="uid://dbjxbhk5v87lp" path="res://game/ui/shaders/region/mask/empty_region_mask.png" id="3_pyfmk"]
+
+[resource]
+shader = ExtResource("1_udce2")
+shader_parameter/id_map = ExtResource("2_41s65")
+shader_parameter/region_mask = ExtResource("3_pyfmk")
+shader_parameter/highlight_color = Color(1, 1, 1, 0.5019608)
