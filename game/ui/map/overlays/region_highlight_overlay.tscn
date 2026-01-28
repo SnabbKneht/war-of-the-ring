@@ -10,7 +10,7 @@
 shader = ExtResource("1_c2b7t")
 shader_parameter/id_map = ExtResource("3_0mlny")
 shader_parameter/region_mask = ExtResource("3_emd7o")
-shader_parameter/highlight_color = Vector4(1, 1, 1, 0.5)
+shader_parameter/highlight_color = Color(1, 1, 1, 0.5019608)
 
 [node name="RegionHighlightOverlay" type="Sprite2D" unique_id=1617974426]
 material = SubResource("ShaderMaterial_nc45e")

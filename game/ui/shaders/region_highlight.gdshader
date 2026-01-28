@@ -2,7 +2,7 @@ shader_type canvas_item;
 
 uniform sampler2D id_map;
 uniform sampler2D region_mask;
-uniform vec4 highlight_color;
+uniform vec4 highlight_color : source_color = vec4(1.0, 1.0, 1.0, 1.0);
 
 void vertex() {
 	// Called for every vertex the material is visible on.
