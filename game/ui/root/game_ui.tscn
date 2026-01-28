@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://d3w630rhniw7x"]
+[gd_scene format=3 uid="uid://d3w630rhniw7x"]
 
 [ext_resource type="Script" uid="uid://bk2hn6uskk1bi" path="res://game/ui/root/game_ui.gd" id="1_1bwvd"]
 [ext_resource type="PackedScene" uid="uid://cy4mk6xcuh1cf" path="res://game/ui/map/map_view.tscn" id="2_wm2qb"]
@@ -6,18 +6,18 @@
 [ext_resource type="PackedScene" uid="uid://cjxjskdp1viq7" path="res://game/ui/politics/political_track_view.tscn" id="4_www8g"]
 [ext_resource type="PackedScene" uid="uid://l1ap1jwj6kcr" path="res://game/ui/region/region_details_view.tscn" id="5_vvtaq"]
 
-[node name="GameUI" type="Node"]
+[node name="GameUI" type="Node" unique_id=811977218]
 script = ExtResource("1_1bwvd")
 
-[node name="MapView" parent="." instance=ExtResource("2_wm2qb")]
+[node name="MapView" parent="." unique_id=1001479617 instance=ExtResource("2_wm2qb")]
 
-[node name="MapCamera" parent="." instance=ExtResource("3_fpmk1")]
+[node name="MapCamera" parent="." unique_id=1128628084 instance=ExtResource("3_fpmk1")]
 
-[node name="HUD" type="CanvasLayer" parent="."]
+[node name="HUD" type="CanvasLayer" parent="." unique_id=53411897]
 
-[node name="PoliticalTrackView" parent="HUD" instance=ExtResource("4_www8g")]
+[node name="PoliticalTrackView" parent="HUD" unique_id=124119815 instance=ExtResource("4_www8g")]
 
-[node name="RegionDetailsView" parent="HUD" instance=ExtResource("5_vvtaq")]
+[node name="RegionDetailsView" parent="HUD" unique_id=237034357 instance=ExtResource("5_vvtaq")]
 visible = false
 anchors_preset = 2
 anchor_top = 1.0

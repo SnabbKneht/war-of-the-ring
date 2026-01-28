@@ -3,6 +3,7 @@ extends Node2D
 
 
 signal region_selected(region_id: int)
+signal region_deselected
 signal region_hovered(region_id: int)
 
 
@@ -40,6 +41,8 @@ func _handle_region_click(event: InputEvent) -> void:
 		var region_id: int = _get_region_id_at_mouse_pos()
 		if region_id in GameData.get_all_region_ids():
 			region_selected.emit(region_id)
+		else:
+			region_deselected.emit()
 
 
 func _handle_region_hover(event: InputEvent) -> void:
