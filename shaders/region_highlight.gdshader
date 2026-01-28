@@ -2,6 +2,7 @@ shader_type canvas_item;
 
 uniform sampler2D id_map;
 uniform sampler2D region_mask;
+uniform vec4 highlight_color;
 
 void vertex() {
 	// Called for every vertex the material is visible on.
@@ -16,7 +17,7 @@ void fragment() {
 	vec4 mask = texelFetch(region_mask, coord, 0);
 
 	if(mask.r > 0.5) {
-		COLOR = vec4(1.0, 1.0, 1.0, 0.5);
+		COLOR = highlight_color;
 	} else {
 		COLOR = vec4(0.0, 0.0, 0.0, 0.0);
 	}
