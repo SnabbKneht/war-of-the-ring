@@ -1,18 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://b8do8s5kxvps3"]
+[gd_scene format=3 uid="uid://b8do8s5kxvps3"]
 
 [ext_resource type="Script" uid="uid://ceaypferk5yw7" path="res://game/ui/pieces/piece_view.gd" id="1_rl60q"]
 
-[node name="PieceView" type="PanelContainer"]
+[node name="PieceView" type="PanelContainer" unique_id=1184754677]
 offset_right = 238.0
 offset_bottom = 147.0
 script = ExtResource("1_rl60q")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=934604153]
 layout_mode = 2
 
-[node name="FreePieces" type="ItemList" parent="HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=822405613]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FreeContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=1791942684]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="FreePieces" type="ItemList" parent="VBoxContainer/HBoxContainer/FreeContainer" unique_id=884086329]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 focus_mode = 0
 theme_override_font_sizes/font_size = 32
 item_count = 3
@@ -20,12 +29,47 @@ item_0/text = "elem1"
 item_1/text = "elem2"
 item_2/text = "elem3"
 
-[node name="ShadowPieces" type="ItemList" parent="HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/FreeContainer" unique_id=1674124077]
+layout_mode = 2
+
+[node name="MoveButton" type="Button" parent="VBoxContainer/HBoxContainer/FreeContainer/HBoxContainer" unique_id=1949543340]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Move"
+
+[node name="AttackButton" type="Button" parent="VBoxContainer/HBoxContainer/FreeContainer/HBoxContainer" unique_id=1669300020]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Attack"
+
+[node name="ShadowContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=1801086082]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ShadowPieces" type="ItemList" parent="VBoxContainer/HBoxContainer/ShadowContainer" unique_id=624783923]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 focus_mode = 0
 theme_override_font_sizes/font_size = 32
 item_count = 3
 item_0/text = "elem1"
 item_1/text = "elem2"
 item_2/text = "elem3"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/ShadowContainer" unique_id=187252143]
+layout_mode = 2
+
+[node name="MoveButton" type="Button" parent="VBoxContainer/HBoxContainer/ShadowContainer/HBoxContainer" unique_id=59243437]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Move"
+
+[node name="AttackButton" type="Button" parent="VBoxContainer/HBoxContainer/ShadowContainer/HBoxContainer" unique_id=580946756]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "Attack"

@@ -2,8 +2,10 @@ class_name PieceView
 extends PanelContainer
 
 
-@onready var free_peoples_list: ItemList = $HBoxContainer/FreePieces
-@onready var shadow_list: ItemList = $HBoxContainer/ShadowPieces
+@onready var free_peoples_list: ItemList = $VBoxContainer/HBoxContainer/FreeContainer/FreePieces
+@onready var shadow_list: ItemList = $VBoxContainer/HBoxContainer/ShadowContainer/ShadowPieces
+@onready var free_container: VBoxContainer = $VBoxContainer/HBoxContainer/FreeContainer
+@onready var shadow_container: VBoxContainer = $VBoxContainer/HBoxContainer/ShadowContainer
 
 
 var _pieces: Array[Piece]
@@ -18,9 +20,9 @@ func display(pieces: Array[Piece]) -> void:
 		else:
 			_add_to_shadow_list(piece)
 	if free_peoples_list.item_count > 0:
-		free_peoples_list.show()
+		free_container.show()
 	if shadow_list.item_count > 0:
-		shadow_list.show()
+		shadow_container.show()
 
 
 func _add_to_free_peoples_list(piece: Piece) -> void:
@@ -34,5 +36,5 @@ func _add_to_shadow_list(piece: Piece) -> void:
 func _clear_lists() -> void:
 	free_peoples_list.clear()
 	shadow_list.clear()
-	free_peoples_list.hide()
-	shadow_list.hide()
+	free_container.hide()
+	shadow_container.hide()
