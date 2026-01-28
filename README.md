@@ -1,3 +1,5 @@
+![Demo GIF](demo.gif)
+
 # Turn-Based Strategy Board Game Adaptation (Godot 4)
 
 A personal portfolio project implemented in Godot 4, focused on clean architecture, data-driven design, and maintainable game systems rather than visual polish.
