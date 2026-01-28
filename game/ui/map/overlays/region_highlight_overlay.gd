@@ -2,9 +2,6 @@ class_name RegionHighlighOverlay
 extends Sprite2D
 
 
-@export var region_id_map: Image
-
-
 func highlight(region_ids: Array[int]) -> void:
 	var new_image: Image = Image.create_empty(105, 1, false, Image.FORMAT_R8)
 	for i: int in range(105):

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cwl1d6sko30s0"]
+[gd_scene format=3 uid="uid://cwl1d6sko30s0"]
 
 [ext_resource type="Shader" uid="uid://j7hv8dqptb6w" path="res://shaders/region_highlight.gdshader" id="1_c2b7t"]
 [ext_resource type="Script" uid="uid://hbfq6bs8m0cy" path="res://game/ui/map/overlays/region_highlight_overlay.gd" id="1_kggy0"]
@@ -11,7 +11,7 @@ shader = ExtResource("1_c2b7t")
 shader_parameter/id_map = ExtResource("3_0mlny")
 shader_parameter/region_mask = ExtResource("3_emd7o")
 
-[node name="RegionHighlightOverlay" type="Sprite2D"]
+[node name="RegionHighlightOverlay" type="Sprite2D" unique_id=1617974426]
 material = SubResource("ShaderMaterial_nc45e")
 texture = ExtResource("4_nc45e")
 script = ExtResource("1_kggy0")
