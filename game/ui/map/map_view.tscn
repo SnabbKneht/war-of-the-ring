@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cp61lbqe8ihyv" path="res://game/ui/map/map_view.gd" id="1_uxdsf"]
 [ext_resource type="Texture2D" uid="uid://d2llijouvugt" path="res://game/ui/assets/images/region_view.png" id="3_taev8"]
 [ext_resource type="PackedScene" uid="uid://b3y3bb5axh587" path="res://game/ui/region/map_region_view.tscn" id="4_14mc1"]
-[ext_resource type="PackedScene" uid="uid://cwl1d6sko30s0" path="res://game/ui/map/overlays/region_highlight_overlay.tscn" id="4_tdayu"]
+[ext_resource type="PackedScene" uid="uid://cwl1d6sko30s0" path="res://game/ui/map/overlays/region_shader_overlay.tscn" id="4_tdayu"]
 
 [node name="MapView" type="Node2D" unique_id=1965174897]
 script = ExtResource("1_uxdsf")
