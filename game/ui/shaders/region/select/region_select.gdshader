@@ -31,6 +31,8 @@ void fragment() {
 		
 		if(is_border) {
 			COLOR = border_color;
+		} else {
+			COLOR = vec4(0.0, 0.0, 0.0, 0.0);
 		}
 	} else {
 		COLOR = vec4(0.0, 0.0, 0.0, 0.0);
