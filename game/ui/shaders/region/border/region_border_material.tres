@@ -8,5 +8,5 @@
 shader = ExtResource("1_clvwg")
 shader_parameter/id_map = ExtResource("2_hk7j8")
 shader_parameter/region_mask = ExtResource("3_pgjhh")
-shader_parameter/border_color = Color(1, 0, 1, 1)
-shader_parameter/border_thickness = 5
+shader_parameter/border_color = Color(1, 0.73333335, 0, 1)
+shader_parameter/border_thickness = 8

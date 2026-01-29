@@ -30,7 +30,7 @@ void fragment() {
 		}
 		
 		if(is_border) {
-			COLOR = border_color;
+			COLOR = border_color * vec4(1.0, 1.0, 1.0, sin(TIME * 5.0) * 0.5 + 0.5);
 		} else {
 			COLOR = vec4(0.0, 0.0, 0.0, 0.0);
 		}
