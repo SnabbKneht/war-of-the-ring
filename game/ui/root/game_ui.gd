@@ -41,16 +41,16 @@ func hide_region_details() -> void:
 	region_details_view.hide()
 
 
-func highlight_regions(region_ids: Array[int]) -> void:
-	map_view.highlight_regions(region_ids)
+func add_region_overlay(region_ids: Array[int], overlay: UIEnums.RegionOverlay) -> void:
+	map_view.add_region_overlay(region_ids, overlay)
 
 
-func draw_selection_border(region_ids: Array[int]) -> void:
-	map_view.draw_selection_border(region_ids)
+func remove_region_overlay(region_ids: Array[int], overlay: UIEnums.RegionOverlay) -> void:
+	map_view.remove_region_overlay(region_ids, overlay)
 
 
-func clear_selection_border() -> void:
-	map_view.clear_selection_border()
+func clear_region_overlay(overlay: UIEnums.RegionOverlay) -> void:
+	map_view.clear_region_overlay(overlay)
 
 
 func _on_region_selected(region_id: int) -> void:

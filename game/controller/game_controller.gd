@@ -19,16 +19,18 @@ func _ready() -> void:
 
 func _on_region_selected(region_id: int) -> void:
 	game_ui.show_region_details(game_state.map_state.get_region_state_by_id(region_id))
-	game_ui.draw_selection_border([region_id])
+	game_ui.clear_region_overlay(UIEnums.RegionOverlay.SELECTION)
+	game_ui.add_region_overlay([region_id], UIEnums.RegionOverlay.SELECTION)
 
 
 func _on_region_deselected() -> void:
 	game_ui.hide_region_details()
-	game_ui.clear_selection_border()
+	game_ui.clear_region_overlay(UIEnums.RegionOverlay.SELECTION)
 
 
 func _on_region_hovered(region_id: int) -> void:
-	game_ui.highlight_regions([region_id])
+	game_ui.clear_region_overlay(UIEnums.RegionOverlay.HIGHLIGHT)
+	game_ui.add_region_overlay([region_id], UIEnums.RegionOverlay.HIGHLIGHT)
 
 
 func _on_advance_nation_requested(nation: Enums.Nation) -> void:
