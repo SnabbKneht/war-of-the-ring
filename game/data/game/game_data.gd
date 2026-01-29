@@ -28,6 +28,10 @@ func get_all_region_ids() -> Array[int]:
 	return _region_by_id.keys()
 
 
+func get_neighbors(region_id: int) -> Array[int]:
+	return _region_by_id[region_id].neighbors
+
+
 func are_regions_adjacent(region_id_1: int, region_id_2: int) -> bool:
 	assert(region_id_1 in _region_by_id.keys())
 	return _region_by_id[region_id_1].neighbors.has(region_id_2)

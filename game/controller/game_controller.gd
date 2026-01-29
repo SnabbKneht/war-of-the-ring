@@ -13,6 +13,8 @@ func _ready() -> void:
 	game_ui.region_selected.connect(_on_region_selected)
 	game_ui.region_deselected.connect(_on_region_deselected)
 	game_ui.region_hovered.connect(_on_region_hovered)
+	game_ui.neighbor_icon_mouse_entered.connect(_on_neighbor_icon_mouse_entered)
+	game_ui.neighbor_icon_mouse_exited.connect(_on_neighbor_icon_mouse_exited)
 	game_ui.advance_nation_requested.connect(_on_advance_nation_requested)
 	game_ui.move_back_nation_requested.connect(_on_move_back_nation_requested)
 
@@ -31,6 +33,15 @@ func _on_region_deselected() -> void:
 func _on_region_hovered(region_id: int) -> void:
 	game_ui.clear_region_overlay(UIEnums.RegionOverlay.HIGHLIGHT)
 	game_ui.add_region_overlay([region_id], UIEnums.RegionOverlay.HIGHLIGHT)
+
+
+func _on_neighbor_icon_mouse_entered(region_id: int) -> void:
+	game_ui.clear_region_overlay(UIEnums.RegionOverlay.NEIGHBOR)
+	game_ui.add_region_overlay(GameData.get_neighbors(region_id), UIEnums.RegionOverlay.NEIGHBOR)
+
+
+func _on_neighbor_icon_mouse_exited(_region_id: int) -> void:
+	game_ui.clear_region_overlay(UIEnums.RegionOverlay.NEIGHBOR)
 
 
 func _on_advance_nation_requested(nation: Enums.Nation) -> void:

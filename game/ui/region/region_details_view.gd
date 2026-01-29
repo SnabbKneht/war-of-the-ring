@@ -2,6 +2,10 @@ class_name RegionDetailsView
 extends PanelContainer
 
 
+signal neighbor_icon_mouse_entered(region_id: int)
+signal neighbor_icon_mouse_exited(region_id: int)
+
+
 @onready var region_label: Label = $MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/RegionLabel
 @onready var nation_icon: TextureRect = $MarginContainer/NationIcon
 @onready var neighbor_icon: TextureRect = $MarginContainer/NeighborIcon
@@ -75,3 +79,11 @@ func _refresh_region_piece_view() -> void:
 		region_piece_view.show()
 	else:
 		region_piece_view.hide()
+
+
+func _on_neighbor_icon_mouse_entered() -> void:
+	neighbor_icon_mouse_entered.emit(_region_state.get_id())
+
+
+func _on_neighbor_icon_mouse_exited() -> void:
+	neighbor_icon_mouse_exited.emit(_region_state.get_id())

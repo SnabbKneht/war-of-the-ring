@@ -17,6 +17,10 @@ var _controlled_by: Enums.Side
 var _is_conquered: bool
 
 
+func get_id() -> int:
+	return region_data.id
+
+
 func add_piece(piece: Piece) -> void:
 	_pieces.append(piece)
 	changed.emit()
