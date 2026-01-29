@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://c25lcx44x3op3"]
 
-[ext_resource type="Shader" uid="uid://clp503c7hmpbm" path="res://game/ui/shaders/region/select/region_select.gdshader" id="1_clvwg"]
+[ext_resource type="Shader" uid="uid://clp503c7hmpbm" path="res://game/ui/shaders/region/border/region_border.gdshader" id="1_clvwg"]
 [ext_resource type="Texture2D" uid="uid://crccqhxnhrll7" path="res://game/ui/assets/images/region_picker_grayscale.png" id="2_hk7j8"]
 [ext_resource type="Texture2D" uid="uid://dbjxbhk5v87lp" path="res://game/ui/shaders/region/mask/empty_region_mask.png" id="3_pgjhh"]
 
