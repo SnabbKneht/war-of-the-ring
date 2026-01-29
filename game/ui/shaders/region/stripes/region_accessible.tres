@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c2hvliwu65mjh"]
+
+[ext_resource type="Shader" uid="uid://b741qre64iwdk" path="res://game/ui/shaders/region/stripes/region_stripes.gdshader" id="1_rsu1s"]
+[ext_resource type="Texture2D" uid="uid://crccqhxnhrll7" path="res://game/ui/assets/images/region_picker_grayscale.png" id="2_yuepc"]
+[ext_resource type="Texture2D" uid="uid://dbjxbhk5v87lp" path="res://game/ui/shaders/region/mask/empty_region_mask.png" id="3_nyype"]
+
+[resource]
+shader = ExtResource("1_rsu1s")
+shader_parameter/id_map = ExtResource("2_yuepc")
+shader_parameter/region_mask = ExtResource("3_nyype")
+shader_parameter/stripes_layout = 2
+shader_parameter/stripes_color = Color(0, 1, 0, 1)
+shader_parameter/stripe_width = 8
+shader_parameter/gap_width = 16
+shader_parameter/animated = true
+shader_parameter/animation_speed = 30.0000004321348
