@@ -8,5 +8,5 @@
 shader = ExtResource("1_c5kri")
 shader_parameter/id_map = ExtResource("2_voq4d")
 shader_parameter/region_mask = ExtResource("3_o4p1e")
-shader_parameter/dot_color = Color(0, 1, 0, 1)
+shader_parameter/dot_color = Color(0.72156864, 0.011764706, 0.011764706, 1)
 shader_parameter/dot_size = 8

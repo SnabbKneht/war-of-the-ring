@@ -12,5 +12,5 @@ shader_parameter/stripes_layout = 2
 shader_parameter/stripes_color = Color(0.72156864, 0.011764706, 0.011764706, 1)
 shader_parameter/stripe_width = 8
 shader_parameter/gap_width = 16
-shader_parameter/animated = true
+shader_parameter/animated = false
 shader_parameter/animation_speed = 30.0000004321348
