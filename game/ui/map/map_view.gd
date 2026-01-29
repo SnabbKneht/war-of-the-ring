@@ -17,7 +17,7 @@ var _map_state: MapState
 var _region_views: Dictionary[int, MapRegionView] = {}
 
 
-func _input(event: InputEvent) -> void:
+func _unhandled_input(event: InputEvent) -> void:
 	_handle_region_click(event)
 	_handle_region_hover(event)
 
