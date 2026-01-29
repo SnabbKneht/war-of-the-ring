@@ -8,7 +8,9 @@ extends PanelContainer
 @onready var shadow_container: VBoxContainer = $VBoxContainer/HBoxContainer/ShadowContainer
 
 
-var _pieces: Array[Piece]
+var _pieces: Array[Piece] = []
+var _fp_list_idx_to_piece: Dictionary[int, Piece] = {}
+var _sh_list_idx_to_piece: Dictionary[int, Piece] = {}
 
 
 func display(pieces: Array[Piece]) -> void:
@@ -26,15 +28,19 @@ func display(pieces: Array[Piece]) -> void:
 
 
 func _add_to_free_peoples_list(piece: Piece) -> void:
-	free_peoples_list.add_item(UIData.get_piece_name(piece.get_piece_type_id()))
+	var index: int = free_peoples_list.add_item(UIData.get_piece_name(piece.get_piece_type_id()))
+	_fp_list_idx_to_piece[index] = piece
 
 
 func _add_to_shadow_list(piece: Piece) -> void:
-	shadow_list.add_item(UIData.get_piece_name(piece.get_piece_type_id()))
+	var index: int = shadow_list.add_item(UIData.get_piece_name(piece.get_piece_type_id()))
+	_sh_list_idx_to_piece[index] = piece
 
 
 func _clear_lists() -> void:
 	free_peoples_list.clear()
 	shadow_list.clear()
+	_fp_list_idx_to_piece.clear()
+	_sh_list_idx_to_piece.clear()
 	free_container.hide()
 	shadow_container.hide()
