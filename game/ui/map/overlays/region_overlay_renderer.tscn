@@ -3,13 +3,17 @@
 [ext_resource type="Script" uid="uid://dnrpe728gqteo" path="res://game/ui/map/overlays/region_overlay_renderer.gd" id="1_b6jvw"]
 [ext_resource type="PackedScene" uid="uid://cwl1d6sko30s0" path="res://game/ui/map/overlays/region_shader_overlay.tscn" id="2_w2smt"]
 [ext_resource type="Material" uid="uid://4pyfnott0csh" path="res://game/ui/shaders/region/highlight/region_highlight_material.tres" id="3_lj7uk"]
+[ext_resource type="Material" uid="uid://dyane08y4kssr" path="res://game/ui/shaders/nation/nation_overlay_material.tres" id="3_w2smt"]
 [ext_resource type="Material" uid="uid://c25lcx44x3op3" path="res://game/ui/shaders/region/border/region_border_material.tres" id="4_y8c1l"]
 [ext_resource type="Material" uid="uid://d04m4sc8oapni" path="res://game/ui/shaders/region/stripes/region_neighbors.tres" id="5_3f366"]
 
 [node name="RegionOverlayRenderer" type="Node2D" unique_id=1649560037]
 script = ExtResource("1_b6jvw")
 
-[node name="HighlightOverlay" parent="." unique_id=1617974426 instance=ExtResource("2_w2smt")]
+[node name="NationOverlay" parent="." unique_id=1617974426 instance=ExtResource("2_w2smt")]
+shader_material = ExtResource("3_w2smt")
+
+[node name="HighlightOverlay" parent="." unique_id=255488769 instance=ExtResource("2_w2smt")]
 shader_material = ExtResource("3_lj7uk")
 
 [node name="SelectionOverlay" parent="." unique_id=1957468318 instance=ExtResource("2_w2smt")]
