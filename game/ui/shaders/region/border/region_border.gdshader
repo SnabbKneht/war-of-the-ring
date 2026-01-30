@@ -2,8 +2,14 @@ shader_type canvas_item;
 
 uniform sampler2D id_map;
 uniform sampler2D region_mask;
+
+group_uniforms BorderCustomization;
 uniform vec4 border_color : source_color = vec4(1.0, 0.0, 0.0, 1.0);
 uniform int border_thickness : hint_range(1, 10, 1);
+
+group_uniforms Animation;
+uniform bool animated = false;
+uniform float animation_speed : hint_range(1.0, 30.0, 0.1);
 
 void vertex() {
 	// Called for every vertex the material is visible on.
@@ -30,7 +36,8 @@ void fragment() {
 		}
 		
 		if(is_border) {
-			COLOR = border_color * vec4(1.0, 1.0, 1.0, sin(TIME * 5.0) * 0.5 + 0.5);
+			float alpha = animated ? sin(TIME * animation_speed) * 0.5 + 0.5 : border_color.w;
+			COLOR = border_color * vec4(1.0, 1.0, 1.0, alpha);
 		} else {
 			COLOR = vec4(0.0, 0.0, 0.0, 0.0);
 		}
