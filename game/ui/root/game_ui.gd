@@ -20,13 +20,13 @@ var _game_state: GameState
 
 
 func _ready() -> void:
-	map_view.region_selected.connect(_on_region_selected)
-	map_view.region_deselected.connect(_on_region_deselected)
-	map_view.region_hovered.connect(_on_region_hovered)
-	region_details_view.neighbor_highlight_requested.connect(_on_neighbor_highlight_requested)
-	region_details_view.neighbor_highlight_cancelled.connect(_on_neighbor_highlight_cancelled)
-	political_track_view.advance_nation_requested.connect(_on_advance_nation_requested)
-	political_track_view.move_back_nation_requested.connect(_on_move_back_nation_requested)
+	map_view.region_selected.connect(func(region_id: int) -> void: region_selected.emit(region_id))
+	map_view.region_deselected.connect(func() -> void: region_deselected.emit())
+	map_view.region_hovered.connect(func(region_id: int) -> void: region_hovered.emit(region_id))
+	region_details_view.neighbor_highlight_requested.connect(func(region_id: int) -> void: neighbor_highlight_requested.emit(region_id))
+	region_details_view.neighbor_highlight_cancelled.connect(func(region_id: int) -> void: neighbor_highlight_cancelled.emit(region_id))
+	political_track_view.advance_nation_requested.connect(func(nation: Enums.Nation) -> void: advance_nation_requested.emit(nation))
+	political_track_view.move_back_nation_requested.connect(func(nation: Enums.Nation) -> void: move_back_nation_requested.emit(nation))
 
 
 func set_game_state(game_state: GameState) -> void:
@@ -55,31 +55,3 @@ func remove_region_overlay(region_ids: Array[int], overlay: UIEnums.RegionOverla
 
 func clear_region_overlay(overlay: UIEnums.RegionOverlay) -> void:
 	map_view.clear_region_overlay(overlay)
-
-
-func _on_region_selected(region_id: int) -> void:
-	region_selected.emit(region_id)
-
-
-func _on_region_deselected() -> void:
-	region_deselected.emit()
-
-
-func _on_region_hovered(region_id: int) -> void:
-	region_hovered.emit(region_id)
-
-
-func _on_neighbor_highlight_requested(region_id: int) -> void:
-	neighbor_highlight_requested.emit(region_id)
-
-
-func _on_neighbor_highlight_cancelled(region_id: int) -> void:
-	neighbor_highlight_cancelled.emit(region_id)
-
-
-func _on_advance_nation_requested(nation: Enums.Nation) -> void:
-	advance_nation_requested.emit(nation)
-
-
-func _on_move_back_nation_requested(nation: Enums.Nation) -> void:
-	move_back_nation_requested.emit(nation)

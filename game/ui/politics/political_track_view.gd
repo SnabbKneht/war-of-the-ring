@@ -28,13 +28,5 @@ func _init_nation_views() -> void:
 		nation_view.set_game_state(_game_state)
 		nation_view.set_nation_state(_political_state.get_nation_state(nation_view.nation))
 		_nation_views[nation_view.nation] = nation_view
-		nation_view.advance_nation_requested.connect(_on_advance_nation_requested)
-		nation_view.move_back_nation_requested.connect(_on_move_back_nation_requested)
-
-
-func _on_advance_nation_requested(nation: Enums.Nation) -> void:
-	advance_nation_requested.emit(nation)
-
-
-func _on_move_back_nation_requested(nation: Enums.Nation) -> void:
-	move_back_nation_requested.emit(nation)
+		nation_view.advance_nation_requested.connect(func(nation: Enums.Nation) -> void: advance_nation_requested.emit(nation))
+		nation_view.move_back_nation_requested.connect(func(nation: Enums.Nation) -> void: move_back_nation_requested.emit(nation))
