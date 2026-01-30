@@ -5,8 +5,8 @@ extends Node
 signal region_selected(region_id: int)
 signal region_deselected
 signal region_hovered(region_id: int)
-signal neighbor_icon_mouse_entered(region_id: int)
-signal neighbor_icon_mouse_exited(region_id: int)
+signal neighbor_highlight_requested(region_id: int)
+signal neighbor_highlight_cancelled(region_id: int)
 signal advance_nation_requested(nation: Enums.Nation)
 signal move_back_nation_requested(nation: Enums.Nation)
 
@@ -23,8 +23,8 @@ func _ready() -> void:
 	map_view.region_selected.connect(_on_region_selected)
 	map_view.region_deselected.connect(_on_region_deselected)
 	map_view.region_hovered.connect(_on_region_hovered)
-	region_details_view.neighbor_icon_mouse_entered.connect(_on_neighbor_icon_mouse_entered)
-	region_details_view.neighbor_icon_mouse_exited.connect(_on_neighbor_icon_mouse_exited)
+	region_details_view.neighbor_highlight_requested.connect(_on_neighbor_highlight_requested)
+	region_details_view.neighbor_highlight_cancelled.connect(_on_neighbor_highlight_cancelled)
 	political_track_view.advance_nation_requested.connect(_on_advance_nation_requested)
 	political_track_view.move_back_nation_requested.connect(_on_move_back_nation_requested)
 
@@ -69,12 +69,12 @@ func _on_region_hovered(region_id: int) -> void:
 	region_hovered.emit(region_id)
 
 
-func _on_neighbor_icon_mouse_entered(region_id: int) -> void:
-	neighbor_icon_mouse_entered.emit(region_id)
+func _on_neighbor_highlight_requested(region_id: int) -> void:
+	neighbor_highlight_requested.emit(region_id)
 
 
-func _on_neighbor_icon_mouse_exited(region_id: int) -> void:
-	neighbor_icon_mouse_exited.emit(region_id)
+func _on_neighbor_highlight_cancelled(region_id: int) -> void:
+	neighbor_highlight_cancelled.emit(region_id)
 
 
 func _on_advance_nation_requested(nation: Enums.Nation) -> void:
