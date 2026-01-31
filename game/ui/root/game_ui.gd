@@ -20,13 +20,13 @@ var _game_state: GameState
 
 
 func _ready() -> void:
-	map_view.region_selected.connect(func(region_id: int) -> void: region_selected.emit(region_id))
-	map_view.region_deselected.connect(func() -> void: region_deselected.emit())
-	map_view.region_hovered.connect(func(region_id: int) -> void: region_hovered.emit(region_id))
-	region_details_view.neighbor_highlight_requested.connect(func(region_id: int) -> void: neighbor_highlight_requested.emit(region_id))
-	region_details_view.neighbor_highlight_cancelled.connect(func(region_id: int) -> void: neighbor_highlight_cancelled.emit(region_id))
-	political_track_view.advance_nation_requested.connect(func(nation: Enums.Nation) -> void: advance_nation_requested.emit(nation))
-	political_track_view.move_back_nation_requested.connect(func(nation: Enums.Nation) -> void: move_back_nation_requested.emit(nation))
+	map_view.region_selected.connect(region_selected.emit)
+	map_view.region_deselected.connect(region_deselected.emit)
+	map_view.region_hovered.connect(region_hovered.emit)
+	region_details_view.neighbor_highlight_requested.connect(neighbor_highlight_requested.emit)
+	region_details_view.neighbor_highlight_cancelled.connect(neighbor_highlight_cancelled.emit)
+	political_track_view.advance_nation_requested.connect(advance_nation_requested.emit)
+	political_track_view.move_back_nation_requested.connect(move_back_nation_requested.emit)
 
 
 func set_game_state(game_state: GameState) -> void:
