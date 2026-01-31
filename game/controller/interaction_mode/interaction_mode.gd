@@ -1,6 +1,6 @@
 @abstract
 class_name InteractionMode
-extends Node
+extends RefCounted
 
 
 @abstract func enter() -> void
