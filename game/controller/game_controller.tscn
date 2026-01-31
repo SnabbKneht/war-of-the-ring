@@ -2,8 +2,10 @@
 
 [ext_resource type="Script" uid="uid://dn4j5nidpurxj" path="res://game/controller/game_controller.gd" id="1_8ttgu"]
 [ext_resource type="PackedScene" uid="uid://d3w630rhniw7x" path="res://game/ui/root/game_ui.tscn" id="2_31mgp"]
+[ext_resource type="PackedScene" uid="uid://nph6tmxacy6x" path="res://game/controller/interaction_mode/default_mode.tscn" id="2_m0xuw"]
 
 [node name="GameController" type="Node" unique_id=61236690]
 script = ExtResource("1_8ttgu")
+default_mode_scene = ExtResource("2_m0xuw")
 
 [node name="GameUI" parent="." unique_id=1582353785 instance=ExtResource("2_31mgp")]

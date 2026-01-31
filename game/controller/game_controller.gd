@@ -2,46 +2,18 @@ class_name GameController
 extends Node
 
 
+@export var default_mode_scene: PackedScene
+
+
 @onready var game_ui: GameUI = $GameUI
 var game_state: GameState
+var _current_mode: InteractionMode
 
 
 func _ready() -> void:
 	game_state = GameStateFactory.create()
 	game_ui.set_game_state(game_state)
-	
-	game_ui.region_selected.connect(_on_region_selected)
-	game_ui.region_deselected.connect(_on_region_deselected)
-	game_ui.region_hovered.connect(_on_region_hovered)
-	game_ui.neighbor_highlight_requested.connect(_on_neighbor_highlight_requested)
-	game_ui.neighbor_highlight_cancelled.connect(_on_neighbor_highlight_cancelled)
-	game_ui.advance_nation_requested.connect(_on_advance_nation_requested)
-	game_ui.move_back_nation_requested.connect(_on_move_back_nation_requested)
-
-
-func _on_region_selected(region_id: int) -> void:
-	game_ui.show_region_details(game_state.map_state.get_region_state_by_id(region_id))
-	game_ui.clear_region_overlay(UIEnums.RegionOverlay.SELECTION)
-	game_ui.add_region_overlay([region_id], UIEnums.RegionOverlay.SELECTION)
-
-
-func _on_region_deselected() -> void:
-	game_ui.hide_region_details()
-	game_ui.clear_region_overlay(UIEnums.RegionOverlay.SELECTION)
-
-
-func _on_region_hovered(region_id: int) -> void:
-	game_ui.clear_region_overlay(UIEnums.RegionOverlay.HIGHLIGHT)
-	game_ui.add_region_overlay([region_id], UIEnums.RegionOverlay.HIGHLIGHT)
-
-
-func _on_neighbor_highlight_requested(region_id: int) -> void:
-	game_ui.clear_region_overlay(UIEnums.RegionOverlay.NEIGHBOR)
-	game_ui.add_region_overlay(GameData.get_neighbors(region_id), UIEnums.RegionOverlay.NEIGHBOR)
-
-
-func _on_neighbor_highlight_cancelled(_region_id: int) -> void:
-	game_ui.clear_region_overlay(UIEnums.RegionOverlay.NEIGHBOR)
+	_switch_to_default_mode()
 
 
 func _on_advance_nation_requested(nation: Enums.Nation) -> void:
@@ -56,3 +28,12 @@ func _on_move_back_nation_requested(nation: Enums.Nation) -> void:
 	if action.can_apply(game_state):
 		action.apply(game_state)
 		# Add action to history
+
+
+func _switch_to_default_mode() -> void:
+	var mode_scene: Node = default_mode_scene.instantiate()
+	add_child(mode_scene)
+	_current_mode = mode_scene as DefaultMode
+	_current_mode.enter(game_state, game_ui)
+	_current_mode.advance_nation_requested.connect(_on_advance_nation_requested)
+	_current_mode.move_back_nation_requested.connect(_on_move_back_nation_requested)
