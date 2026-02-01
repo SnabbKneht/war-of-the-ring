@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dgfc3nxex1s76"]
+
+[ext_resource type="Script" uid="uid://oe8ujssopql" path="res://game/ui/interaction_modes/default/default_hud.gd" id="1_6shbs"]
+[ext_resource type="PackedScene" uid="uid://cjxjskdp1viq7" path="res://game/ui/politics/political_track_view.tscn" id="1_w5xg0"]
+[ext_resource type="PackedScene" uid="uid://l1ap1jwj6kcr" path="res://game/ui/region/region_details_view.tscn" id="2_6shbs"]
+
+[node name="DefaultHUD" type="CanvasLayer" unique_id=380695641]
+script = ExtResource("1_6shbs")
+
+[node name="PoliticalTrackView" parent="." unique_id=176338305 instance=ExtResource("1_w5xg0")]
+
+[node name="RegionDetailsView" parent="." unique_id=820143251 instance=ExtResource("2_6shbs")]
+visible = false
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -840.0
+offset_bottom = 0.0
+grow_vertical = 0
