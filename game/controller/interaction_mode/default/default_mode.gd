@@ -9,6 +9,10 @@ signal move_back_nation_requested(nation: Enums.Nation)
 @onready var _default_hud: DefaultHUD = $DefaultHUD
 
 
+var _game_state: GameState
+var _game_ui: GameUI
+
+
 func _ready() -> void:
 	_default_hud.set_game_state(_game_state)
 	_game_ui.region_hovered.connect(_on_region_hovered)

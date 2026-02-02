@@ -32,8 +32,6 @@ func _on_move_back_nation_requested(nation: Enums.Nation) -> void:
 
 func _switch_to_default_mode() -> void:
 	var mode_scene: Node = default_mode_scene.instantiate()
-	var test: DefaultMode = mode_scene as DefaultMode
-	assert(mode_scene != null)
 	(mode_scene as DefaultMode).configure(game_state, game_ui)
 	add_child(mode_scene)
 	_current_mode = mode_scene as DefaultMode

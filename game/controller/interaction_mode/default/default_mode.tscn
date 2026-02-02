@@ -1,10 +1,9 @@
-[gd_scene format=3 uid="uid://nph6tmxacy6x"]
+[gd_scene format=3 uid="uid://vuhf5pjuf8m5"]
 
 [ext_resource type="Script" uid="uid://dvg4ydtm08gnh" path="res://game/controller/interaction_mode/default/default_mode.gd" id="1_h2f7u"]
 [ext_resource type="PackedScene" uid="uid://dgfc3nxex1s76" path="res://game/ui/interaction_modes/default/default_hud.tscn" id="2_q6f3c"]
 
-[node name="DefaultMode" type="Node" unique_id=1688034644]
+[node name="DefaultMode" type="Node" unique_id=178982585]
 script = ExtResource("1_h2f7u")
-metadata/_custom_type_script = "uid://dvg4ydtm08gnh"
 
 [node name="DefaultHUD" parent="." unique_id=380695641 instance=ExtResource("2_q6f3c")]
