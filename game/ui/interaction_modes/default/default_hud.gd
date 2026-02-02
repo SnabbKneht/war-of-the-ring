@@ -6,7 +6,7 @@ signal advance_nation_requested(nation: Enums.Nation)
 signal move_back_nation_requested(nation: Enums.Nation)
 signal neighbor_highlight_requested(region_id: int)
 signal neighbor_highlight_cancelled(region_id: int)
-signal army_movement_mode_requested(piece_ids: Array[StringName])
+signal army_movement_mode_requested(piece_ids: Array[StringName], from_region_id: int)
 
 
 @onready var _political_track_view: PoliticalTrackView = $PoliticalTrackView

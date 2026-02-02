@@ -6,6 +6,7 @@
 [ext_resource type="Material" uid="uid://dyane08y4kssr" path="res://game/ui/shaders/nation/nation_overlay_material.tres" id="3_w2smt"]
 [ext_resource type="Material" uid="uid://c25lcx44x3op3" path="res://game/ui/shaders/region/border/region_border_material.tres" id="4_y8c1l"]
 [ext_resource type="Material" uid="uid://d04m4sc8oapni" path="res://game/ui/shaders/region/stripes/region_neighbors.tres" id="5_3f366"]
+[ext_resource type="Material" uid="uid://c2hvliwu65mjh" path="res://game/ui/shaders/region/stripes/region_accessible.tres" id="5_lj7uk"]
 
 [node name="RegionOverlayRenderer" type="Node2D" unique_id=1649560037]
 script = ExtResource("1_b6jvw")
@@ -15,6 +16,9 @@ shader_material = ExtResource("3_w2smt")
 
 [node name="HighlightOverlay" parent="." unique_id=255488769 instance=ExtResource("2_w2smt")]
 shader_material = ExtResource("3_lj7uk")
+
+[node name="AccessibleOverlay" parent="." unique_id=396946859 instance=ExtResource("2_w2smt")]
+shader_material = ExtResource("5_lj7uk")
 
 [node name="SelectionOverlay" parent="." unique_id=1957468318 instance=ExtResource("2_w2smt")]
 shader_material = ExtResource("4_y8c1l")

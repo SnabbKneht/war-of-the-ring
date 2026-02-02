@@ -3,6 +3,7 @@ extends Node2D
 
 
 @onready var highlight_overlay: RegionShaderOverlay = $HighlightOverlay
+@onready var accessible_overlay: RegionShaderOverlay = $AccessibleOverlay
 @onready var selection_overlay: RegionShaderOverlay = $SelectionOverlay
 @onready var neighbor_overlay: RegionShaderOverlay = $NeighborOverlay
 
@@ -41,6 +42,8 @@ func _refresh(overlay: UIEnums.RegionOverlay) -> void:
 			overlay_node = highlight_overlay
 		UIEnums.RegionOverlay.SELECTION:
 			overlay_node = selection_overlay
+		UIEnums.RegionOverlay.ACCESSIBLE:
+			overlay_node = accessible_overlay
 		UIEnums.RegionOverlay.NEIGHBOR:
 			overlay_node = neighbor_overlay
 		_:

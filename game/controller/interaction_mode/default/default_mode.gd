@@ -4,7 +4,7 @@ extends InteractionMode
 
 signal advance_nation_requested(nation: Enums.Nation)
 signal move_back_nation_requested(nation: Enums.Nation)
-signal army_movement_mode_requested(piece_ids: Array[StringName])
+signal army_movement_mode_requested(piece_ids: Array[StringName], from_region_id: int)
 
 
 @onready var _default_hud: DefaultHUD = $DefaultHUD

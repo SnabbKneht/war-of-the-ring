@@ -4,7 +4,7 @@ extends PanelContainer
 
 signal neighbor_highlight_requested(region_id: int)
 signal neighbor_highlight_cancelled(region_id: int)
-signal army_movement_mode_requested(piece_ids: Array[StringName])
+signal army_movement_mode_requested(piece_ids: Array[StringName], from_region_id: int)
 
 
 @onready var region_label: Label = $MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/MarginContainer/RegionLabel
@@ -20,7 +20,8 @@ var _region_state: RegionState
 
 
 func _ready() -> void:
-	region_piece_view.army_movement_mode_requested.connect(army_movement_mode_requested.emit)
+	var reemit: Callable = func(piece_ids: Array[StringName]) -> void: army_movement_mode_requested.emit(piece_ids, _region_state.get_id())
+	region_piece_view.army_movement_mode_requested.connect(reemit)
 
 
 func set_region_state(region_state: RegionState) -> void:

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bd73gncd8op0e"]
+
+[ext_resource type="Script" uid="uid://ba56y48hpq1dk" path="res://game/controller/interaction_mode/army_movement/army_movement_mode.gd" id="1_1stj2"]
+[ext_resource type="PackedScene" uid="uid://41fvq54ym5c6" path="res://game/ui/interaction_modes/army_movement/army_movement_hud.tscn" id="2_oa46s"]
+
+[node name="ArmyMovementMode" type="Node" unique_id=2039324343]
+script = ExtResource("1_1stj2")
+
+[node name="ArmyMovementHUD" parent="." unique_id=1080849077 instance=ExtResource("2_oa46s")]
