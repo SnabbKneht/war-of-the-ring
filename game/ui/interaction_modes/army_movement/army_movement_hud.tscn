@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://41fvq54ym5c6"]
+
+[ext_resource type="Script" uid="uid://cmfhlsw5ssp8x" path="res://game/ui/interaction_modes/army_movement/army_movement_hud.gd" id="1_leek4"]
+
+[node name="ArmyMovementHUD" type="CanvasLayer" unique_id=1080849077]
+script = ExtResource("1_leek4")

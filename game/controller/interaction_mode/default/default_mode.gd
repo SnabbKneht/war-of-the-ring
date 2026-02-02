@@ -10,22 +10,19 @@ signal move_back_nation_requested(nation: Enums.Nation)
 
 
 func _ready() -> void:
+	_default_hud.set_game_state(_game_state)
+	_game_ui.region_hovered.connect(_on_region_hovered)
+	_game_ui.region_selected.connect(_on_region_selected)
+	_game_ui.region_deselected.connect(_on_region_deselected)
 	_default_hud.advance_nation_requested.connect(advance_nation_requested.emit)
 	_default_hud.move_back_nation_requested.connect(move_back_nation_requested.emit)
 	_default_hud.neighbor_highlight_requested.connect(_on_neighbor_highlight_requested)
 	_default_hud.neighbor_highlight_cancelled.connect(_on_neighbor_highlight_cancelled)
 
 
-func enter(p_game_state: GameState, p_game_ui: GameUI) -> void:
-	super(p_game_state, p_game_ui)
-	_default_hud.set_game_state(_game_state)
-	_game_ui.region_hovered.connect(_on_region_hovered)
-	_game_ui.region_selected.connect(_on_region_selected)
-	_game_ui.region_deselected.connect(_on_region_deselected)
-
-
-func exit() -> void:
-	pass
+func configure(p_game_state: GameState, p_game_ui: GameUI) -> void:
+	_game_state = p_game_state
+	_game_ui = p_game_ui
 
 
 func on_cancel() -> void:
