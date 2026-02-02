@@ -38,12 +38,14 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
+theme_override_font_sizes/font_size = 32
 text = "Move"
 
 [node name="AttackButtonFP" type="Button" parent="VBoxContainer/HBoxContainer/FreeContainer/HBoxContainer" unique_id=1669300020]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
+theme_override_font_sizes/font_size = 32
 text = "Attack"
 
 [node name="ShadowContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer" unique_id=1801086082]
@@ -70,12 +72,14 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
+theme_override_font_sizes/font_size = 32
 text = "Move"
 
 [node name="AttackButtonSH" type="Button" parent="VBoxContainer/HBoxContainer/ShadowContainer/HBoxContainer" unique_id=580946756]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
+theme_override_font_sizes/font_size = 32
 text = "Attack"
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer/FreeContainer/HBoxContainer/MoveButtonFP" to="." method="_on_move_button_fp_pressed"]
