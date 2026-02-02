@@ -34,13 +34,13 @@ item_2/text = "elem3"
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/FreeContainer" unique_id=1674124077]
 layout_mode = 2
 
-[node name="MoveButton" type="Button" parent="VBoxContainer/HBoxContainer/FreeContainer/HBoxContainer" unique_id=1949543340]
+[node name="MoveButtonFP" type="Button" parent="VBoxContainer/HBoxContainer/FreeContainer/HBoxContainer" unique_id=1949543340]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Move"
 
-[node name="AttackButton" type="Button" parent="VBoxContainer/HBoxContainer/FreeContainer/HBoxContainer" unique_id=1669300020]
+[node name="AttackButtonFP" type="Button" parent="VBoxContainer/HBoxContainer/FreeContainer/HBoxContainer" unique_id=1669300020]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
@@ -66,14 +66,17 @@ item_2/text = "elem3"
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/ShadowContainer" unique_id=187252143]
 layout_mode = 2
 
-[node name="MoveButton" type="Button" parent="VBoxContainer/HBoxContainer/ShadowContainer/HBoxContainer" unique_id=59243437]
+[node name="MoveButtonSH" type="Button" parent="VBoxContainer/HBoxContainer/ShadowContainer/HBoxContainer" unique_id=59243437]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Move"
 
-[node name="AttackButton" type="Button" parent="VBoxContainer/HBoxContainer/ShadowContainer/HBoxContainer" unique_id=580946756]
+[node name="AttackButtonSH" type="Button" parent="VBoxContainer/HBoxContainer/ShadowContainer/HBoxContainer" unique_id=580946756]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 text = "Attack"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/FreeContainer/HBoxContainer/MoveButtonFP" to="." method="_on_move_button_fp_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/ShadowContainer/HBoxContainer/MoveButtonSH" to="." method="_on_move_button_sh_pressed"]

@@ -2,10 +2,15 @@ class_name PieceView
 extends PanelContainer
 
 
+signal army_movement_mode_requested(piece_ids: Array[StringName])
+
+
 @onready var free_peoples_list: ItemList = $VBoxContainer/HBoxContainer/FreeContainer/FreePieces
 @onready var shadow_list: ItemList = $VBoxContainer/HBoxContainer/ShadowContainer/ShadowPieces
 @onready var free_container: VBoxContainer = $VBoxContainer/HBoxContainer/FreeContainer
 @onready var shadow_container: VBoxContainer = $VBoxContainer/HBoxContainer/ShadowContainer
+@onready var move_button_fp: Button = $VBoxContainer/HBoxContainer/FreeContainer/HBoxContainer/MoveButtonFP
+@onready var move_button_sh: Button = $VBoxContainer/HBoxContainer/ShadowContainer/HBoxContainer/MoveButtonSH
 
 
 var _pieces: Array[Piece] = []
@@ -44,3 +49,21 @@ func _clear_lists() -> void:
 	_sh_list_idx_to_piece.clear()
 	free_container.hide()
 	shadow_container.hide()
+
+
+func _on_move_button_fp_pressed() -> void:
+	if free_peoples_list.get_selected_items().is_empty():
+		return
+	var selected_piece_ids: Array[StringName] = []
+	for idx: int in free_peoples_list.get_selected_items():
+		selected_piece_ids.append(_fp_list_idx_to_piece[idx].get_id())
+	army_movement_mode_requested.emit(selected_piece_ids)
+
+
+func _on_move_button_sh_pressed() -> void:
+	if shadow_list.get_selected_items().is_empty():
+		return
+	var selected_piece_ids: Array[StringName] = []
+	for idx: int in shadow_list.get_selected_items():
+		selected_piece_ids.append(_sh_list_idx_to_piece[idx].get_id())
+	army_movement_mode_requested.emit(selected_piece_ids)

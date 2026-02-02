@@ -4,6 +4,7 @@ extends InteractionMode
 
 signal advance_nation_requested(nation: Enums.Nation)
 signal move_back_nation_requested(nation: Enums.Nation)
+signal army_movement_mode_requested(piece_ids: Array[StringName])
 
 
 @onready var _default_hud: DefaultHUD = $DefaultHUD
@@ -22,6 +23,7 @@ func _ready() -> void:
 	_default_hud.move_back_nation_requested.connect(move_back_nation_requested.emit)
 	_default_hud.neighbor_highlight_requested.connect(_on_neighbor_highlight_requested)
 	_default_hud.neighbor_highlight_cancelled.connect(_on_neighbor_highlight_cancelled)
+	_default_hud.army_movement_mode_requested.connect(army_movement_mode_requested.emit)
 
 
 func configure(p_game_state: GameState, p_game_ui: GameUI) -> void:
