@@ -32,7 +32,7 @@ func _on_move_back_nation_requested(nation: Enums.Nation) -> void:
 
 
 func _on_army_movement_requested(piece_ids: Array[StringName], from_region_id: int, to_region_id: int) -> void:
-	print("Army movement requested.")
+	print("Requested movement of %s from %d to %d" % [piece_ids, from_region_id, to_region_id])
 	_switch_to_default_mode()
 
 
