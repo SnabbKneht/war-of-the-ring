@@ -31,6 +31,12 @@ func configure(p_game_state: GameState, p_game_ui: GameUI) -> void:
 	_game_ui = p_game_ui
 
 
+func exit() -> void:
+	_game_ui.clear_region_overlay(UIEnums.RegionOverlay.NEIGHBOR)
+	_game_ui.clear_region_overlay(UIEnums.RegionOverlay.SELECTION)
+	_game_ui.clear_region_overlay(UIEnums.RegionOverlay.HIGHLIGHT)
+
+
 func on_cancel() -> void:
 	pass
 

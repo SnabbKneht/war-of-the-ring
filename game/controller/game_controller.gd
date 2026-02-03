@@ -41,6 +41,9 @@ func _on_army_movement_mode_requested(piece_ids: Array[StringName], from_region_
 
 
 func _switch_to_default_mode() -> void:
+	if _current_mode:
+		_current_mode.exit()
+		_current_mode.queue_free()
 	var mode_scene: Node = default_mode_scene.instantiate()
 	(mode_scene as DefaultMode).configure(game_state, game_ui)
 	add_child(mode_scene)
@@ -50,7 +53,8 @@ func _switch_to_default_mode() -> void:
 	_current_mode.army_movement_mode_requested.connect(_on_army_movement_mode_requested)
 
 
-func _switch_to_army_movement_mode(piece_ids: Array[StringName], from_region_id) -> void:
+func _switch_to_army_movement_mode(piece_ids: Array[StringName], from_region_id: int) -> void:
+	_current_mode.exit()
 	_current_mode.queue_free()
 	var mode_scene: Node = army_movement_mode_scene.instantiate()
 	(mode_scene as ArmyMovementMode).configure(game_state, game_ui, piece_ids, from_region_id)
