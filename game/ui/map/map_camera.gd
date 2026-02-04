@@ -25,7 +25,7 @@ func _handle_panning(event: InputEvent) -> void:
 
 
 func _handle_zoom(event: InputEvent) -> void:
-	if event is InputEventMouseButton:
+	if event is InputEventMouseButton and get_viewport().gui_get_hovered_control() == null:
 		match event.button_index:
 			MOUSE_BUTTON_WHEEL_UP:
 				_zoom_in()
