@@ -32,7 +32,10 @@ func _on_move_back_nation_requested(nation: Enums.Nation) -> void:
 
 
 func _on_army_movement_requested(piece_ids: Array[StringName], from_region_id: int, to_region_id: int) -> void:
-	print("Requested movement of %s from %d to %d" % [piece_ids, from_region_id, to_region_id])
+	var action: GameAction = MovementLogic.create_move_army_action(piece_ids, from_region_id, to_region_id)
+	if action.can_apply(game_state):
+		action.apply(game_state)
+		# Add action to history
 	_switch_to_default_mode()
 
 

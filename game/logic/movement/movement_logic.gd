@@ -2,6 +2,10 @@ class_name MovementLogic
 extends RefCounted
 
 
+static func create_move_army_action(piece_ids: Array[StringName], from_region_id: int, to_region_id: int) -> MoveArmyAction:
+	return MoveArmyAction.new(piece_ids, from_region_id, to_region_id)
+
+
 static func get_valid_move_targets(game_state: GameState, piece_ids: Array[StringName], from_region: int) -> Array[int]:
 	var targets: Array[int] = []
 	for neighbor_id: int in GameData.get_region_by_id(from_region).neighbors:
