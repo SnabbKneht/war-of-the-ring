@@ -31,6 +31,12 @@ func add_pieces(pieces: Array[Piece]) -> void:
 	changed.emit()
 
 
+func remove_piece(piece: Piece) -> void:
+	assert(_pieces.has(piece))
+	_pieces.erase(piece)
+	changed.emit()
+
+
 func remove_pieces(pieces: Array[Piece]) -> void:
 	for p: Piece in pieces:
 		assert(_pieces.has(p))

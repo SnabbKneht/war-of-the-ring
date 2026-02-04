@@ -16,3 +16,11 @@ func add_piece_to_region(id: int, piece: Piece) -> void:
 
 func add_pieces_to_region(id: int, pieces: Array[Piece]) -> void:
 	get_region_state_by_id(id).add_pieces(pieces)
+
+
+func remove_piece_from_region(id: int, piece: Piece) -> void:
+	get_region_state_by_id(id).remove_piece(piece)
+
+
+func remove_pieces_from_region(id: int, pieces: Array[Piece]) -> void:
+	get_region_state_by_id(id).remove_pieces(pieces)
