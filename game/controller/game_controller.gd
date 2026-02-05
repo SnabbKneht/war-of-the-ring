@@ -64,3 +64,4 @@ func _switch_to_army_movement_mode(piece_ids: Array[StringName], from_region_id:
 	add_child(mode_scene)
 	_current_mode = mode_scene as ArmyMovementMode
 	_current_mode.army_movement_requested.connect(_on_army_movement_requested)
+	_current_mode.cancelled.connect(_switch_to_default_mode)

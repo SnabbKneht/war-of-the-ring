@@ -3,6 +3,7 @@ extends InteractionMode
 
 
 signal army_movement_requested(piece_ids: Array[StringName], from_region_id: int, to_region_id: int)
+signal cancelled
 
 
 var _game_state: GameState
@@ -20,6 +21,11 @@ func _ready() -> void:
 	_game_ui.add_region_overlay(_accessible_regions, UIEnums.RegionOverlay.ACCESSIBLE)
 
 
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("ui_cancel"):
+		on_cancel()
+
+
 func configure(p_game_state: GameState, p_game_ui: GameUI, p_piece_ids: Array[StringName], p_from_region_id: int) -> void:
 	_game_state = p_game_state
 	_game_ui = p_game_ui
@@ -33,7 +39,7 @@ func exit() -> void:
 
 
 func on_cancel() -> void:
-	pass
+	cancelled.emit()
 
 
 func _on_region_hovered(region_id: int) -> void:
