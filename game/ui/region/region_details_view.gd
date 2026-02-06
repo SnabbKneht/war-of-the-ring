@@ -13,9 +13,10 @@ signal army_movement_mode_requested(piece_ids: Array[StringName], from_region_id
 @onready var structure_icon: TextureRect = $MarginContainer/VBoxContainer/StructureContainer/PanelContainer/StructureIcon
 @onready var structure_container: HBoxContainer = $MarginContainer/VBoxContainer/StructureContainer
 @onready var stronghold_piece_view: PieceView = $MarginContainer/VBoxContainer/StructureContainer/StrongholdPieceView
-@onready var region_piece_view: PieceView = $MarginContainer/VBoxContainer/PanelContainer/VBoxContainer/RegionPieceView
-@onready var move_button: Button = $MarginContainer/VBoxContainer/PanelContainer/VBoxContainer/ArmyButtons/MoveButton
-@onready var attack_button: Button = $MarginContainer/VBoxContainer/PanelContainer/VBoxContainer/ArmyButtons/AttackButton
+@onready var piece_panel: PanelContainer = $MarginContainer/VBoxContainer/PiecePanel
+@onready var region_piece_view: PieceView = $MarginContainer/VBoxContainer/PiecePanel/VBoxContainer/RegionPieceView
+@onready var move_button: Button = $MarginContainer/VBoxContainer/PiecePanel/VBoxContainer/ArmyButtons/MoveButton
+@onready var attack_button: Button = $MarginContainer/VBoxContainer/PiecePanel/VBoxContainer/ArmyButtons/AttackButton
 
 
 var _region_state: RegionState
@@ -84,9 +85,9 @@ func _refresh_stronghold_piece_view() -> void:
 func _refresh_region_piece_view() -> void:
 	if _region_state.has_any_pieces():
 		region_piece_view.display(_region_state.get_pieces())
-		region_piece_view.show()
+		piece_panel.show()
 	else:
-		region_piece_view.hide()
+		piece_panel.hide()
 
 
 func _refresh_army_buttons_availability() -> void:

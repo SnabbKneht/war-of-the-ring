@@ -60,27 +60,27 @@ stretch_mode = 5
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=225181686]
+[node name="PiecePanel" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=225181686]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PanelContainer" unique_id=23704513]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PiecePanel" unique_id=23704513]
 layout_mode = 2
 
-[node name="RegionPieceView" parent="MarginContainer/VBoxContainer/PanelContainer/VBoxContainer" unique_id=1906525612 instance=ExtResource("2_p1y7a")]
+[node name="RegionPieceView" parent="MarginContainer/VBoxContainer/PiecePanel/VBoxContainer" unique_id=1906525612 instance=ExtResource("2_p1y7a")]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ArmyButtons" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PanelContainer/VBoxContainer" unique_id=1180343508]
+[node name="ArmyButtons" type="VBoxContainer" parent="MarginContainer/VBoxContainer/PiecePanel/VBoxContainer" unique_id=1180343508]
 layout_mode = 2
 
-[node name="MoveButton" type="Button" parent="MarginContainer/VBoxContainer/PanelContainer/VBoxContainer/ArmyButtons" unique_id=1461907839]
+[node name="MoveButton" type="Button" parent="MarginContainer/VBoxContainer/PiecePanel/VBoxContainer/ArmyButtons" unique_id=1461907839]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 32
 text = "Move"
 
-[node name="AttackButton" type="Button" parent="MarginContainer/VBoxContainer/PanelContainer/VBoxContainer/ArmyButtons" unique_id=2007557785]
+[node name="AttackButton" type="Button" parent="MarginContainer/VBoxContainer/PiecePanel/VBoxContainer/ArmyButtons" unique_id=2007557785]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 32
@@ -104,7 +104,7 @@ texture = SubResource("PlaceholderTexture2D_4eppg")
 expand_mode = 1
 stretch_mode = 4
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/PanelContainer/VBoxContainer/ArmyButtons/MoveButton" to="." method="_on_move_button_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/PanelContainer/VBoxContainer/ArmyButtons/AttackButton" to="." method="_on_attack_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/PiecePanel/VBoxContainer/ArmyButtons/MoveButton" to="." method="_on_move_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/PiecePanel/VBoxContainer/ArmyButtons/AttackButton" to="." method="_on_attack_button_pressed"]
 [connection signal="mouse_entered" from="MarginContainer/NeighborIcon" to="." method="_on_neighbor_icon_mouse_entered"]
 [connection signal="mouse_exited" from="MarginContainer/NeighborIcon" to="." method="_on_neighbor_icon_mouse_exited"]
