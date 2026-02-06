@@ -13,15 +13,16 @@ signal army_movement_mode_requested(piece_ids: Array[StringName], from_region_id
 @onready var structure_icon: TextureRect = $MarginContainer/VBoxContainer/StructureContainer/PanelContainer/StructureIcon
 @onready var structure_container: HBoxContainer = $MarginContainer/VBoxContainer/StructureContainer
 @onready var stronghold_piece_view: PieceView = $MarginContainer/VBoxContainer/StructureContainer/StrongholdPieceView
-@onready var region_piece_view: PieceView = $MarginContainer/VBoxContainer/RegionPieceView
+@onready var region_piece_view: PieceView = $MarginContainer/VBoxContainer/PanelContainer/VBoxContainer/RegionPieceView
+@onready var move_button: Button = $MarginContainer/VBoxContainer/PanelContainer/VBoxContainer/ArmyButtons/MoveButton
+@onready var attack_button: Button = $MarginContainer/VBoxContainer/PanelContainer/VBoxContainer/ArmyButtons/AttackButton
 
 
 var _region_state: RegionState
 
 
 func _ready() -> void:
-	var reemit: Callable = func(piece_ids: Array[StringName]) -> void: army_movement_mode_requested.emit(piece_ids, _region_state.get_id())
-	region_piece_view.army_movement_mode_requested.connect(reemit)
+	region_piece_view.selection_changed.connect(_refresh_army_buttons_availability)
 
 
 func set_region_state(region_state: RegionState) -> void:
@@ -35,6 +36,7 @@ func _refresh() -> void:
 	_refresh_neighbor_icon()
 	_refresh_structure_details()
 	_refresh_region_piece_view()
+	_refresh_army_buttons_availability()
 
 
 func _refresh_region_label() -> void:
@@ -87,9 +89,25 @@ func _refresh_region_piece_view() -> void:
 		region_piece_view.hide()
 
 
+func _refresh_army_buttons_availability() -> void:
+	if region_piece_view.get_selected_piece_ids().is_empty():
+		move_button.disabled = true
+	else:
+		move_button.disabled = false
+	attack_button.disabled = true
+
+
 func _on_neighbor_icon_mouse_entered() -> void:
 	neighbor_highlight_requested.emit(_region_state.get_id())
 
 
 func _on_neighbor_icon_mouse_exited() -> void:
 	neighbor_highlight_cancelled.emit(_region_state.get_id())
+
+
+func _on_move_button_pressed() -> void:
+	army_movement_mode_requested.emit(region_piece_view.get_selected_piece_ids(), _region_state.get_id())
+
+
+func _on_attack_button_pressed() -> void:
+	pass # Replace with function body.

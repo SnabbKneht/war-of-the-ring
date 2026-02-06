@@ -2,15 +2,13 @@ class_name PieceView
 extends PanelContainer
 
 
-signal army_movement_mode_requested(piece_ids: Array[StringName])
+signal selection_changed
 
 
 @onready var free_peoples_list: ItemList = $VBoxContainer/HBoxContainer/FreeContainer/FreePieces
 @onready var shadow_list: ItemList = $VBoxContainer/HBoxContainer/ShadowContainer/ShadowPieces
 @onready var free_container: VBoxContainer = $VBoxContainer/HBoxContainer/FreeContainer
 @onready var shadow_container: VBoxContainer = $VBoxContainer/HBoxContainer/ShadowContainer
-@onready var move_button_fp: Button = $VBoxContainer/HBoxContainer/FreeContainer/HBoxContainer/MoveButtonFP
-@onready var move_button_sh: Button = $VBoxContainer/HBoxContainer/ShadowContainer/HBoxContainer/MoveButtonSH
 
 
 var _pieces: Array[Piece] = []
@@ -32,6 +30,16 @@ func display(pieces: Array[Piece]) -> void:
 		shadow_container.show()
 
 
+func get_selected_piece_ids() -> Array[StringName]:
+	assert(free_peoples_list.get_selected_items().is_empty() or shadow_list.get_selected_items().is_empty())
+	var selected_piece_ids: Array[StringName] = []
+	for idx: int in free_peoples_list.get_selected_items():
+		selected_piece_ids.append(_fp_list_idx_to_piece[idx].get_id())
+	for idx: int in shadow_list.get_selected_items():
+		selected_piece_ids.append(_sh_list_idx_to_piece[idx].get_id())
+	return selected_piece_ids
+
+
 func _add_to_free_peoples_list(piece: Piece) -> void:
 	var index: int = free_peoples_list.add_item(UIData.get_piece_name(piece.get_piece_type_id()))
 	_fp_list_idx_to_piece[index] = piece
@@ -51,19 +59,11 @@ func _clear_lists() -> void:
 	shadow_container.hide()
 
 
-func _on_move_button_fp_pressed() -> void:
-	if free_peoples_list.get_selected_items().is_empty():
-		return
-	var selected_piece_ids: Array[StringName] = []
-	for idx: int in free_peoples_list.get_selected_items():
-		selected_piece_ids.append(_fp_list_idx_to_piece[idx].get_id())
-	army_movement_mode_requested.emit(selected_piece_ids)
+func _on_fp_list_multi_selected(_index: int, _selected: bool) -> void:
+	shadow_list.deselect_all()
+	selection_changed.emit()
 
 
-func _on_move_button_sh_pressed() -> void:
-	if shadow_list.get_selected_items().is_empty():
-		return
-	var selected_piece_ids: Array[StringName] = []
-	for idx: int in shadow_list.get_selected_items():
-		selected_piece_ids.append(_sh_list_idx_to_piece[idx].get_id())
-	army_movement_mode_requested.emit(selected_piece_ids)
+func _on_sh_list_multi_selected(_index: int, _selected: bool) -> void:
+	free_peoples_list.deselect_all()
+	selection_changed.emit()
