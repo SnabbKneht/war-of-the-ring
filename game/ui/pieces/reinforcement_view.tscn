@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bg0cia6vnhfk8"]
+
+[ext_resource type="PackedScene" uid="uid://b8do8s5kxvps3" path="res://game/ui/pieces/piece_view.tscn" id="1_hmeer"]
+
+[node name="ReinforcementView" type="PanelContainer" unique_id=844699902]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1920129329]
+layout_mode = 2
+columns = 4
+
+[node name="PieceView" parent="GridContainer" unique_id=1184754677 instance=ExtResource("1_hmeer")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PieceView2" parent="GridContainer" unique_id=50489177 instance=ExtResource("1_hmeer")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PieceView3" parent="GridContainer" unique_id=608448143 instance=ExtResource("1_hmeer")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PieceView4" parent="GridContainer" unique_id=2130078513 instance=ExtResource("1_hmeer")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PieceView5" parent="GridContainer" unique_id=443895744 instance=ExtResource("1_hmeer")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PieceView6" parent="GridContainer" unique_id=1537059422 instance=ExtResource("1_hmeer")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PieceView7" parent="GridContainer" unique_id=1652620643 instance=ExtResource("1_hmeer")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PieceView8" parent="GridContainer" unique_id=922696751 instance=ExtResource("1_hmeer")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
