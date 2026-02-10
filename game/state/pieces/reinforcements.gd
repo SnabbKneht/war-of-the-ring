@@ -2,16 +2,20 @@ class_name Reinforcements
 extends RefCounted
 
 
-var _free_peoples: Array[Piece] = []
-var _shadow: Array[Piece] = []
+var _nation_to_pieces: Dictionary[Enums.Nation, Array] = {}
+
+
+func _init() -> void:
+	for nation: Enums.Nation in Enums.Nation.values():
+		_nation_to_pieces[nation] = []
+
+
+func get_reinforcements_by_nation(nation: Enums.Nation) -> Array[Piece]:
+	return _nation_to_pieces[nation]
 
 
 func add(piece: Piece) -> void:
-	match piece.get_side():
-		Enums.Side.FREE_PEOPLES:
-			_free_peoples.append(piece)
-		Enums.Side.SHADOW:
-			_shadow.append(piece)
+	_nation_to_pieces[piece.get_nation()].append(piece)
 
 
 func add_all(pieces: Array[Piece]) -> void:
@@ -20,8 +24,5 @@ func add_all(pieces: Array[Piece]) -> void:
 
 
 func remove(piece: Piece) -> void:
-	assert(_free_peoples.has(piece) or _shadow.has(piece))
-	if piece in _free_peoples:
-		_free_peoples.erase(piece)
-	elif piece in _shadow:
-		_shadow.erase(piece)
+	assert(_nation_to_pieces[piece.get_nation()].has(piece))
+	_nation_to_pieces[piece.get_nation()].erase(piece)
